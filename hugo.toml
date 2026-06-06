@@ -1,0 +1,22 @@
+baseURL = "https://www.roamsnotes.com/"
+locale = "en-US"
+title = "RoamsNotes"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Practical guides and tools for choosing online tarot, astrology, and spiritual reading services."
+  brand = "RoamsNotes"
+  affiliateDisclosure = "RoamsNotes may earn a commission when you buy through some links. We focus on practical comparison and safety, not guaranteed outcomes."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.6

@@ -1,0 +1,120 @@
+- slug: fiverr-tarot-reading
+  type: service
+  title: "Fiverr Tarot Reading: How to Choose a Reader Safely"
+  h1: "Fiverr Tarot Reading: How to Choose a Reader Safely"
+  description: "A practical guide to finding tarot readers on Fiverr by budget, delivery format, reviews, and question type."
+  intent: "Find an affordable tarot reader on Fiverr without falling for exaggerated promises."
+  audience: "People who want a one-time love, career, or self-reflection tarot reading and prefer fixed-price services."
+  primary_cta: "Browse tarot readers on Fiverr"
+  cta_url: "https://www.fiverr.com/categories/lifestyle/astrology-psychics?source=category_tree"
+  category: "Tarot"
+  budget: "$5-$50 typical entry range"
+  delivery: "Text, PDF, audio, or short video depending on the seller"
+  risk_level: "Medium"
+  sections:
+    - heading: "Best for"
+      body: "Low-budget, asynchronous readings where you can compare packages before ordering."
+    - heading: "Avoid if"
+      body: "You need emergency support, medical/legal/financial advice, or guaranteed predictions."
+    - heading: "Selection checklist"
+      body: "Check recent reviews, delivery format, revision policy, sample style, and whether the gig explains limits clearly."
+  related:
+    - /tools/tarot-question-generator/
+    - /how-to-choose-a-tarot-reader-online/
+    - /fiverr-vs-keen-psychics/
+- slug: fiverr-astrology-reading
+  type: service
+  title: "Fiverr Astrology Reading: Birth Chart Services, Cost, and Red Flags"
+  h1: "Fiverr Astrology Reading: Birth Chart Services, Cost, and Red Flags"
+  description: "Compare Fiverr astrology reading services by chart type, price, delivery time, and the amount of birth data required."
+  intent: "Choose an astrology reading service on Fiverr with realistic expectations."
+  audience: "People looking for birth chart, compatibility, career, or yearly astrology interpretations."
+  primary_cta: "Browse astrology readers on Fiverr"
+  cta_url: "https://www.fiverr.com/categories/lifestyle/astrology-psychics/astrology"
+  category: "Astrology"
+  budget: "$10-$75 depending on depth"
+  delivery: "PDF report, written interpretation, audio, or video"
+  risk_level: "Medium"
+  sections:
+    - heading: "Data you may need"
+      body: "Most serious chart readings need birth date, birth time, and birth location. If birth time is unknown, expect a less precise reading."
+    - heading: "Good signs"
+      body: "Clear scope, sample report, exact delivery format, and no promise of fixed future outcomes."
+    - heading: "Red flags"
+      body: "Guaranteed soulmate claims, urgent fear-based upsells, or requests for unnecessary sensitive personal data."
+  related:
+    - /tools/astrology-reading-cost-calculator/
+    - /fiverr-vs-keen-psychics/
+    - /fiverr-tarot-reading/
+- slug: how-to-choose-a-tarot-reader-online
+  type: guide
+  title: "How to Choose a Tarot Reader Online Without Overpaying"
+  h1: "How to Choose a Tarot Reader Online Without Overpaying"
+  description: "A safety-first checklist for comparing online tarot readers across Fiverr, live psychic platforms, and independent services."
+  intent: "Learn how to evaluate tarot readers before paying."
+  audience: "First-time buyers who are curious but cautious."
+  primary_cta: "Compare Fiverr tarot readers"
+  cta_url: "/fiverr-tarot-reading/"
+  category: "Safety"
+  budget: "Use fixed-price packages first"
+  delivery: "Written readings are easiest to compare"
+  risk_level: "Low"
+  sections:
+    - heading: "Start with the question"
+      body: "Specific, reflective questions produce better readings than yes/no pressure questions."
+    - heading: "Compare delivery formats"
+      body: "Text readings are cheaper and reviewable. Live sessions can feel more personal but are harder to compare."
+    - heading: "Keep boundaries"
+      body: "Do not use tarot as a substitute for professional medical, legal, financial, or emergency support."
+  related:
+    - /tools/tarot-question-generator/
+    - /fiverr-tarot-reading/
+    - /fiverr-vs-keen-psychics/
+- slug: fiverr-vs-keen-psychics
+  type: comparison
+  title: "Fiverr vs Keen Psychics: Which Is Better for a First Reading?"
+  h1: "Fiverr vs Keen Psychics: Which Is Better for a First Reading?"
+  description: "Compare Fiverr fixed-price readings with Keen-style live psychic platforms by cost, speed, format, and buyer expectations."
+  intent: "Decide whether fixed-price Fiverr readings or live psychic platforms fit better."
+  audience: "People comparing low-cost asynchronous readings with real-time advisor chats."
+  primary_cta: "Start with Fiverr if you want fixed pricing"
+  cta_url: "/fiverr-tarot-reading/"
+  category: "Comparison"
+  budget: "Fiverr is fixed-price; live platforms often charge per minute"
+  delivery: "Fiverr is often asynchronous; Keen-style services are live"
+  risk_level: "Low"
+  sections:
+    - heading: "Choose Fiverr when"
+      body: "You want to compare sellers, see package prices upfront, and receive a written or recorded result."
+    - heading: "Choose live platforms when"
+      body: "You want an immediate conversation and are comfortable with per-minute pricing."
+    - heading: "Best first step"
+      body: "Start with a low-cost fixed package before paying for longer live sessions."
+  related:
+    - /fiverr-tarot-reading/
+    - /fiverr-astrology-reading/
+    - /how-to-choose-a-tarot-reader-online/
+- slug: cheap-online-tarot-reading
+  type: service
+  title: "Cheap Online Tarot Reading: What to Expect Before You Pay"
+  h1: "Cheap Online Tarot Reading: What to Expect Before You Pay"
+  description: "Understand what low-cost online tarot readings can and cannot provide, and how to compare fixed-price offers safely."
+  intent: "Find a low-cost tarot reading without unrealistic claims."
+  audience: "Budget-conscious users testing tarot readings for the first time."
+  primary_cta: "Compare affordable Fiverr readers"
+  cta_url: "/fiverr-tarot-reading/"
+  category: "Budget"
+  budget: "$5-$25 starter readings"
+  delivery: "Usually short written or audio readings"
+  risk_level: "Medium"
+  sections:
+    - heading: "What cheap readings are good for"
+      body: "Simple reflection, question framing, and low-stakes curiosity."
+    - heading: "What they are not good for"
+      body: "Complex life decisions, crisis support, or guaranteed future outcomes."
+    - heading: "How to compare"
+      body: "Look for clear package limits, recent reviews, and transparent delivery examples."
+  related:
+    - /fiverr-tarot-reading/
+    - /tools/tarot-question-generator/
+    - /how-to-choose-a-tarot-reader-online/

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ if eq .Section "tools" }}
+    <div class="grid three">
+      <a class="card" href="/tools/tarot-question-generator/">
+        <span class="card-kicker">Tool</span>
+        <h2>Tarot Question Generator</h2>
+        <p>Prepare clearer questions before ordering a reading.</p>
+      </a>
+      <a class="card" href="/tools/psychic-reader-matcher/">
+        <span class="card-kicker">Tool</span>
+        <h2>Psychic Reader Matcher</h2>
+        <p>Match topic, budget, and format to a reader type.</p>
+      </a>
+      <a class="card" href="/tools/astrology-reading-cost-calculator/">
+        <span class="card-kicker">Tool</span>
+        <h2>Astrology Cost Calculator</h2>
+        <p>Estimate what kind of reading fits your budget.</p>
+      </a>
+    </div>
+  {{ end }}
+</article>
+{{ end }}

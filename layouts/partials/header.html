@@ -1,0 +1,8 @@
+<header class="site-header">
+  <a class="brand" href="/">{{ .Site.Params.brand }}</a>
+  <nav class="main-nav" aria-label="Main navigation">
+    {{ range hugo.Data.site.navigation.main }}
+      <a href="{{ .url }}">{{ .title }}</a>
+    {{ end }}
+  </nav>
+</header>

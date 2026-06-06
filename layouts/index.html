@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="hero">
+  <div>
+    <p class="eyebrow">Tarot, Astrology, and Spiritual Reading Tools</p>
+    <h1>Choose an online reader with clearer questions and safer expectations.</h1>
+    <p class="lede">RoamsNotes combines free tools, practical checklists, and Fiverr-focused comparison pages so you can compare reading services before paying.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="/tools/tarot-question-generator/">Start with a question</a>
+      <a class="button secondary" href="/fiverr-tarot-reading/">Compare Fiverr readers</a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="section-heading">
+    <h2>Start Here</h2>
+    <p>Use a tool first, then compare services only when you know what you need.</p>
+  </div>
+  <div class="grid three">
+    <a class="card" href="/tools/tarot-question-generator/">
+      <span class="card-kicker">Tool</span>
+      <h3>Tarot Question Generator</h3>
+      <p>Turn vague worries into clearer reading questions.</p>
+    </a>
+    <a class="card" href="/tools/psychic-reader-matcher/">
+      <span class="card-kicker">Tool</span>
+      <h3>Psychic Reader Matcher</h3>
+      <p>Match your budget, topic, and delivery style to reader types.</p>
+    </a>
+    <a class="card" href="/fiverr-tarot-reading/">
+      <span class="card-kicker">Guide</span>
+      <h3>Fiverr Tarot Reading</h3>
+      <p>Compare fixed-price tarot services with a safety-first checklist.</p>
+    </a>
+  </div>
+</section>
+
+<section class="band muted">
+  <div class="section-heading">
+    <h2>Fiverr Reading Guides</h2>
+    <p>Generated from structured data and reviewed against a risk checklist.</p>
+  </div>
+  <div class="list">
+    {{ range hugo.Data.pseo.pages }}
+      <a class="list-row" href="/{{ .slug }}/">
+        <span>{{ .category }}</span>
+        <strong>{{ .title }}</strong>
+        <em>{{ .risk_level }} risk</em>
+      </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,8 @@
+<script type="application/ld+json">
+{{- if .IsHome -}}
+{{- dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Params.brand "url" .Site.BaseURL "description" .Site.Params.description | jsonify (dict "indent" "  ") | safeJS -}}
+{{- else -}}
+{{- $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" (.Description | default .Site.Params.description) "mainEntityOfPage" .Permalink "publisher" (dict "@type" "Organization" "name" .Site.Params.brand) -}}
+{{- $schema | jsonify (dict "indent" "  ") | safeJS -}}
+{{- end -}}
+</script>

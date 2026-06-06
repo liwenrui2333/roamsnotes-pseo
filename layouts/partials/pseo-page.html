@@ -1,0 +1,63 @@
+{{ $item := .Item }}
+<article class="content pseo-page">
+  <p class="eyebrow">{{ $item.category }} / {{ $item.type }}</p>
+  <h1>{{ $item.h1 }}</h1>
+  <p class="lede">{{ $item.description }}</p>
+
+  <section class="summary-panel">
+    <div>
+      <span>Intent</span>
+      <strong>{{ $item.intent }}</strong>
+    </div>
+    <div>
+      <span>Budget</span>
+      <strong>{{ $item.budget }}</strong>
+    </div>
+    <div>
+      <span>Delivery</span>
+      <strong>{{ $item.delivery }}</strong>
+    </div>
+    <div>
+      <span>Risk</span>
+      <strong>{{ $item.risk_level }}</strong>
+    </div>
+  </section>
+
+  <section class="affiliate-note">
+    <p>{{ site.Params.affiliateDisclosure }}</p>
+  </section>
+
+  {{ range $item.sections }}
+    <section>
+      <h2>{{ .heading }}</h2>
+      <p>{{ .body }}</p>
+    </section>
+  {{ end }}
+
+  <section>
+    <h2>Before You Click</h2>
+    <ul class="checklist">
+      <li>Use readings for entertainment and self-reflection.</li>
+      <li>Avoid sellers promising guaranteed love, wealth, health, or legal outcomes.</li>
+      <li>Prefer clear packages, recent reviews, and transparent delivery formats.</li>
+      <li>Do not share unnecessary sensitive personal information.</li>
+    </ul>
+  </section>
+
+  <section class="cta-panel">
+    <h2>Next Step</h2>
+    <p>{{ $item.audience }}</p>
+    <a class="button primary" href="{{ $item.cta_url }}" rel="sponsored nofollow">{{ $item.primary_cta }}</a>
+  </section>
+
+  {{ with $item.related }}
+  <section>
+    <h2>Related Guides</h2>
+    <div class="related-links">
+      {{ range . }}
+        <a href="{{ . }}">{{ . }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</article>

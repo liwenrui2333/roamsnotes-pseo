@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ $slug := path.Base .RelPermalink }}
+{{ $item := index (where hugo.Data.pseo.pages "slug" $slug) 0 }}
+{{ if $item }}
+  {{ partial "pseo-page.html" (dict "Page" . "Item" $item) }}
+{{ else }}
+  <article class="content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+{{ end }}
+{{ end }}
