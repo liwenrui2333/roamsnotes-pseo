@@ -34,6 +34,18 @@
     </section>
   {{ end }}
 
+  {{ with $item.faq }}
+  <section class="faq">
+    <h2>FAQ</h2>
+    {{ range . }}
+      <details>
+        <summary>{{ .q }}</summary>
+        <p>{{ .a }}</p>
+      </details>
+    {{ end }}
+  </section>
+  {{ end }}
+
   <section>
     <h2>Before You Click</h2>
     <ul class="checklist">
@@ -45,9 +57,8 @@
   </section>
 
   <section class="cta-panel">
-    <h2>Next Step</h2>
-    <p>{{ $item.audience }}</p>
-    <a class="button primary" href="{{ $item.cta_url }}" rel="sponsored nofollow">{{ $item.primary_cta }}</a>
+    <h3>If you decide to book</h3>
+    <p>{{ $item.audience }} When you know what you want, you can {{ if $item.affiliate }}<a class="soft-cta" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="{{ $item.primary_cta }}" rel="sponsored nofollow noopener">{{ lower $item.primary_cta }} &rarr;</a>{{ else }}<a class="soft-cta" href="{{ $item.cta_url }}"{{ if hasPrefix $item.cta_url "http" }} rel="sponsored nofollow noopener"{{ end }}>{{ lower $item.primary_cta }} &rarr;</a>{{ end }} — there's no rush, and comparing a few sellers first is always fine.</p>
   </section>
 
   {{ with $item.related }}
@@ -60,4 +71,30 @@
     </div>
   </section>
   {{ end }}
+
+  {{ with $item.last_updated }}<p class="last-updated">Data anchors last checked: {{ . }}.</p>{{ end }}
 </article>
+
+{{/* Service schema for service/comparison pages */}}
+{{ if in (slice "service" "comparison") $item.type }}
+  {{ $svc := dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" $item.h1
+      "description" $item.description
+      "serviceType" $item.category
+      "areaServed" "Worldwide"
+      "provider" (dict "@type" "Organization" "name" site.Params.brand "url" site.BaseURL)
+  }}
+  {{ printf "<script type=\"application/ld+json\">%s</script>" ($svc | jsonify) | safeHTML }}
+{{ end }}
+
+{{/* FAQPage schema from faq field */}}
+{{ with $item.faq }}
+  {{ $items := slice }}
+  {{ range . }}
+    {{ $items = $items | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) }}
+  {{ end }}
+  {{ $faq := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $items }}
+  {{ printf "<script type=\"application/ld+json\">%s</script>" ($faq | jsonify) | safeHTML }}
+{{ end }}

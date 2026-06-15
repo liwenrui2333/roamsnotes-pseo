@@ -21,19 +21,47 @@ const questions = {
   }
 };
 
+// Map a tool result to the matching Fiverr search redirect (see data/affiliate/links.yaml).
+function softLink(slug, label) {
+  return `<a class="soft-cta" href="/go/${slug}/" data-affiliate data-cta="${label}" rel="sponsored nofollow noopener">${label} &rarr;</a>`;
+}
+
 function setText(id, value) {
   const element = document.getElementById(id);
   if (element) element.textContent = value;
 }
 
+// Renders a primary result line plus an optional soft-placed reader link underneath.
+function setResult(id, mainText, link) {
+  const element = document.getElementById(id);
+  if (!element) return;
+  const main = document.createElement("p");
+  main.className = "result-main";
+  main.textContent = mainText;
+  element.replaceChildren(main);
+  if (link) {
+    const note = document.createElement("p");
+    note.className = "result-soft";
+    note.innerHTML = link;
+    element.appendChild(note);
+  }
+}
+
 function initQuestionGenerator() {
   const form = document.getElementById("question-tool");
   if (!form) return;
+  const topicToReader = {
+    love: ["love-tarot", "Find a reader for this love question"],
+    career: ["career-tarot", "Find a reader for this career question"],
+    money: ["fiverr-tarot", "Find a reader for this question"],
+    self: ["fiverr-tarot", "Find a reader for this reflection"]
+  };
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const topic = form.elements.topic.value;
     const style = form.elements.style.value;
-    setText("question-result", questions[topic][style]);
+    const [slug, label] = topicToReader[topic] || topicToReader.self;
+    setResult("question-result", questions[topic][style], softLink(slug, label));
   });
 }
 
@@ -53,7 +81,23 @@ function initReaderMatcher() {
     const budgetNote = budget < 20
       ? "Start with a short fixed-price package and avoid add-ons."
       : "Compare mid-range packages with clear samples and recent reviews.";
-    setText("matcher-result", `Look for a ${reader}. Prefer ${format} delivery. ${budgetNote}`);
+    // Match topic + delivery to the most relevant search.
+    let slug;
+    let label;
+    if (topic === "astrology") {
+      slug = "birth-chart";
+      label = "See matching astrology readers";
+    } else if (format === "written") {
+      slug = "written-tarot";
+      label = "See written-report tarot readers";
+    } else if (topic === "love") {
+      slug = "love-tarot";
+      label = "See matching love tarot readers";
+    } else {
+      slug = "fiverr-tarot";
+      label = "See matching tarot readers";
+    }
+    setResult("matcher-result", `Look for a ${reader}. Prefer ${format} delivery. ${budgetNote}`, softLink(slug, label));
   });
 }
 
@@ -66,7 +110,9 @@ function initCostCalculator() {
     const speed = form.elements.speed.value;
     const base = depth === "short" ? 15 : depth === "standard" ? 45 : 85;
     const rush = speed === "fast" ? 15 : 0;
-    setText("cost-result", `Estimated budget: $${base + rush}. Use this as a comparison anchor, not a guaranteed market price.`);
+    const slug = depth === "deep" ? "compatibility-astrology" : "birth-chart";
+    const label = `Compare astrology readers near $${base + rush}`;
+    setResult("cost-result", `Estimated budget: $${base + rush}. Use this as a comparison anchor, not a guaranteed market price.`, softLink(slug, label));
   });
 }
 

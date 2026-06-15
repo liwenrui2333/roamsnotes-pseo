@@ -1,0 +1,9 @@
+# Authoritative Mercury retrograde windows. update_sky.js reads this to decide
+# whether to show "Mercury is retrograde" today. We DO NOT compute or guess these
+# dates — fill them from a trusted ephemeris/astronomy source so the site never
+# states a wrong window. Format: ISO dates (YYYY-MM-DD), inclusive.
+#
+# Until you fill this, the sky widget simply omits any Mercury mention (honest default).
+# Example (replace with verified dates):
+# - start: 2026-02-26
+#   end: 2026-03-20

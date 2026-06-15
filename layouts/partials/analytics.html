@@ -1,0 +1,33 @@
+{{- /* RoamsNotes analytics: GA4 + Clarity + outbound affiliate click tracking. No-op until IDs set in hugo.toml [params]. */ -}}
+{{- with site.Params.googleSiteVerification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+{{- with site.Params.ga4Id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}', { send_page_view: true });
+</script>
+{{- end }}
+{{- with site.Params.clarityId }}
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","{{ . }}");
+</script>
+{{- end }}
+<script>
+  // Outbound affiliate click tracking: page_path, cta_label, destination, timestamp
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-affiliate]');
+    if (!a) return;
+    var payload = {
+      page_path: location.pathname,
+      cta_label: a.getAttribute('data-cta') || (a.textContent || '').trim(),
+      destination: a.getAttribute('href'),
+      timestamp: new Date().toISOString()
+    };
+    if (typeof gtag === 'function') { gtag('event', 'affiliate_click', Object.assign({ transport_type: 'beacon' }, payload)); }
+    if (window.clarity) { try { clarity('event', 'affiliate_click'); } catch (_) {} }
+  }, true);
+</script>

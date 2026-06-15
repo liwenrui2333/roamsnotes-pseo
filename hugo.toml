@@ -8,6 +8,12 @@ disableKinds = ["taxonomy", "term"]
   description = "Practical guides and tools for choosing online tarot, astrology, and spiritual reading services."
   brand = "RoamsNotes"
   affiliateDisclosure = "RoamsNotes may earn a commission when you buy through some links. We focus on practical comparison and safety, not guaranteed outcomes."
+  # --- Tracking (fill to activate; empty = no-op) ---
+  ga4Id = ""                  # e.g. G-XXXXXXXXXX
+  clarityId = ""              # Microsoft Clarity project id
+  googleSiteVerification = "" # GSC HTML-tag verification token
+  # --- Fiverr affiliate (fill to emit real deep links) ---
+  fiverrAffiliateId = ""      # bta id from Fiverr affiliate dashboard
 
 [markup]
   [markup.goldmark]

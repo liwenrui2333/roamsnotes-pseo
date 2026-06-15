@@ -308,6 +308,78 @@ input {
   padding: 16px;
 }
 
+.tool-result .result-main {
+  margin: 0;
+}
+
+.tool-result .result-soft {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+}
+
+.soft-cta {
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.soft-cta:hover {
+  opacity: 0.8;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq details p {
+  margin: 8px 0 0;
+}
+
+.last-updated {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+.sky-today {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.sky-moon {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sky-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.sky-moon strong {
+  display: block;
+}
+
+.sky-sub {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.sky-note {
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
 }

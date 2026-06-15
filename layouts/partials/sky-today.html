@@ -1,0 +1,15 @@
+{{/* Astro-seek-style "sky today" band. Data from data/sky/today.yaml (refreshed daily
+     by scripts/update_sky.js). Descriptive only — no predictions — with one restrained
+     soft link. Renders nothing if the data file is absent. */}}
+{{ with site.Data.sky.today }}
+<section class="sky-today" aria-label="Today's sky">
+  <div class="sky-moon">
+    <span class="sky-emoji" aria-hidden="true">{{ .moon.emoji }}</span>
+    <div>
+      <strong>Today's Moon: {{ .moon.name }}</strong>
+      <span class="sky-sub">{{ .moon.illumination }}% illuminated{{ if .mercury_retrograde }} · Mercury is retrograde{{ with .mercury_retrograde_until }} until {{ . }}{{ end }}{{ end }}</span>
+    </div>
+  </div>
+  <p class="sky-note">A simple snapshot for reflection, not a forecast. Curious how your own chart reads right now? <a class="soft-cta" href="/go/birth-chart/" data-affiliate data-cta="Sky today — birth chart readers" rel="sponsored nofollow noopener">compare birth chart readers &rarr;</a></p>
+</section>
+{{ end }}

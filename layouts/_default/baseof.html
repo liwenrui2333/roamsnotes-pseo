@@ -9,6 +9,7 @@
     {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     {{ partial "schema.html" . }}
+    {{ partial "analytics.html" . }}
   </head>
   <body>
     {{ partial "header.html" . }}
