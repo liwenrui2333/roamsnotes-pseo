@@ -162,6 +162,12 @@ async function callModel({ system, user }) {
   return json.choices[0].message.content;
 }
 const stripFence = (s) => s.replace(/^```[a-z]*\n?/i, "").replace(/```\s*$/, "").trim();
+// 容错解析：先归一化智能引号(避免 YAML 解析报错)，JSON 优先，回退 YAML。
+function parsePage(raw) {
+  const cleaned = raw.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+  try { return JSON.parse(cleaned); } catch (_) {}
+  return yaml.parse(cleaned);
+}
 
 // ---------- run ----------
 let queue = topics.filter((t) => !onlySlug || t.slug === onlySlug);
@@ -178,19 +184,24 @@ for (const topic of queue) {
     continue;
   }
 
-  try {
-    console.log(`GEN ${topic.slug} ...`);
-    const raw = stripFence(await callModel(prompt));
-    const page = yaml.parse(raw);
-    page.slug = topic.slug; // enforce
-    const errs = validate(page);
-    if (errs.length) { console.error(`REJECT ${topic.slug}: ${errs.join(", ")}`); failed++; continue; }
-    fs.appendFileSync(pagesPath, "\n" + yaml.stringify([page]), "utf8");
-    existingSlugs.add(topic.slug);
-    console.log(`OK   ${topic.slug} appended -> data/pseo/pages.yaml`);
-    done++;
-  } catch (e) {
-    console.error(`ERR  ${topic.slug}: ${e.message}`); failed++;
+  // 最多 2 次：解析或校验失败自动重试一次（模型偶发坏 YAML/缺结构）
+  let saved = false;
+  for (let attempt = 1; attempt <= 2 && !saved; attempt++) {
+    try {
+      console.log(`GEN ${topic.slug} (try ${attempt}) ...`);
+      const raw = stripFence(await callModel(prompt));
+      const page = parsePage(raw);
+      page.slug = topic.slug; // enforce
+      const errs = validate(page);
+      if (errs.length) throw new Error(`validate: ${errs.join(", ")}`);
+      fs.appendFileSync(pagesPath, "\n" + yaml.stringify([page]), "utf8");
+      existingSlugs.add(topic.slug);
+      console.log(`OK   ${topic.slug} appended -> data/pseo/pages.yaml`);
+      done++; saved = true;
+    } catch (e) {
+      console.error(`${attempt < 2 ? "RETRY" : "FAIL "} ${topic.slug}: ${e.message}`);
+      if (attempt === 2) failed++;
+    }
   }
 }
 
