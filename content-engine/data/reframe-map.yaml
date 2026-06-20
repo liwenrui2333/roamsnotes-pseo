@@ -1,0 +1,33 @@
+# ×独家输入（C 情绪意图）：把命运式查询改写成关于读者自己的、可反思的问题。
+# 这张表既是数据，也是 RoamsNotes 的品牌立场——别的站没有这种"反预言改写"角度。
+# key = topics/wave1.yaml 里 emotional 题的 reframe_key。
+
+is-my-ex-coming-back:
+  reframed: "What do I need to understand about this relationship before I decide whether to reach out?"
+  why: "A reading can't decide another adult's future choices. Pointed at your own clarity, it tells you something you can actually act on; pointed at his future, it just guesses."
+  red_flag: "Avoid any 'reunite with your ex' or 'reconciliation guaranteed' gig — promising power over someone else's choices is the clearest red flag in love readings."
+  spread_hint: "A three-card past / present / what-I-need-to-see pull keeps the focus on you, not on predicting him."
+
+does-he-love-me:
+  reframed: "What am I not seeing clearly about how I show up in this relationship?"
+  why: "Asking a reader to mind-read someone else's feelings invites a comforting guess. Asking about your own patterns returns something you can use."
+  red_flag: "Skip readers who claim to channel another person's exact feelings on demand — that's a confidence act, not a reading."
+  spread_hint: "A single focused card on 'what I keep overlooking' beats a yes/no spread here."
+
+is-he-thinking-about-me:
+  reframed: "Where am I putting my energy in this connection, and is it serving me?"
+  why: "Whether he's thinking about you is unknowable and, honestly, not the lever you control. Where your attention goes is."
+  red_flag: "Be wary of gigs that promise to tell you a third person's private thoughts or 'send them a sign' — that's fear-and-hope marketing."
+  spread_hint: "Try a two-card 'my energy now / where it would serve me better' reflection."
+
+will-i-find-love:
+  reframed: "What patterns should I be aware of as I start dating again?"
+  why: "No reading can set a date for meeting someone. It can help you notice the habits you bring into new connections."
+  red_flag: "Avoid 'soulmate timing' or 'meet your person by [date]' gigs — a date is the one thing a reading can't honestly give."
+  spread_hint: "A three-card 'what I've learned / what I repeat / what to try differently' spread fits."
+
+soulmate-tarot:
+  reframed: "What does a relationship that's genuinely good for me actually look like — and where do I compromise that?"
+  why: "'Soulmate' framing outsources your standards to fate. Turning it into your own criteria makes the reading a mirror, not a lottery ticket."
+  red_flag: "Steer clear of readers who 'confirm your soulmate' or name a specific person — that's selling certainty no one has."
+  spread_hint: "A values-focused spread ('what I need / what I fear / what I settle for') is more useful than a 'who is my soulmate' layout."

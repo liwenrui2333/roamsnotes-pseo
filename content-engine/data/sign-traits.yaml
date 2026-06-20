@@ -1,0 +1,14 @@
+# ×独家输入（D2 星座配对）：真实占星要素，让配对稿基于事实推理，而非刻板印象。
+# element: fire|earth|air|water  modality: cardinal|fixed|mutable
+aries:       { dates: "Mar 21 - Apr 19",  element: fire,  modality: cardinal, ruler: Mars,    keywords: [direct, driven, impatient] }
+taurus:      { dates: "Apr 20 - May 20",  element: earth, modality: fixed,    ruler: Venus,   keywords: [steady, sensual, stubborn] }
+gemini:      { dates: "May 21 - Jun 20",  element: air,   modality: mutable,  ruler: Mercury, keywords: [curious, verbal, restless] }
+cancer:      { dates: "Jun 21 - Jul 22",  element: water, modality: cardinal, ruler: Moon,    keywords: [protective, moody, loyal] }
+leo:         { dates: "Jul 23 - Aug 22",  element: fire,  modality: fixed,    ruler: Sun,     keywords: [warm, proud, generous] }
+virgo:       { dates: "Aug 23 - Sep 22",  element: earth, modality: mutable,  ruler: Mercury, keywords: [precise, helpful, critical] }
+libra:       { dates: "Sep 23 - Oct 22",  element: air,   modality: cardinal, ruler: Venus,   keywords: [fair, relational, indecisive] }
+scorpio:     { dates: "Oct 23 - Nov 21",  element: water, modality: fixed,    ruler: Pluto,   keywords: [intense, private, loyal] }
+sagittarius: { dates: "Nov 22 - Dec 21",  element: fire,  modality: mutable,  ruler: Jupiter, keywords: [free, candid, restless] }
+capricorn:   { dates: "Dec 22 - Jan 19",  element: earth, modality: cardinal, ruler: Saturn,  keywords: [disciplined, ambitious, guarded] }
+aquarius:    { dates: "Jan 20 - Feb 18",  element: air,   modality: fixed,    ruler: Uranus,  keywords: [independent, ideic, detached] }
+pisces:      { dates: "Feb 19 - Mar 20",  element: water, modality: mutable,  ruler: Neptune, keywords: [empathic, dreamy, porous] }

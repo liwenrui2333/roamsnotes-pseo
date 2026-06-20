@@ -1,0 +1,94 @@
+# Wave 1 选题队列（20）。引擎按 type 取独家数据 + 对应 prompt 模板。
+# tool/money 路径用于内链与软植入。related 取 3 个站内路径。
+
+# ---------- C 情绪意图（5）：tool=问题生成器，money=love-tarot ----------
+- slug: is-my-ex-coming-back-tarot
+  type: emotional
+  target_kw: "is my ex coming back tarot"
+  reframe_key: is-my-ex-coming-back
+  tool_path: /tools/tarot-question-generator/
+  money_path: /love-tarot-reading-on-fiverr/
+  related: [/tools/tarot-question-generator/, /love-tarot-reading-on-fiverr/, /what-to-ask-a-tarot-reader/]
+
+- slug: does-he-love-me-tarot
+  type: emotional
+  target_kw: "does he love me tarot"
+  reframe_key: does-he-love-me
+  tool_path: /tools/tarot-question-generator/
+  money_path: /love-tarot-reading-on-fiverr/
+  related: [/tools/tarot-question-generator/, /love-tarot-reading-on-fiverr/, /how-to-choose-a-tarot-reader-online/]
+
+- slug: is-he-thinking-about-me-tarot
+  type: emotional
+  target_kw: "is he thinking about me tarot"
+  reframe_key: is-he-thinking-about-me
+  tool_path: /tools/tarot-question-generator/
+  money_path: /love-tarot-reading-on-fiverr/
+  related: [/tools/tarot-question-generator/, /love-tarot-reading-on-fiverr/, /what-to-ask-a-tarot-reader/]
+
+- slug: will-i-find-love-tarot
+  type: emotional
+  target_kw: "will i find love tarot"
+  reframe_key: will-i-find-love
+  tool_path: /tools/tarot-question-generator/
+  money_path: /love-tarot-reading-on-fiverr/
+  related: [/tools/tarot-question-generator/, /love-tarot-reading-on-fiverr/, /cheap-online-tarot-reading/]
+
+- slug: soulmate-tarot-reading
+  type: emotional
+  target_kw: "soulmate tarot reading"
+  reframe_key: soulmate-tarot
+  tool_path: /tools/tarot-question-generator/
+  money_path: /love-tarot-reading-on-fiverr/
+  related: [/tools/tarot-question-generator/, /love-tarot-reading-on-fiverr/, /how-to-choose-a-tarot-reader-online/]
+
+# ---------- B 牌阵（3）：tool=问题生成器，money=fiverr-tarot ----------
+- slug: three-card-tarot-spread
+  type: spread
+  target_kw: "three card tarot spread"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /fiverr-tarot-reading/
+  related: [/tools/tarot-question-generator/, /fiverr-tarot-reading/, /what-to-ask-a-tarot-reader/]
+  spread_data:
+    spread_name: "Three-Card Spread"
+    positions: "1) Past / what set this up — 2) Present / where you are now — 3) Guidance / what you can do, NOT what will happen"
+    best_for: "One focused situation you're actively thinking through; quick check-ins"
+    common_mistake: "Reading position 3 as a prediction of the outcome instead of as advice you can act on"
+
+- slug: yes-or-no-tarot
+  type: spread
+  target_kw: "yes or no tarot"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /fiverr-tarot-reading/
+  related: [/tools/tarot-question-generator/, /fiverr-tarot-reading/, /how-to-choose-a-tarot-reader-online/]
+  spread_data:
+    spread_name: "Yes / No Single Card"
+    positions: "1) One card; upright leans yes / reversed leans no — but read the card's meaning as the real answer, not the direction alone"
+    best_for: "Low-stakes, genuinely binary questions when you want a quick nudge"
+    common_mistake: "Forcing a life-changing or relational question into yes/no, which strips out the nuance that would actually help"
+
+- slug: celtic-cross-tarot-spread
+  type: spread
+  target_kw: "celtic cross tarot spread"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /fiverr-tarot-reading/
+  related: [/tools/tarot-question-generator/, /fiverr-tarot-reading/, /written-tarot-reading-on-fiverr/]
+  spread_data:
+    spread_name: "Celtic Cross (10 cards)"
+    positions: "1) Heart of the matter — 2) The challenge — 3) Past root — 4) Recent past — 5) Conscious goal — 6) Near future — 7) Your stance — 8) Outside influences — 9) Hopes/fears — 10) Likely direction if nothing changes"
+    best_for: "A complex situation you want to see from many angles; not a quick question"
+    common_mistake: "Treating position 10 as a fixed fate rather than 'where this trends if you change nothing'"
+
+# ---------- D2 星座配对（12）：tool=费用计算器，money=compatibility ----------
+- { slug: aries-and-leo-compatibility,        type: compatibility, sign_a: aries,       sign_b: leo,         target_kw: "aries and leo compatibility",        tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: taurus-and-cancer-compatibility,    type: compatibility, sign_a: taurus,      sign_b: cancer,      target_kw: "taurus and cancer compatibility",    tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: gemini-and-libra-compatibility,     type: compatibility, sign_a: gemini,      sign_b: libra,       target_kw: "gemini and libra compatibility",     tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /fiverr-astrology-reading/] }
+- { slug: cancer-and-scorpio-compatibility,   type: compatibility, sign_a: cancer,      sign_b: scorpio,     target_kw: "cancer and scorpio compatibility",   tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: leo-and-sagittarius-compatibility,  type: compatibility, sign_a: leo,         sign_b: sagittarius, target_kw: "leo and sagittarius compatibility",  tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /fiverr-astrology-reading/] }
+- { slug: virgo-and-capricorn-compatibility,  type: compatibility, sign_a: virgo,       sign_b: capricorn,   target_kw: "virgo and capricorn compatibility",  tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: libra-and-aquarius-compatibility,   type: compatibility, sign_a: libra,       sign_b: aquarius,    target_kw: "libra and aquarius compatibility",   tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /fiverr-astrology-reading/] }
+- { slug: scorpio-and-pisces-compatibility,   type: compatibility, sign_a: scorpio,     sign_b: pisces,      target_kw: "scorpio and pisces compatibility",   tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: sagittarius-and-aries-compatibility,type: compatibility, sign_a: sagittarius, sign_b: aries,       target_kw: "sagittarius and aries compatibility",tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /fiverr-astrology-reading/] }
+- { slug: capricorn-and-taurus-compatibility, type: compatibility, sign_a: capricorn,   sign_b: taurus,      target_kw: "capricorn and taurus compatibility", tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
+- { slug: aquarius-and-gemini-compatibility,  type: compatibility, sign_a: aquarius,    sign_b: gemini,      target_kw: "aquarius and gemini compatibility",  tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /fiverr-astrology-reading/] }
+- { slug: pisces-and-cancer-compatibility,    type: compatibility, sign_a: pisces,      sign_b: cancer,      target_kw: "pisces and cancer compatibility",    tool_path: /tools/astrology-reading-cost-calculator/, money_path: /compatibility-astrology-reading-on-fiverr/, related: [/tools/astrology-reading-cost-calculator/, /compatibility-astrology-reading-on-fiverr/, /birth-chart-reading-on-fiverr/] }
