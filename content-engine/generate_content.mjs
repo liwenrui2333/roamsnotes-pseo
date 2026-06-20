@@ -18,6 +18,15 @@ const __dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dir, "..");
 const DATE = new Date().toISOString().slice(0, 10);
 
+// 自动加载 gitignored .env（无需依赖）：KEY=VALUE，已存在的 env 不覆盖。
+for (const envPath of [path.join(root, ".env"), path.join(__dir, ".env")]) {
+  if (!fs.existsSync(envPath)) continue;
+  for (const line of fs.readFileSync(envPath, "utf8").split(/\r?\n/)) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/i);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+  }
+}
+
 // ---------- args ----------
 const args = process.argv.slice(2);
 const flag = (n, d = null) => { const i = args.indexOf(n); return i >= 0 ? (args[i + 1] || true) : d; };

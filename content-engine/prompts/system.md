@@ -21,7 +21,7 @@ budget: <价格/形式锚；无金钱场景给 "N/A (...)">
 delivery: <交付/形式锚>
 risk_level: <Low|Medium>
 last_updated: <按给定日期>
-tldr: <30-50 词的一句话速览（"Quick take"），先给结论>
+tldr: <30-50 词速览，先给结论。不要写 "Quick take:" 前缀，模板会自动加>
 hero: { src: <按给定的 hero 资产路径>, alt: <描述>, caption: <可选一句> }   # 给定了就填，没给定就省略
 sections:                 # 5-7 个
   - heading: <小标题>
@@ -63,4 +63,4 @@ related:                  # 恰好 3 个站内路径（按给定）
 
 ## 软植入与语言
 
-正文给足价值后，`primary_cta` 与最后一节末尾**至多一次**自然导向给定工具内链；Fiverr 钱页只通过 related 出现。成稿正文用**英文**，自然地道，带上面的人格与立场。
+正文给足价值后，`primary_cta` 与最后一节末尾**至多一次**自然导向给定工具内链；Fiverr 钱页只通过 related 出现。**不要把内链路径作为裸文本（如 `/tools/...`）写进 body**——链接由模板用 cta_url/related 渲染，正文只用自然语言提一句。成稿正文用**英文**，自然地道，带上面的人格与立场。
