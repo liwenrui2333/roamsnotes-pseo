@@ -121,6 +121,43 @@ h3 {
   margin-top: 24px;
 }
 
+.intent-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+  max-width: 920px;
+}
+
+.intent-strip a {
+  display: grid;
+  gap: 4px;
+  min-height: 82px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  color: var(--ink);
+  background: white;
+}
+
+.intent-strip a:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.intent-strip span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.intent-strip strong {
+  font-size: 0.94rem;
+  line-height: 1.25;
+}
+
 .button {
   display: inline-flex;
   min-height: 44px;
@@ -317,6 +354,41 @@ input {
   font-size: 0.95rem;
 }
 
+.tool-result .result-questions {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+}
+
+.tool-result .result-questions li {
+  margin: 0 0 10px;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.tool-result .copy-btn {
+  flex: none;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tool-result .copy-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.tool-result .result-hint {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
 .soft-cta {
   font-weight: 600;
   text-decoration: none;
@@ -402,6 +474,7 @@ input {
   }
 
   .grid.three,
+  .intent-strip,
   .summary-panel,
   .tool-grid {
     grid-template-columns: 1fr;

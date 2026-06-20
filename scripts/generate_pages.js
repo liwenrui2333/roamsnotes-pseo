@@ -53,7 +53,9 @@ if (fs.existsSync(linksPath)) {
   };
 
   for (const link of links) {
-    const dest = deepLink(link.target);
+    // Prefer an individual gig (single-product) landingPage when set; fall back to
+    // the query-matched search URL if no gig is assigned or a gig has gone dead.
+    const dest = deepLink(link.gig || link.target);
     const dir = path.join(goDir, link.slug);
     fs.mkdirSync(dir, { recursive: true });
     const html = `<!doctype html>

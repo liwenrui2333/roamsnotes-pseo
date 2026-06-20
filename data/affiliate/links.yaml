@@ -3,38 +3,54 @@
 # deep link (go.fiverr.com/visit?bta=...&landingPage=...). Otherwise it falls back
 # to the plain target with utm params.
 #
-# v2: targets are precise Fiverr SEARCH results (query-matched), not bare category
-# pages, so soft-placed tool/page links land users on relevant gigs, not a wall of
-# thousands. Tools map their result (topic/budget/depth) to the matching slug below.
+# v3 (2026-06-17): landingPage is now an INDIVIDUAL Fiverr gig (single product),
+# not a search results page. `gig:` = the single-product deep-link target;
+# `target:` = the query-matched search URL kept as a FALLBACK (build uses gig || target,
+# so deleting a dead `gig:` line instantly reverts that slug to the live search page).
+#
+# Selection criteria (no public per-gig conversion data exists; Fiverr 403s all bots):
+#   - deliverable matches the RN page it serves (written report / detailed chart / synastry)
+#   - price sits inside the cost-calculator anchor ($10-85), not $5 throwaway or $75+ premium
+#   - clear scope, established reviews; NO dramatic outcome claims (compliance red line:
+#     no 复合/正缘/发财/治病 predictions)
+# Re-verify monthly with: node scripts/check_gigs.js  (+ manual click — 403 != dead).
 
 # --- General hubs (page-level soft links) ---
 - slug: fiverr-tarot
   label: Fiverr tarot readers
+  gig: "https://www.fiverr.com/bossybusiness/give-you-tarot-card-reading-that-will-blow-your-mind"
   target: "https://www.fiverr.com/search/gigs?query=tarot%20reading"
 - slug: fiverr-astrology
   label: Fiverr astrology readers
+  gig: "https://www.fiverr.com/astrokatya/an-astrological-birth-chart-reading-an-astrological-synastry-chart-reading"
   target: "https://www.fiverr.com/search/gigs?query=astrology%20reading"
 
 # --- Tarot intent (tool-matched) ---
 - slug: love-tarot
   label: love & relationship tarot readers
+  gig: "https://www.fiverr.com/occultreadings/do-deep-tarot-spread-about-love-and-relationship-reading"
   target: "https://www.fiverr.com/search/gigs?query=love%20tarot%20reading"
 - slug: career-tarot
   label: career tarot readers
+  gig: "https://www.fiverr.com/taylorg951/use-tarot-to-give-clear-insights-into-your-career-and-business"
   target: "https://www.fiverr.com/search/gigs?query=career%20tarot%20reading"
 - slug: written-tarot
   label: written tarot report readers
+  gig: "https://www.fiverr.com/skimmerlit/read-your-tarot-and-provide-a-written-report"
   target: "https://www.fiverr.com/search/gigs?query=written%20tarot%20reading%20report"
 
 # --- Astrology intent (tool-matched) ---
 - slug: birth-chart
   label: birth chart readers
+  gig: "https://www.fiverr.com/lofeinstructor/do-detailed-birth-chart-astrology-reading"
   target: "https://www.fiverr.com/search/gigs?query=birth%20chart%20reading"
 - slug: compatibility-astrology
   label: compatibility & synastry readers
+  gig: "https://www.fiverr.com/loveastrologist/do-a-synastry-chart-full-analysis-of-your-love-compatibility"
   target: "https://www.fiverr.com/search/gigs?query=astrology%20compatibility%20synastry%20reading"
 
 # --- Legacy compatibility slugs (avoid 404 on old inbound/crawled links) ---
+# Kept on search target intentionally: low-traffic compat redirects, not worth a gig pin.
 - slug: tarot-reading
   label: Fiverr tarot readers
   target: "https://www.fiverr.com/search/gigs?query=tarot%20reading"

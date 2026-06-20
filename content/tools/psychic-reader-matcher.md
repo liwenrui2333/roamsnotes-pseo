@@ -12,6 +12,7 @@ Use this matcher before browsing readers. It helps you compare formats without a
         <option value="love">Love or relationship</option>
         <option value="career">Career or direction</option>
         <option value="astrology">Birth chart or astrology</option>
+        <option value="compatibility">Compatibility / synastry</option>
       </select>
     </label>
     <label>Preferred delivery
@@ -21,12 +22,20 @@ Use this matcher before browsing readers. It helps you compare formats without a
         <option value="video">video reading</option>
       </select>
     </label>
+    <label>What matters most
+      <select name="priority">
+        <option value="record">Keeping a record I can revisit</option>
+        <option value="depth">Depth and detail</option>
+        <option value="price">Lowest cost</option>
+        <option value="speed">Fast turnaround</option>
+      </select>
+    </label>
     <label>Budget in USD
       <input name="budget" type="number" min="5" max="300" value="25">
     </label>
   </div>
   <button class="button primary" type="submit">Match reader type</button>
-  <div class="tool-result" id="matcher-result">Enter your preferences to get a reader type.</div>
+  <div class="tool-result" id="matcher-result">Enter your preferences to get a tailored reader type.</div>
 </form>
 
 Use the result as a starting point, then compare seller reviews, package limits, and delivery examples.
@@ -39,11 +48,15 @@ Use it when you know you want a reading but are not sure which *type* fits — a
 
 ## How to use it
 
-Choose your topic (love, career, or astrology), the delivery format you would genuinely use, and a realistic budget. The matcher suggests a reader type and a budget-appropriate approach, then offers a link to matching readers. As a rough guide: under $20 points you toward short written packages; $20-$45 opens up multi-card spreads and audio; higher budgets suit detailed reports.
+Choose your topic (love, career, astrology, or compatibility), the delivery format you would genuinely use, what matters most to you, and a realistic budget. The matcher combines all four into a tailored suggestion — a reader type, a budget-appropriate approach, and advice that shifts with your priority — then links you to matching readers. As a rough guide: under $20 points you toward short written packages; $20-$45 opens up multi-card spreads and audio; higher budgets suit detailed reports.
+
+## How it tailors the result
+
+The four inputs each change the output. Topic decides the kind of reader and which search you land on. Format sets what you will actually receive. Budget reframes the advice — the same topic reads differently at $15 than at $80. And your priority retunes the guidance: choose *keeping a record* and it steers you to a written report; choose *speed* and it tells you to filter for rush delivery; choose *depth* and it points you to sellers who show their method and a sample. That is why two people with the same topic can get different, specific recommendations rather than one generic answer.
 
 ## Example
 
-Selecting *Love + written + $20* suggests a relationship-focused tarot reader, a short fixed-price written package, and a search filtered to love tarot readers. You stay in control of the final choice — the tool narrows the field, it does not pick a seller for you.
+Selecting *Love + written + keeping a record + $20* suggests a relationship-focused tarot reader, a short fixed-price written package you can revisit, and a search filtered to love tarot readers. Change the priority to *fast turnaround* and the same selection tells you to filter for 24-hour delivery instead. You stay in control of the final choice — the tool narrows the field, it does not pick a seller for you.
 
 ## FAQ
 
