@@ -1,0 +1,485 @@
+generated: 2026-06-20
+source: google-autocomplete
+note: 候选词。人工/打分挑 top N，按 suggested_type 转成对应 wave 选题再过 content-engine。event 类需配
+  event_calendar 真实日期。
+candidates:
+  - query: full moon april 2026
+    slug: full-moon-april-2026
+    suggested_type: event
+    score: 7
+    freq: 3
+    date_signal: true
+  - query: full moon april
+    slug: full-moon-april
+    suggested_type: event
+    score: 7
+    freq: 3
+    date_signal: true
+  - query: mercury retrograde june 2026
+    slug: mercury-retrograde-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 dates
+    slug: mercury-retrograde-2026-dates
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde march 2026
+    slug: mercury-retrograde-march-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon june 2026
+    slug: full-moon-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon may 2026
+    slug: full-moon-may-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon march 2026
+    slug: full-moon-march-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon june
+    slug: full-moon-june
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon june 2026
+    slug: new-moon-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon march 2026
+    slug: new-moon-march-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon april 2026
+    slug: new-moon-april-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon may 2026
+    slug: new-moon-may-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon calendar 2026
+    slug: new-moon-calendar-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde of 2026
+    slug: mercury-retrograde-of-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 quotes
+    slug: mercury-retrograde-2026-quotes
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde year 2026
+    slug: mercury-retrograde-year-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon calendar 2026
+    slug: full-moon-calendar-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon cycle 2026
+    slug: full-moon-cycle-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: retrograde 2026 what happens
+    slug: retrograde-2026-what-happens
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 what not to do
+    slug: mercury-retrograde-2026-what-not-to-do
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026
+    slug: mercury-retrograde-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde 2025
+    slug: mercury-retrograde-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde 2026 meaning
+    slug: mercury-retrograde-2026-meaning
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: full moons 2026
+    slug: full-moons-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: new moons 2026
+    slug: new-moons-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: solar eclipse 2026
+    slug: solar-eclipse-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: solar eclipse 2024
+    slug: solar-eclipse-2024
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: solar eclipse 2027
+    slug: solar-eclipse-2027
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: lunar eclipse 2026
+    slug: lunar-eclipse-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: lunar eclipse march 3
+    slug: lunar-eclipse-march-3
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: lunar eclipse march 3 2026
+    slug: lunar-eclipse-march-3-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: lunar eclipse 2025
+    slug: lunar-eclipse-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: lunar eclipse 2026 time
+    slug: lunar-eclipse-2026-time
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde april
+    slug: mercury-retrograde-april
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde aries 2026
+    slug: mercury-retrograde-aries-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde april 2026
+    slug: mercury-retrograde-april-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde calendar 2026
+    slug: mercury-retrograde-calendar-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde calendar 2025
+    slug: mercury-retrograde-calendar-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde capricorn 2026
+    slug: mercury-retrograde-capricorn-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde dates 2026
+    slug: mercury-retrograde-dates-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde dates 2025
+    slug: mercury-retrograde-dates-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde dates 2027
+    slug: mercury-retrograde-dates-2027
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde dates 2024
+    slug: mercury-retrograde-dates-2024
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde dates march 2026
+    slug: mercury-retrograde-dates-march-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde december 2025
+    slug: mercury-retrograde-december-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde ends 2026
+    slug: mercury-retrograde-ends-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde ends march 2026
+    slug: mercury-retrograde-ends-march-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde february 2026
+    slug: mercury-retrograde-february-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde for 2026
+    slug: mercury-retrograde-for-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde february
+    slug: mercury-retrograde-february
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde gemini 2026
+    slug: mercury-retrograde-gemini-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde in cancer 2026
+    slug: mercury-retrograde-in-cancer-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde in pisces 2026
+    slug: mercury-retrograde-in-pisces-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde in 2026
+    slug: mercury-retrograde-in-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde july 2026
+    slug: mercury-retrograde-july-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde july 2025
+    slug: mercury-retrograde-july-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde january 2026
+    slug: mercury-retrograde-january-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde june
+    slug: mercury-retrograde-june
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde june 29 2026
+    slug: mercury-retrograde-june-29-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde july
+    slug: mercury-retrograde-july
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde june 2025
+    slug: mercury-retrograde-june-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde libra 2026
+    slug: mercury-retrograde-libra-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde leo 2026
+    slug: mercury-retrograde-leo-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde march
+    slug: mercury-retrograde-march
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde may 2026
+    slug: mercury-retrograde-may-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde march 2025
+    slug: mercury-retrograde-march-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde may
+    slug: mercury-retrograde-may
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde november 2025
+    slug: mercury-retrograde-november-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde november 2026
+    slug: mercury-retrograde-november-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde november
+    slug: mercury-retrograde-november
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde october 2026
+    slug: mercury-retrograde-october-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde of 2025
+    slug: mercury-retrograde-of-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde pisces 2026
+    slug: mercury-retrograde-pisces-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde post shadow 2026
+    slug: mercury-retrograde-post-shadow-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde periods 2026
+    slug: mercury-retrograde-periods-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde pre shadow 2026
+    slug: mercury-retrograde-pre-shadow-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde 2025 quotes
+    slug: mercury-retrograde-2025-quotes
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde red shaded 2026
+    slug: mercury-retrograde-red-shaded-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde shadow period 2026
+    slug: mercury-retrograde-shadow-period-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true

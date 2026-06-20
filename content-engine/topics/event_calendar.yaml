@@ -1,0 +1,218 @@
+generated: 2026-06-20
+note: moons 段由 scripts/build_event_calendar.mjs 用 synodic
+  算法计算（±1天，可验证、非臆造）。retrogrades/eclipses
+  段必须人工从权威星历(timeanddate/astro.com)填入，脚本绝不计算或猜测——错误日期会毁掉页面可信度。
+moons:
+  - kind: full-moon
+    date: 2026-06-30
+    month: June
+    year: 2026
+    slug: full-moon-june-2026
+    target_kw: full moon june 2026
+    event_name: June 2026 Full Moon
+  - kind: new-moon
+    date: 2026-07-15
+    month: July
+    year: 2026
+    slug: new-moon-july-2026
+    target_kw: new moon july 2026
+    event_name: July 2026 New Moon
+  - kind: full-moon
+    date: 2026-07-30
+    month: July
+    year: 2026
+    slug: full-moon-july-2026
+    target_kw: full moon july 2026
+    event_name: July 2026 Full Moon
+  - kind: new-moon
+    date: 2026-08-14
+    month: August
+    year: 2026
+    slug: new-moon-august-2026
+    target_kw: new moon august 2026
+    event_name: August 2026 New Moon
+  - kind: full-moon
+    date: 2026-08-28
+    month: August
+    year: 2026
+    slug: full-moon-august-2026
+    target_kw: full moon august 2026
+    event_name: August 2026 Full Moon
+  - kind: new-moon
+    date: 2026-09-12
+    month: September
+    year: 2026
+    slug: new-moon-september-2026
+    target_kw: new moon september 2026
+    event_name: September 2026 New Moon
+  - kind: full-moon
+    date: 2026-09-27
+    month: September
+    year: 2026
+    slug: full-moon-september-2026
+    target_kw: full moon september 2026
+    event_name: September 2026 Full Moon
+  - kind: new-moon
+    date: 2026-10-12
+    month: October
+    year: 2026
+    slug: new-moon-october-2026
+    target_kw: new moon october 2026
+    event_name: October 2026 New Moon
+  - kind: full-moon
+    date: 2026-10-26
+    month: October
+    year: 2026
+    slug: full-moon-october-2026
+    target_kw: full moon october 2026
+    event_name: October 2026 Full Moon
+  - kind: new-moon
+    date: 2026-11-10
+    month: November
+    year: 2026
+    slug: new-moon-november-2026
+    target_kw: new moon november 2026
+    event_name: November 2026 New Moon
+  - kind: full-moon
+    date: 2026-11-25
+    month: November
+    year: 2026
+    slug: full-moon-november-2026
+    target_kw: full moon november 2026
+    event_name: November 2026 Full Moon
+  - kind: new-moon
+    date: 2026-12-10
+    month: December
+    year: 2026
+    slug: new-moon-december-2026
+    target_kw: new moon december 2026
+    event_name: December 2026 New Moon
+  - kind: full-moon
+    date: 2026-12-25
+    month: December
+    year: 2026
+    slug: full-moon-december-2026
+    target_kw: full moon december 2026
+    event_name: December 2026 Full Moon
+  - kind: new-moon
+    date: 2027-01-08
+    month: January
+    year: 2027
+    slug: new-moon-january-2027
+    target_kw: new moon january 2027
+    event_name: January 2027 New Moon
+  - kind: full-moon
+    date: 2027-01-23
+    month: January
+    year: 2027
+    slug: full-moon-january-2027
+    target_kw: full moon january 2027
+    event_name: January 2027 Full Moon
+  - kind: new-moon
+    date: 2027-02-07
+    month: February
+    year: 2027
+    slug: new-moon-february-2027
+    target_kw: new moon february 2027
+    event_name: February 2027 New Moon
+  - kind: full-moon
+    date: 2027-02-22
+    month: February
+    year: 2027
+    slug: full-moon-february-2027
+    target_kw: full moon february 2027
+    event_name: February 2027 Full Moon
+  - kind: new-moon
+    date: 2027-03-08
+    month: March
+    year: 2027
+    slug: new-moon-march-2027
+    target_kw: new moon march 2027
+    event_name: March 2027 New Moon
+  - kind: full-moon
+    date: 2027-03-23
+    month: March
+    year: 2027
+    slug: full-moon-march-2027
+    target_kw: full moon march 2027
+    event_name: March 2027 Full Moon
+  - kind: new-moon
+    date: 2027-04-07
+    month: April
+    year: 2027
+    slug: new-moon-april-2027
+    target_kw: new moon april 2027
+    event_name: April 2027 New Moon
+  - kind: full-moon
+    date: 2027-04-22
+    month: April
+    year: 2027
+    slug: full-moon-april-2027
+    target_kw: full moon april 2027
+    event_name: April 2027 Full Moon
+  - kind: new-moon
+    date: 2027-05-06
+    month: May
+    year: 2027
+    slug: new-moon-may-2027
+    target_kw: new moon may 2027
+    event_name: May 2027 New Moon
+  - kind: full-moon
+    date: 2027-05-21
+    month: May
+    year: 2027
+    slug: full-moon-may-2027
+    target_kw: full moon may 2027
+    event_name: May 2027 Full Moon
+  - kind: new-moon
+    date: 2027-06-05
+    month: June
+    year: 2027
+    slug: new-moon-june-2027
+    target_kw: new moon june 2027
+    event_name: June 2027 New Moon
+  - kind: full-moon
+    date: 2027-06-20
+    month: June
+    year: 2027
+    slug: full-moon-june-2027
+    target_kw: full moon june 2027
+    event_name: June 2027 Full Moon
+  - kind: new-moon
+    date: 2027-07-04
+    month: July
+    year: 2027
+    slug: new-moon-july-2027
+    target_kw: new moon july 2027
+    event_name: July 2027 New Moon
+  - kind: full-moon
+    date: 2027-07-19
+    month: July
+    year: 2027
+    slug: full-moon-july-2027
+    target_kw: full moon july 2027
+    event_name: July 2027 Full Moon
+  - kind: new-moon
+    date: 2027-08-03
+    month: August
+    year: 2027
+    slug: new-moon-august-2027
+    target_kw: new moon august 2027
+    event_name: August 2027 New Moon
+  - kind: full-moon
+    date: 2027-08-18
+    month: August
+    year: 2027
+    slug: full-moon-august-2027
+    target_kw: full moon august 2027
+    event_name: August 2027 Full Moon
+retrogrades:
+  - planet: mercury
+    start: ""
+    end: ""
+    note: ★从权威源填入 ISO 日期后才会被事件页引用；空=不生成
+eclipses:
+  - kind: solar|lunar
+    date: ""
+    saros: ""
+    note: ★人工权威填入；空=跳过
