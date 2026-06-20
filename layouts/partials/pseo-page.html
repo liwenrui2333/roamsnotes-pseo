@@ -4,6 +4,17 @@
   <h1>{{ $item.h1 }}</h1>
   <p class="lede">{{ $item.description }}</p>
 
+  {{ with $item.hero }}
+  <figure class="hero-img">
+    <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" width="900" height="480">
+    {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
+
+  {{ with $item.tldr }}
+  <aside class="tldr"><strong>Quick take:</strong> {{ . | markdownify }}</aside>
+  {{ end }}
+
   <section class="summary-panel">
     <div>
       <span>Intent</span>
@@ -30,7 +41,13 @@
   {{ range $item.sections }}
     <section>
       <h2>{{ .heading }}</h2>
-      <p>{{ .body }}</p>
+      {{ with .image }}
+      <figure class="section-img">
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+        {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}
+      {{ .body | markdownify }}
     </section>
   {{ end }}
 
@@ -40,7 +57,7 @@
     {{ range . }}
       <details>
         <summary>{{ .q }}</summary>
-        <p>{{ .a }}</p>
+        {{ .a | markdownify }}
       </details>
     {{ end }}
   </section>

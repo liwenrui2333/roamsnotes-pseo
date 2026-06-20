@@ -39,6 +39,7 @@ const TEMPLATES = {
 };
 const reframeMap = loadYaml("data/reframe-map.yaml");
 const signs = loadYaml("data/sign-traits.yaml");
+const assets = loadYaml("data/assets.yaml");
 const topics = loadYaml(`topics/${wave}.yaml`);
 
 const pagesPath = path.join(root, "data", "pseo", "pages.yaml");
@@ -69,6 +70,21 @@ function assemble(topic) {
     "{{RELATED}}": JSON.stringify(topic.related),
     "{{DATE}}": DATE,
   };
+  // hero 配图：按类型映射到零成本资产（星座 SVG / 公共领域 RWS 牌）
+  let hero = null, heroAlt = "";
+  if (topic.type === "compatibility") {
+    hero = `/img/zodiac/${topic.sign_a}-${topic.sign_b}.svg`;
+    heroAlt = `Zodiac glyphs for ${cap(topic.sign_a)} and ${cap(topic.sign_b)}`;
+  } else if (topic.type === "emotional") {
+    const c = assets.emotional_cards[topic.reframe_key];
+    if (c) { hero = `/img/tarot/${c}.jpg`; heroAlt = `${c.replace(/-/g, " ")} tarot card`; }
+  } else if (topic.type === "spread") {
+    const c = assets.spread_cards[topic.slug];
+    if (c) { hero = `/img/tarot/${c}.jpg`; heroAlt = `${c.replace(/-/g, " ")} tarot card`; }
+  }
+  base["{{HERO_SRC}}"] = hero || "";
+  base["{{HERO_ALT}}"] = heroAlt;
+
   let vars = { ...base };
   if (topic.type === "emotional") {
     const r = reframeMap[topic.reframe_key];
@@ -99,13 +115,22 @@ const BANNED = ["guaranteed result", "guaranteed love", "remove curse", "curse r
   "wealth leak", "medical advice", "legal advice", "financial certainty"];
 function validate(page) {
   const errs = [];
-  for (const k of ["slug", "title", "h1", "description", "intent", "audience", "primary_cta", "cta_url", "sections", "faq", "related"])
+  for (const k of ["slug", "title", "h1", "description", "intent", "audience", "primary_cta", "cta_url", "tldr", "sections", "faq", "related"])
     if (!page[k] || (Array.isArray(page[k]) && page[k].length === 0)) errs.push(`missing ${k}`);
   if (Array.isArray(page.sections) && page.sections.length < 5) errs.push("sections<5");
   if (Array.isArray(page.related) && page.related.length !== 3) errs.push("related!=3");
   const text = JSON.stringify(page).toLowerCase();
   for (const b of BANNED) if (text.includes(b)) errs.push(`banned:${b}`);
-  if (!/\$\d|\d+\s*(day|days|card|cards|min|week)/i.test(text)) errs.push("no price/anchor");
+  if (!/\$\d|\d+\s*(day|days|card|cards|min|week|%)/i.test(text)) errs.push("no price/anchor");
+  // 资产门禁：必须有 hero 或至少一节配图
+  const hasImg = (page.hero && page.hero.src) || (Array.isArray(page.sections) && page.sections.some((s) => s.image && s.image.src));
+  if (!hasImg) errs.push("no image (hero/section)");
+  // 豆腐块门禁：每节正文必须有结构（列表/表格/多段），不能是一坨
+  for (const s of page.sections || []) {
+    const b = String(s.body || "");
+    const structured = /\n\s*[-*\d]/.test(b) || b.includes("|") || /\n\s*\n/.test(b);
+    if (!structured) errs.push(`tofu:${(s.heading || "?").slice(0, 20)}`);
+  }
   return errs;
 }
 

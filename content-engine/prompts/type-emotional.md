@@ -28,3 +28,6 @@
 - related: {{RELATED}}
 - last_updated: {{DATE}}
 - budget: "N/A (free reflection-first guide)"　delivery: "Self-guided; pairs with a written reading if you want one"　risk_level: "Low"
+- hero: 填 `{ src: "{{HERO_SRC}}", alt: "{{HERO_ALT}}", caption: <一句呼应主题> }`，不要改 src
+- tldr: 写一句 30-50 词速览，先给结论（这一页帮你把命运式问题改成能行动的问题）
+- 结构：含一个小 "reality check" 数据点（标注为一般研究、非预言）；改写小节用对比呈现（原问题 vs 改写后），可用表格或加粗

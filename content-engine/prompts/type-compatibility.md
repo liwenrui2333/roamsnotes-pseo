@@ -31,3 +31,6 @@
 - related: {{RELATED}}
 - last_updated: {{DATE}}
 - budget: "A full synastry reading runs $25-$120"　delivery: "Sun-sign overview here; full reading needs both birth charts"　risk_level: "Low"
+- hero: 填 `{ src: "{{HERO_SRC}}", alt: "{{HERO_ALT}}", caption: <一句> }`，不要改 src
+- tldr: 写一句 30-50 词速览，先给一句话结论（这对总体合不合、强在哪、卡在哪）
+- 结构（SERP 获胜·必须）：含一张 **markdown 评分表**，5 行 Love / Communication / Passion / Trust / Long-term，每行一个 % + 一句为什么（从 element/modality 推）；表后写一句"How we score this"公开依据；再给 Strengths 与 Challenges 两组项目符号

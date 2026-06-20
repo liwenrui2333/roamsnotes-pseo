@@ -49,13 +49,24 @@ for (const page of pages) {
     else if (age > FRESH_DAYS) l3.push(`stale ${Math.round(age)}d`);
   }
 
+  // L4 — readability: every section body should carry structure (list/table/paragraph breaks),
+  // not a single "tofu block". WARN-level so legacy prose pages don't break the build.
+  const l4 = [];
+  for (const s of (Array.isArray(page.sections) ? page.sections : [])) {
+    const b = String(s.body || "");
+    if (!(/\n\s*[-*\d]/.test(b) || b.includes("|") || /\n\s*\n/.test(b))) l4.push((s.heading || "?").slice(0, 16));
+  }
+  // L5 — visual asset: page should have a hero or at least one section image.
+  const l5 = !(page.hero && page.hero.src) && !((Array.isArray(page.sections) ? page.sections : []).some((s) => s.image && s.image.src));
+
   if (missing.length || hits.length || l0.length) {
     failures += 1;
     console.error(`FAIL ${page.slug}: missing=${missing.join(",") || "-"} banned=${hits.join(",") || "-"} L0=${l0.join(",") || "-"}`);
   }
-  if (l3.length) {
+  if (l3.length || l4.length || l5) {
     warnings += 1;
-    console.warn(`WARN ${page.slug}: L3 ${l3.join(",")}`);
+    const parts = [l3.length ? `L3 ${l3.join(",")}` : "", l4.length ? `L4 tofu:${l4.join("/")}` : "", l5 ? "L5 no-image" : ""].filter(Boolean);
+    console.warn(`WARN ${page.slug}: ${parts.join(" | ")}`);
   }
 }
 

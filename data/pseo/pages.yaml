@@ -695,3 +695,70 @@
     - /tools/astrology-reading-cost-calculator/
     - /cheap-online-tarot-reading/
     - /fiverr-astrology-reading/
+
+- slug: is-my-ex-coming-back-tarot
+  type: info
+  title: "Is My Ex Coming Back? What a Tarot Reading Can Honestly Do"
+  h1: "Is My Ex Coming Back? What Tarot Can Honestly Do"
+  description: "Searching 'is my ex coming back' for a tarot answer? The honest version: how a reading helps you decide your next move instead of guessing his."
+  intent: "Find out whether tarot can say if an ex returns, and get something actually useful."
+  audience: "Someone hurting after a breakup who wants clarity, not a comforting guess."
+  primary_cta: "Get your question right first"
+  cta_url: /tools/tarot-question-generator/
+  category: "Tarot"
+  budget: "N/A (free reflection-first guide)"
+  delivery: "Self-guided; pairs with a written reading if you want one"
+  risk_level: "Low"
+  last_updated: "2026-06-20"
+  tldr: "Tarot can't predict whether your ex returns, that's his choice, not the cards'. Pointed at you, a reading shows what to understand before you reach out. Reframe the question and you get something you can act on."
+  hero:
+    src: /img/tarot/three-of-swords.jpg
+    alt: "Three of Swords tarot card"
+    caption: "The Three of Swords: heartbreak, and the clarity that can follow it."
+  sections:
+    - heading: "The question under the question"
+      body: |
+        Typing "is my ex coming back" into a tarot search at 1am is one of the most human things you can do. You are not foolish for wanting certainty. You want the ache to stop.
+
+        But notice what you are really asking. Not "what do the cards say" but "will this specific person walk back through my door." Hold that thought, because the most useful thing tarot does here is gently refuse to answer it and hand you a better question instead.
+    - heading: "Why no honest reading predicts his return"
+      body: |
+        A tarot reading cannot decide another adult's future choices. No deck has a wire into your ex's head.
+
+        What a reading actually reads is **you**: your patterns, your part in what happened, the thing you keep circling at night. When someone claims to know he will be back by the full moon, they are not reading cards. They are selling relief.
+    - heading: "Swap the question (this is the whole trick)"
+      body: |
+        The reframe changes what you get back:
+
+        | You typed | Ask instead |
+        | --- | --- |
+        | "Is my ex coming back?" | "What do I need to understand about this relationship before I decide whether to reach out?" |
+
+        The first question waits on him. The second is yours to act on tonight. Pointed at his future, the cards guess. Pointed at your own clarity, they show you what you already half-know.
+    - heading: "A three-card pull you can do tonight"
+      body: |
+        You do not need to pay anyone for this one. Pull three cards:
+
+        1. **Past** — what set this up.
+        2. **Present** — where you honestly are now.
+        3. **Guidance** — what you can do next, not what will happen.
+
+        Read the third card as advice, never as a verdict. If it lands on something slow and grounded, the message is not "he returns," it is "do not rush the next move."
+    - heading: "A reality check, not a prediction"
+      body: |
+        Hold a realistic frame. General relationship research finds a meaningful share of exes reconnect, but only a minority rebuild something lasting, and that depends on changed behaviour, not timing.
+
+        If you do want a real person to reflect this back, a written reading runs about $5-$25 and takes 1-3 days. Get your question right first so it is not generic.
+  faq:
+    - q: "Can tarot tell me if my ex is coming back?"
+      a: "No honest reading can predict another person's future choices. What it can do is help you see your own patterns and whether reaching out serves you. Use it to decide your next move, not to forecast his."
+    - q: "What is a better question than 'will my ex come back'?"
+      a: "Ask 'what do I need to understand before I decide whether to reach out?' It keeps the focus on choices you control, which is the only place a reading gives you something useful rather than a comforting guess."
+    - q: "Do tarot readers who promise reconciliation work?"
+      a: "Treat them as a red flag. Promising to reunite you with a specific person claims power over someone else's free will that no reading has. A reflective reading that centres on you is the safer, more honest purchase."
+    - q: "Which cards mean an ex is returning?"
+      a: "There is no single reunion card, and reading one that way is how people fool themselves. Cards like the Six of Cups point to memory, not a guaranteed return. Context and your own honesty matter more than any one card."
+  related:
+    - /tools/tarot-question-generator/
+    - /love-tarot-reading-on-fiverr/
+    - /what-to-ask-a-tarot-reader/

@@ -26,3 +26,6 @@
 - related: {{RELATED}}
 - last_updated: {{DATE}}
 - budget: "Free to do yourself; a written reading runs $5-$35 if you want one"　delivery: "Self-guided tutorial"　risk_level: "Low"
+- hero: 填 `{ src: "{{HERO_SRC}}", alt: "{{HERO_ALT}}", caption: <一句> }`，不要改 src
+- tldr: 写一句 30-50 词速览
+- 结构（SERP 获胜）：除给定牌阵外，再给 2-3 个**命名变体**（如 past/present/future、situation/influence/guidance、mind/body/spirit），每个一段位置说明 + 一个步骤有序列表；解读单独成节

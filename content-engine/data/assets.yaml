@@ -1,0 +1,41 @@
+# 图片/资产映射。零成本来源：
+#  - 塔罗：Rider-Waite-Smith 牌（1909，美国公共领域），scripts/fetch_rws.mjs 从 Wikimedia 下到 static/img/tarot/
+#  - 星座：scripts/make_zodiac_svg.mjs 用下面字形+元素色生成 static/img/zodiac/<sign>.svg 与配对图
+
+zodiac:
+  aries:       { glyph: "♈", element: fire,  color: "#d9534f" }
+  taurus:      { glyph: "♉", element: earth, color: "#6b8e23" }
+  gemini:      { glyph: "♊", element: air,   color: "#e0a800" }
+  cancer:      { glyph: "♋", element: water, color: "#4a90d9" }
+  leo:         { glyph: "♌", element: fire,  color: "#d9534f" }
+  virgo:       { glyph: "♍", element: earth, color: "#6b8e23" }
+  libra:       { glyph: "♎", element: air,   color: "#e0a800" }
+  scorpio:     { glyph: "♏", element: water, color: "#4a90d9" }
+  sagittarius: { glyph: "♐", element: fire,  color: "#d9534f" }
+  capricorn:   { glyph: "♑", element: earth, color: "#6b8e23" }
+  aquarius:    { glyph: "♒", element: air,   color: "#e0a800" }
+  pisces:      { glyph: "♓", element: water, color: "#4a90d9" }
+
+# 情绪页 hero 牌（按 reframe_key），选与主题相关的牌面
+emotional_cards:
+  is-my-ex-coming-back:   three-of-swords
+  does-he-love-me:        two-of-cups
+  is-he-thinking-about-me: the-high-priestess
+  will-i-find-love:       the-star
+  soulmate-tarot:         the-lovers
+
+# 牌阵页 hero 牌（按 slug）
+spread_cards:
+  three-card-tarot-spread:  the-magician
+  yes-or-no-tarot:          the-high-priestess
+  celtic-cross-tarot-spread: wheel-of-fortune
+
+# card_slug -> Wikimedia Commons 文件名（fetch_rws 用 Special:FilePath 拉取，公共领域）
+rws:
+  three-of-swords:    "Swords03.jpg"
+  two-of-cups:        "Cups02.jpg"
+  the-high-priestess: "RWS_Tarot_02_High_Priestess.jpg"
+  the-star:           "RWS_Tarot_17_Star.jpg"
+  the-lovers:         "RWS_Tarot_06_Lovers.jpg"
+  the-magician:       "RWS_Tarot_01_Magician.jpg"
+  wheel-of-fortune:   "RWS_Tarot_10_Wheel_of_Fortune.jpg"

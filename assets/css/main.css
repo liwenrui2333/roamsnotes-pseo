@@ -1,3 +1,18 @@
+/* --- content-engine v3: hero / section images / tldr / readable bodies --- */
+.pseo-page .hero-img,
+.pseo-page .section-img { margin: 1rem 0; }
+.pseo-page .hero-img img { width: 100%; height: auto; border-radius: var(--radius); display: block; }
+.pseo-page .section-img img { max-width: 320px; width: 100%; height: auto; border-radius: var(--radius); display: block; }
+.pseo-page figure { margin: 1rem 0; }
+.pseo-page figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; }
+.pseo-page .tldr { background: var(--soft); border-left: 4px solid var(--accent); padding: 0.85rem 1rem; border-radius: var(--radius); margin: 1rem 0; }
+.pseo-page section p { margin: 0 0 0.8rem; }
+.pseo-page section ul, .pseo-page section ol { margin: 0 0 0.9rem 1.2rem; }
+.pseo-page section li { margin: 0.25rem 0; }
+.pseo-page table { border-collapse: collapse; width: 100%; margin: 0.9rem 0; font-size: 0.95rem; }
+.pseo-page th, .pseo-page td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; }
+.pseo-page th { background: var(--soft); }
+
 :root {
   --ink: #1f2933;
   --muted: #5f6b7a;

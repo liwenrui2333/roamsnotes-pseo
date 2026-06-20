@@ -4,49 +4,63 @@
 
 ## 输出格式（必须严格遵守）
 
-只输出一个**合法 YAML 对象**，不要任何解释、不要 ```yaml 围栏外的文字。字段与本站 pages.yaml schema 完全一致：
+只输出一个**合法 YAML 对象**，不要任何解释、不要 ```yaml 围栏外的文字。字段与本站 pages.yaml schema 一致：
 
 ```yaml
 slug: <按给定值，不要改>
-type: <按给定值：service|guide|comparison|info>
+type: <按给定值>
 title: <50-60 字符内，含目标词，可加年份>
 h1: <含目标词，比 title 短>
-description: <140-160 字符，含目标词，给出页面价值>
+description: <140-160 字符，含目标词>
 intent: <一句话：读者真实诉求>
 audience: <一句话：谁会读>
-primary_cta: <克制的下一步文案，不硬推>
+primary_cta: <克制的下一步文案>
 cta_url: <按给定的工具内链>
 category: <按给定值>
-budget: <价格锚，如 "$5-$25 for short readings">  # 没有金钱场景的页给 "N/A (free reflection tool)"
-delivery: <交付/形式锚，如 "Written or audio; 1-3 days">
+budget: <价格/形式锚；无金钱场景给 "N/A (...)">
+delivery: <交付/形式锚>
 risk_level: <Low|Medium>
 last_updated: <按给定日期>
-sections:                 # 5-7 个，每个 heading + body
+tldr: <30-50 词的一句话速览（"Quick take"），先给结论>
+hero: { src: <按给定的 hero 资产路径>, alt: <描述>, caption: <可选一句> }   # 给定了就填，没给定就省略
+sections:                 # 5-7 个
   - heading: <小标题>
-    body: <100-160 词，每节至少 1 个可核查锚点；长短句交替>
-faq:                      # 4-5 个长尾问答
-  - q: <问题，尽量贴目标词的真实搜索变体>
-    a: <60-110 词，直接回答>
-related:                  # 3 个站内路径（按给定的内链）
+    image: { src: <给定资产路径>, alt: <描述>, caption: <可选> }   # 仅当本节给了配图资产时
+    body: |               # markdown！见下方格式硬规则
+      <2-3 句一段，段间空行；该列表就用 - ；该打分/比价就用表格>
+faq:
+  - q: <贴目标词的真实搜索变体>
+    a: <60-110 词，可用 markdown>
+related:                  # 恰好 3 个站内路径（按给定）
   - <path>
 ```
 
-## 反 AI 指纹（违反=低质，会被打回）
+## 正文格式硬规则（治"豆腐块"，违反=打回）
 
-- 句长必须有变化：判断短句穿插解释长句。绝不每句等长。
-- 词汇要具体，避免"在当今快节奏的世界里""无论你是……还是……"这类填充模板。
-- 结构打散：不同 section 不要用同一套句式开头。
-- 每个 section 锚一个事实（价格区间 / 天数 / 星座要素 / 牌位含义 / 评分量级），不要纯抒情。
-- 敢下判断，不写无信息量的"因人而异，视情况而定"。
+- **body 是 markdown，不是一坨**。每段最多 2-3 句，段与段之间空一行。绝不写 100+ 词不分段的墙。
+- **能列就列**：优点/缺点/红旗/步骤/清单一律用 `-` 项目符号或 `1.` 有序列表。
+- **打分或比价用表格**：例如星座配对分项、价格区间、格式对比，用 markdown 表格 `| | |`。
+- 每节开头可用一句**加粗判断**当抓手，再展开。
+- 给定了配图资产就在该节 `image` 引用；**不要自己编造图片 URL**，只用给定的 src。
 
-## 合规（命中=作废，必须重写）
+## 各类型获胜结构（来自 SERP 逆向，见 serp-notes.md）
 
-禁止词义：guaranteed reconciliation/soulmate、确定的复合/正缘/发财/治病/官司/投资结果、fear-based urgency、medical/legal/financial advice、付费"解锁真相"。塔罗/占星一律框定为 reflection，不是 prediction 或 verdict。
+- **compatibility**：必须含一张**分项评分表**（Love / Communication / Passion / Trust / Long-term，各一个 % + 一句为什么，从 element/modality 推），外加 Strengths 与 Challenges 两组项目符号。并写一句"我们怎么算的"，公开评分依据 = 原创可信。
+- **spread**：给 3-4 个**命名牌阵变体**，每个一段位置说明 + 一个步骤列表；解读单独成节（怎么把几张牌连成故事）。
+- **emotional**：核心仍是把命运式问题**改写**成关于读者自己的问题（灵魂小节）；补一个小"reality check"数据点（标注为一般研究、非预言）+ 诚实边界节。
 
-## 软植入
+## 反 AI 指纹
 
-正文给足价值后，`primary_cta` 与最后一个 section 末尾**至多一次**自然导向给定的工具内链；不写大字硬 CTA。Fiverr 钱页只通过 related 出现，不在正文反复挂链接。
+- 句长必须变化：判断短句穿插解释长句。
+- `not X; (it's) Y` 这类对仗句式**每篇 ≤2 次**。
+- 不同 section 开头句式不要雷同；跨页不要逐篇照抄同一套骨架。
+- 每节锚一个事实（价格 / 天数 / 星座要素 / 牌位义 / 评分 / 统计），不要纯抒情，不写"因人而异"这种无信息句。
+- 禁填充模板："在当今快节奏的世界里""无论你是…还是…"等一律不用。
 
-## 语言
+## 合规（命中=作废重写）
 
-正文用**英文**（站点面向英文搜索）。只有本文件与人格说明是中文，成稿正文一律英文，自然地道，带上面的人格与立场。
+禁止：guaranteed reconciliation/soulmate、确定的复合/正缘/发财/治病/官司/投资结果、fear-based urgency、medical/legal/financial advice、付费"解锁真相"。塔罗/占星一律框为 reflection，不是 prediction 或 verdict。
+
+## 软植入与语言
+
+正文给足价值后，`primary_cta` 与最后一节末尾**至多一次**自然导向给定工具内链；Fiverr 钱页只通过 related 出现。成稿正文用**英文**，自然地道，带上面的人格与立场。
