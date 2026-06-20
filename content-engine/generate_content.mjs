@@ -138,7 +138,7 @@ function validate(page) {
   for (const s of page.sections || []) {
     const b = String(s.body || "");
     const structured = /\n\s*[-*\d]/.test(b) || b.includes("|") || /\n\s*\n/.test(b);
-    if (!structured) errs.push(`tofu:${(s.heading || "?").slice(0, 20)}`);
+    if (b.length > 300 && !structured) errs.push(`tofu:${(s.heading || "?").slice(0, 20)}`);
   }
   return errs;
 }

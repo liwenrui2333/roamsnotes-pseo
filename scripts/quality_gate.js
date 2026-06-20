@@ -54,7 +54,8 @@ for (const page of pages) {
   const l4 = [];
   for (const s of (Array.isArray(page.sections) ? page.sections : [])) {
     const b = String(s.body || "");
-    if (!(/\n\s*[-*\d]/.test(b) || b.includes("|") || /\n\s*\n/.test(b))) l4.push((s.heading || "?").slice(0, 16));
+    // 只抓"长"豆腐块：短小节(<300字符)单段是正常的，不算墙。
+    if (b.length > 300 && !(/\n\s*[-*\d]/.test(b) || b.includes("|") || /\n\s*\n/.test(b))) l4.push((s.heading || "?").slice(0, 16));
   }
   // L5 — visual asset: page should have a hero or at least one section image.
   const l5 = !(page.hero && page.hero.src) && !((Array.isArray(page.sections) ? page.sections : []).some((s) => s.image && s.image.src));
