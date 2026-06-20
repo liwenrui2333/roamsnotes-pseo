@@ -1,8 +1,8 @@
-updated: 2026-06-13
+updated: 2026-06-20
 moon:
-  name: Waning Crescent
-  emoji: 🌘
-  illumination: 2
+  name: Waxing Crescent
+  emoji: 🌒
+  illumination: 32
 mercury_retrograde: false
 mercury_retrograde_until: null
 mercury_known: false

@@ -25,6 +25,7 @@ SITE_URL="${RN_SITE_URL:-https://www.roamsnotes.com}"
 
 # ── 0: THEMED DATA — today's sky (the daily "content") ───────────────────────
 step "[0/4] refresh sky data (moon phase + mercury rx)" node scripts/update_sky.js
+step "[0b/4] generate today's sky article (gpt-5.5)" node content-engine/generate_sky_article.mjs --write
 
 # ── 1: FRESHNESS AUDIT — flag stale data anchors (non-fatal) ─────────────────
 step "[1/4] freshness audit" node scripts/freshness_audit.js

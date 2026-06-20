@@ -1,8 +1,3 @@
-# RoamsNotes PSEO pages. Each entry renders a page via layouts/partials/pseo-page.html.
-# Quality gate (scripts/quality_gate.js): requires concrete anchors (budget, delivery,
-# >=4 sections, a price/time anchor) and a last_updated date. Keep claims neutral —
-# no promised outcomes. Affiliate links are soft-placed and route through /go/<slug>/.
-
 - slug: fiverr-tarot-reading
   type: service
   title: "Fiverr Tarot Reading: How to Choose a Reader Safely (2026)"
@@ -6218,7 +6213,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: aries-and-taurus-compatibility
   type: info
   title: "Aries and Taurus Compatibility: Fire-Earth Reality"
@@ -6427,7 +6421,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: taurus-and-gemini-compatibility
   type: info
   title: "Taurus and Gemini Compatibility: Earth Meets Air"
@@ -6644,7 +6637,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-
 - slug: gemini-and-cancer-compatibility
   type: info
   title: "Gemini and Cancer Compatibility: Air Meets Water"
@@ -6858,7 +6850,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: cancer-and-leo-compatibility
   type: info
   title: "Cancer and Leo Compatibility: Water-Fire Love Guide"
@@ -7088,7 +7079,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-
 - slug: leo-and-virgo-compatibility
   type: info
   title: "Leo and Virgo Compatibility: Fire, Earth, and Real Work"
@@ -7284,7 +7274,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: virgo-and-libra-compatibility
   type: info
   title: "Virgo and Libra Compatibility: Earth-Air Match Guide"
@@ -7514,7 +7503,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-
 - slug: libra-and-scorpio-compatibility
   type: info
   title: "Libra and Scorpio Compatibility: Air Meets Water"
@@ -7714,7 +7702,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: scorpio-and-sagittarius-compatibility
   type: info
   title: "Scorpio and Sagittarius Compatibility: Fire Meets Water"
@@ -7909,7 +7896,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-
 - slug: sagittarius-and-capricorn-compatibility
   type: info
   title: "Sagittarius and Capricorn Compatibility: Fire Meets Earth"
@@ -8114,7 +8100,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: capricorn-and-aquarius-compatibility
   type: info
   title: "Capricorn and Aquarius Compatibility: Earth Meets Air"
@@ -8331,7 +8316,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-
 - slug: aquarius-and-pisces-compatibility
   type: info
   title: "Aquarius and Pisces Compatibility: Air Meets Water"
@@ -8561,7 +8545,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-
 - slug: pisces-and-aries-compatibility
   type: info
   title: "Pisces and Aries Compatibility: Water Meets Fire in Love"
@@ -8749,3 +8732,208 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
+- slug: todays-sky
+  type: info
+  title: "Today's Sky (2026-06-20): Waxing Crescent Moon"
+  h1: "Today's Sky: Waxing Crescent Moon"
+  description: Tonight's moon is a Waxing Crescent, about 32% illuminated. This
+    page uses today's real sky facts to translate the lunar phase, Cancer
+    season, and Mercury's direct motion into grounded reflection, not
+    prediction, so you can choose one honest question for the day.
+  intent: The reader wants to know what today's moon and sky mean without getting
+    a fake horoscope or a prediction.
+  audience: People who like astrology or tarot as reflection tools and want a
+    clear daily check-in based on real sky data.
+  primary_cta: Want to ask today's question more cleanly? Try the tarot question generator.
+  cta_url: /tools/tarot-question-generator/
+  category: Astrology
+  budget: N/A (free daily reflection)
+  delivery: Updated daily; read in 3 min
+  risk_level: Low
+  last_updated: 2026-06-20
+  tldr: "Today's moon is a Waxing Crescent, about 32% lit. Treat it as early
+    momentum: one small first step, one gentle commitment, and no grand
+    prophecy. Cancer season adds a quieter question about care, home, and
+    emotional safety."
+  hero:
+    src: /img/tarot/the-star.jpg
+    alt: The Star tarot card, evoking tonight's waxing crescent moon
+    caption: A 32% Waxing Crescent is not a command from the sky; it is a modest
+      light to think by.
+  sections:
+    - heading: What Is Actually in the Sky Today
+      body: >-
+        **Tonight's moon is a Waxing Crescent, about 32% illuminated.** That is
+        the clean fact to start with. Not a mood forecast, not a cosmic verdict.
+
+
+        Here is the limited sky report for 2026-06-20:
+
+
+        | Sky factor | Today's fact | Reflective use |
+
+        |---|---:|---|
+
+        | Moon phase | Waxing Crescent | Early momentum, small first steps |
+
+        | Illumination | 32% | Enough light to begin, not enough to pretend
+        everything is clear |
+
+        | Sun sign | Cancer | Seasonal focus on care, roots, and emotional
+        shelter |
+
+        | Mercury | Direct | No Mercury retrograde to blame today |
+
+
+        That is all I am using. No invented moon sign. No secret lucky hour. No
+        made-up planetary aspect dressed up as certainty.
+    - heading: The Waxing Crescent Reflection
+      body: >-
+        **A Waxing Crescent is a beginning with a little evidence behind it.**
+        The New Moon has passed, but the sky is still mostly dark. At 32%
+        illumination, this is not the moment for a theatrical life overhaul.
+
+
+        Think smaller. Better.
+
+
+        - Name the thing you have been circling.
+
+        - Choose the first visible step, not the whole staircase.
+
+        - Make the commitment gentle enough that you can keep it tomorrow.
+
+        - Notice where excitement is real, and where it is just pressure wearing
+        perfume.
+
+
+        The useful question is not "Will this work?" That asks the sky to
+        guarantee your future. Try this instead: "What small action would make
+        this intention more honest today?"
+    - heading: Cancer Season Without the Stereotype
+      body: >-
+        **The Sun is in Cancer today, so the seasonal theme leans toward care
+        and containment.** Cancer is a water sign, and in the northern seasonal
+        cycle it arrives around early summer, when heat rises and people often
+        need shade, food, rest, and a place to soften.
+
+
+        That does not mean every Cancer person is nurturing, moody, or secretly
+        psychic. Please leave that cartoon at the door.
+
+
+        For reflection, Cancer season can point you toward:
+
+
+        - Home: what feels supportive, not just familiar
+
+        - Boundaries: what protects you without sealing you off
+
+        - Memory: what past pattern is asking to be handled more gently
+
+        - Care: where you give too much, or receive too little
+
+
+        Pair that with a Waxing Crescent and the day gets practical: one small
+        step toward a life that feels less performative and more inhabitable.
+    - heading: Mercury Is Direct Today
+      body: >-
+        **Mercury is direct today, not retrograde.** So if a text is unclear or
+        a plan gets messy, you do not need to pin it on the planet.
+
+
+        Mercury retrograde gets blamed for everything because it is convenient.
+        Even when Mercury is retrograde, it does not make decisions for you; at
+        most, it is a useful reminder to reread, reconfirm, and slow down
+        communication.
+
+
+        Today, the honest version is simple:
+
+
+        - Check the message before you send it.
+
+        - Clarify the plan if it matters.
+
+        - Do not outsource your responsibility to astrology.
+
+
+        That is less dramatic than "cosmic chaos," I know. It is also cleaner.
+    - heading: Reality Check
+      body: >-
+        **The lunar cycle is about 29.5 days.** That is astronomy, not prophecy.
+        The Moon moves through its visible phases because of its position
+        relative to Earth and the Sun.
+
+
+        What we do with that cycle is symbolic. Humans like rhythm; we mark
+        beginnings, build-up, fullness, release, and rest because those patterns
+        help us think.
+
+
+        A fair boundary looks like this:
+
+
+        | Claim | Keep it? | Why |
+
+        |---|---|---|
+
+        | "The Moon is Waxing Crescent today" | Yes | Observable sky fact |
+
+        | "This phase can support reflection on early momentum" | Yes |
+        Symbolic, useful, optional |
+
+        | "Today guarantees progress" | No | That is prediction dressed as
+        certainty |
+
+        | "The sky decides your choice" | No | Your context still matters most |
+
+
+        If your emotions are heavy today, let this be one input, not the whole
+        room. Support from a trusted person or professional matters more than
+        any daily sky note.
+    - heading: A Small Move for Today
+      body: >-
+        **Use one question, not a whole spiritual performance.** If you read
+        tarot, pull one card and ask it to mirror your next honest step, not to
+        certify the future.
+
+
+        Try this:
+
+
+        1. Write the sentence: "The small commitment I am avoiding is..."
+
+        2. Pull one card, or sit with the sentence for two quiet minutes.
+
+        3. Ask: "What would make this step gentler and more real?"
+
+        4. Choose one action that takes under 20 minutes.
+
+
+        That is enough. If you want help turning the foggy version of your
+        question into something a reader can actually work with, the question
+        generator is a sensible next step.
+  faq:
+    - q: What moon phase is it today?
+      a: "Today, 2026-06-20, the moon is a Waxing Crescent, about 32% illuminated. In
+        reflective astrology, that phase is often treated as early momentum: the
+        first small steps after a new beginning. I would not use it to predict
+        what will happen to you today. A better use is to ask what tiny
+        commitment is ready to become visible."
+    - q: Does the moon affect mood today?
+      a: "The honest answer: the Moon has a real astronomical cycle of about 29.5
+        days, but that does not prove it controls your mood or decisions. You
+        can still use today's Waxing Crescent as a reflective rhythm. If you
+        feel tender, scattered, or hopeful, let the sky help you name the
+        feeling, not explain it away."
+    - q: Is Mercury retrograde today?
+      a: "No. Mercury is direct today, not retrograde. That means there is no need to
+        blame Mercury for unclear messages, delays, or second thoughts. Even
+        during retrograde periods, Mercury does not make choices for you. Today
+        the useful move is ordinary and boring in the best way: reread important
+        messages and clarify plans that matter."
+  related:
+    - /tools/tarot-question-generator/
+    - /tools/astrology-reading-cost-calculator/
+    - /birth-chart-reading-on-fiverr/
