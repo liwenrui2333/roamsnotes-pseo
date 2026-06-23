@@ -14,17 +14,21 @@
 .pseo-page th { background: var(--soft); }
 
 :root {
-  --ink: #1f2933;
-  --muted: #5f6b7a;
-  --line: #d9e1ea;
-  --paper: #ffffff;
-  --soft: #f3f7fb;
-  --accent: #147c86;
-  --accent-dark: #0e5d65;
-  --gold: #b7791f;
-  --danger: #9b2c2c;
-  --radius: 8px;
-  color-scheme: light;
+  --ink: #ece9f5;
+  --muted: #a7a6c4;
+  --line: rgba(201, 168, 76, 0.22);
+  --paper: #0b0c1a;
+  --paper-2: #11132a;
+  --soft: rgba(255, 255, 255, 0.05);
+  --panel: rgba(255, 255, 255, 0.04);
+  --accent: #d8b04a;
+  --accent-dark: #b3a7e6;
+  --gold: #d8b04a;
+  --lav: #b3a7e6;
+  --danger: #e0808a;
+  --radius: 10px;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  color-scheme: dark;
 }
 
 * {
@@ -36,6 +40,16 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
   background: var(--paper);
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 70% 18%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1.5px 1.5px at 40% 70%, rgba(255, 255, 255, 0.55), transparent),
+    radial-gradient(1px 1px at 85% 55%, rgba(255, 255, 255, 0.45), transparent),
+    radial-gradient(1px 1px at 55% 42%, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 12% 82%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(circle at 50% -8%, rgba(179, 167, 230, 0.18), transparent 55%),
+    linear-gradient(180deg, var(--paper), var(--paper-2));
+  background-attachment: fixed;
   line-height: 1.6;
 }
 
@@ -64,8 +78,10 @@ a:hover {
 
 .brand {
   color: var(--ink);
-  font-weight: 800;
-  letter-spacing: 0;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .main-nav {
@@ -104,6 +120,8 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-family: var(--serif);
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: 0;
 }
@@ -152,7 +170,7 @@ h3 {
   border-radius: var(--radius);
   padding: 12px;
   color: var(--ink);
-  background: white;
+  background: var(--panel);
 }
 
 .intent-strip a:hover {
@@ -185,13 +203,20 @@ h3 {
 }
 
 .button.primary {
-  color: white;
-  background: var(--accent);
+  color: #1a160a;
+  background: linear-gradient(180deg, var(--gold), #b8932f);
+  border-color: var(--gold);
+  box-shadow: 0 8px 28px rgba(216, 176, 74, 0.22);
+}
+
+.button.primary:hover {
+  filter: brightness(1.07);
+  text-decoration: none;
 }
 
 .button.secondary {
-  color: var(--accent-dark);
-  background: white;
+  color: var(--ink);
+  background: var(--panel);
 }
 
 .section-heading {
@@ -239,7 +264,7 @@ h3 {
 .affiliate-note {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: white;
+  background: var(--panel);
 }
 
 .card {
@@ -350,7 +375,7 @@ input {
   border-radius: var(--radius);
   padding: 8px 10px;
   color: var(--ink);
-  background: white;
+  background: var(--panel);
   font: inherit;
 }
 
@@ -477,6 +502,15 @@ input {
   gap: 14px;
 }
 
+.footer-guides {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.footer-guides strong {
+  margin-right: 4px;
+}
+
 @media (max-width: 760px) {
   .site-header,
   .section-heading {
@@ -503,4 +537,48 @@ input {
   .list-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- Starfield direction polish (B) --- */
+.eyebrow,
+.card-kicker {
+  letter-spacing: 0.22em;
+}
+
+.site-header {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.card,
+.intent-strip a,
+.summary-panel,
+.cta-panel,
+.affiliate-note,
+.tool-panel,
+.sky-today {
+  backdrop-filter: blur(6px);
+}
+
+.card,
+.intent-strip a {
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.intent-strip a:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.list-row:hover {
+  background: var(--panel);
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+.site-footer {
+  border-top-color: rgba(255, 255, 255, 0.08);
 }

@@ -1,8 +1,35 @@
-<script type="application/ld+json">
-{{- if .IsHome -}}
-{{- dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Params.brand "url" .Site.BaseURL "description" .Site.Params.description | jsonify (dict "indent" "  ") | safeJS -}}
-{{- else -}}
-{{- $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" (.Description | default .Site.Params.description) "mainEntityOfPage" .Permalink "publisher" (dict "@type" "Organization" "name" .Site.Params.brand) -}}
-{{- $schema | jsonify (dict "indent" "  ") | safeJS -}}
+{{- /* AEO/GEO entity + page schema. Real data only — no fabricated dates/authors. */ -}}
+{{- $org := dict
+    "@type" "Organization"
+    "@id" (printf "%s#org" .Site.BaseURL)
+    "name" .Site.Params.brand
+    "url" .Site.BaseURL
+    "description" .Site.Params.description -}}
+{{- $website := dict
+    "@type" "WebSite"
+    "@id" (printf "%s#website" .Site.BaseURL)
+    "name" .Site.Params.brand
+    "url" .Site.BaseURL
+    "description" .Site.Params.description
+    "publisher" (dict "@id" (printf "%s#org" .Site.BaseURL)) -}}
+{{- $graph := slice $org $website -}}
+{{- if not .IsHome -}}
+  {{- $crumbs := slice
+      (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.BaseURL)
+      (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" $crumbs -}}
+  {{- $article := dict
+      "@type" "Article"
+      "headline" .Title
+      "description" (.Description | default .Site.Params.description)
+      "mainEntityOfPage" .Permalink
+      "url" .Permalink
+      "inLanguage" "en-US"
+      "isPartOf" (dict "@id" (printf "%s#website" .Site.BaseURL))
+      "author" (dict "@id" (printf "%s#org" .Site.BaseURL))
+      "publisher" (dict "@id" (printf "%s#org" .Site.BaseURL)) -}}
+  {{- $graph = $graph | append $breadcrumb $article -}}
 {{- end -}}
+<script type="application/ld+json">
+{{- dict "@context" "https://schema.org" "@graph" $graph | jsonify (dict "indent" "  ") | safeJS -}}
 </script>

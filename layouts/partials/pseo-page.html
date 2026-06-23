@@ -78,12 +78,40 @@
     <p>{{ $item.audience }} When you know what you want, you can {{ if $item.affiliate }}<a class="soft-cta" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="{{ $item.primary_cta }}" rel="sponsored nofollow noopener">{{ lower $item.primary_cta }} &rarr;</a>{{ else }}<a class="soft-cta" href="{{ $item.cta_url }}"{{ if hasPrefix $item.cta_url "http" }} rel="sponsored nofollow noopener"{{ end }}>{{ lower $item.primary_cta }} &rarr;</a>{{ end }} — there's no rush, and comparing a few sellers first is always fine.</p>
   </section>
 
+  {{/* Category-contextual hub links — drives crawl equity to core hub pages from every PSEO page */}}
+  {{ $hubs := dict
+      "Tarot" (slice "/fiverr-tarot-reading/" "/tools/")
+      "Astrology" (slice "/fiverr-astrology-reading/" "/compatibility-astrology-reading-on-fiverr/")
+      "Comparison" (slice "/fiverr-tarot-reading/" "/fiverr-astrology-reading/")
+      "Safety" (slice "/tools/" "/fiverr-tarot-reading/")
+      "Budget" (slice "/tools/" "/fiverr-tarot-reading/")
+  }}
+  {{ $hubLabels := dict
+      "/fiverr-tarot-reading/" "Fiverr tarot reading guide"
+      "/fiverr-astrology-reading/" "Fiverr astrology reading guide"
+      "/compatibility-astrology-reading-on-fiverr/" "Compatibility astrology reading"
+      "/tools/" "Free reading tools"
+  }}
+  {{ with index $hubs $item.category }}
+  <section class="explore-more">
+    <h2>Explore more {{ lower $item.category }} guides</h2>
+    <div class="related-links">
+      {{ range . }}
+        <a href="{{ . }}">{{ index $hubLabels . | default . }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
   {{ with $item.related }}
+  {{ $titleBySlug := dict }}
+  {{ range hugo.Data.pseo.pages }}{{ $titleBySlug = merge $titleBySlug (dict .slug .title) }}{{ end }}
   <section>
     <h2>Related Guides</h2>
     <div class="related-links">
       {{ range . }}
-        <a href="{{ . }}">{{ . }}</a>
+        {{ $slug := strings.Trim . "/" }}
+        <a href="{{ . }}">{{ index $titleBySlug $slug | default (title (replace $slug "-" " ")) }}</a>
       {{ end }}
     </div>
   </section>
