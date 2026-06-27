@@ -45,12 +45,24 @@
         asynchronous gig will frustrate you.
     - heading: Selection checklist
       body: >-
-        9. Confirm the delivery format and turnaround in the gig description.
+        Use the gig description before you use the rating:
 
 
-        Look for a revision policy, a sample of the reader's style, and a clear
-        statement of what the reading covers. Skip gigs whose only selling point
-        is certainty about the future.
+        - **Review threshold:** prefer sellers with at least 25 recent reviews,
+        or fewer reviews only when the sample delivery is unusually clear.
+
+        - **Sample proof:** look for a sample spread, PDF screenshot, audio
+        sample, or card-photo policy.
+
+        - **Scope:** confirm how many cards, questions, and words/minutes are
+        included before buying.
+
+        - **Revision policy:** one clarification pass is useful; unlimited
+        "extra truth" upsells are not.
+
+        - **Red flags:** skip sellers who promise fixed outcomes, claim to
+        control another person, ask for unnecessary private data, or use fear to
+        push an add-on.
     - heading: What to send the reader
       body: >-
         One focused, open question works better than five vague ones. Give light
@@ -61,6 +73,25 @@
         Avoid demanding fixed predictions or asking about a third person's
         private choices; readers who set that boundary tend to deliver more
         useful, honest work.
+    - heading: Good questions vs weak questions
+      body: >-
+        **Good question:** "What pattern should I notice before I decide whether
+        to keep dating this person?" It gives the reader a clear emotional field
+        and keeps the answer focused on your choices.
+
+
+        **Weak question:** "Will they come back and marry me?" It pushes the
+        reading toward a fixed prediction about another adult, which invites
+        vague or overconfident answers.
+
+
+        **Good question:** "What would help me approach this career decision
+        with more clarity over the next month?" It has a topic, timeframe, and a
+        practical use.
+
+
+        **Weak question:** "Tell me exactly what will happen." That is too broad
+        to buy a useful fixed-price gig.
     - heading: Typical price by gig type
       body: >-
         Single-question text reading: $5-$15. Three-card spread with written
@@ -121,6 +152,12 @@
         clarification pass. Fiverr's resolution process covers undelivered or
         off-scope work, but subjective disagreement with an interpretation is
         not usually refundable, so vet reviews first.
+    - q: What should I ask a Fiverr tarot reader?
+      a: Ask one open question about your own choices, pattern, or next step. For
+        example, ask what to understand before deciding, what boundary would help,
+        or what you are not seeing clearly. Avoid yes/no demands and questions
+        that require the reader to claim certainty about another person's private
+        thoughts.
   related:
     - /tools/tarot-question-generator/
     - /how-to-choose-a-tarot-reader-online/
@@ -176,6 +213,26 @@
         turnaround of 2-5 days. The reader explains what astrology can and
         cannot speak to, asks for the birth data they actually need, and does
         not promise to settle your decisions for you.
+    - heading: Seller screening checklist
+      body: >-
+        Treat the gig page like a brief audit:
+
+
+        - **Review threshold:** prefer 30+ reviews for broad birth-chart reports,
+        or a smaller review count only when the seller shows a detailed sample.
+
+        - **Chart method:** confirm whether they use Western, Vedic, tropical,
+        sidereal, whole-sign, Placidus, or another house system.
+
+        - **Data request:** birth date, time, and location are normal; requests
+        for unrelated sensitive information are not.
+
+        - **Deliverable:** check whether you receive a PDF, written message,
+        audio, video, chart image, or live call.
+
+        - **Red flags:** avoid fear-based timing claims, fixed soulmate verdicts,
+        paid curse/blockage removal, or a promise that astrology can make a
+        legal, medical, or financial decision for you.
     - heading: Red flags
       body: Claims of certain soulmate or marriage timing, urgent fear-based upsells,
         requests for unnecessary sensitive data, or pressure to buy add-ons to
@@ -230,6 +287,41 @@
         Buying a natal overview when you wanted relationship insight is the most
         common mismatch, so name your question first and let it choose the gig
         type rather than the other way around.
+    - heading: "A worked example: buying a first birth chart report"
+      body: >-
+        Say you have a $50 budget and want to understand recurring relationship
+        patterns. Do not buy a cheap yearly forecast; it answers the wrong
+        question.
+
+
+        Look for a standard natal report around $35-$70 that explicitly covers
+        Venus, Moon, Mars, rising sign, and relationship themes. Send birth
+        date, accurate birth time if you have it, location, and one sentence:
+        "I want to understand relationship patterns, not predict one person's
+        feelings."
+
+
+        The expected output is a written or PDF report you can reread: core
+        placements, relationship tendencies, timing caveats, and one or two
+        practical reflection points. If you need two-person chemistry, choose a
+        synastry gig instead.
+    - heading: Good astrology questions vs weak questions
+      body: >-
+        **Good question:** "Which natal placements should I understand before I
+        choose the right relationship-reading package?" It points the reader to
+        chart interpretation and buying context.
+
+
+        **Weak question:** "When exactly will I meet my spouse?" It invites false
+        certainty and tends to attract sellers who overpromise timing.
+
+
+        **Good question:** "What does my chart suggest about communication and
+        conflict patterns?" That can be answered from a natal chart.
+
+
+        **Weak question:** "Is this person my destiny?" That requires a verdict
+        astrology cannot responsibly provide.
   faq:
     - q: Do I need my exact birth time for an astrology reading?
       a: For a precise natal or house-based reading, yes — birth time sets the rising
@@ -252,6 +344,19 @@
         rising sign and houses depend on time. A careful reader will tell you
         what they can and cannot cover, and may suggest a rectification if
         timing matters to you.
+    - q: How long does a Fiverr astrology reading take?
+      a: Short overviews often arrive in 24-48 hours, while standard PDF reports
+        usually take 2-5 days. Two-person synastry, year-ahead reports, or video
+        delivery can take longer unless you pay for rush delivery.
+    - q: Is a Fiverr astrology reading real?
+      a: It is a real interpretive service when the seller reads your chart and
+        explains the method. It is not proof of a fixed future. Favor sellers who
+        show scope, chart type, and limitations instead of certainty.
+    - q: Can I get a refund if the astrology reading feels generic?
+      a: Read the gig's revision and cancellation policy before ordering. Fiverr
+        can help with undelivered or off-scope work, but a subjective
+        disagreement with an interpretation is harder to refund, so samples and
+        reviews matter.
   related:
     - /tools/astrology-reading-cost-calculator/
     - /birth-chart-reading-on-fiverr/

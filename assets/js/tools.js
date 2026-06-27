@@ -5,8 +5,14 @@
 
 /* ---------- shared helpers ---------- */
 
-function softLink(slug, label) {
-  return `<a class="soft-cta" href="/go/${slug}/" data-affiliate data-cta="${label}" rel="sponsored nofollow noopener">${label} &rarr;</a>`;
+function trackEvent(name, params) {
+  if (typeof gtag === "function") {
+    gtag("event", name, params || {});
+  }
+}
+
+function softLink(slug, label, tool) {
+  return `<a class="soft-cta" href="/go/fiverr-tarot/" data-affiliate data-cta="tool-result-cta" data-tool="${tool || "reader-tool"}" rel="sponsored nofollow noopener">Now find a reader on Fiverr &rarr;</a>`;
 }
 
 function pick(arr) {
@@ -29,6 +35,16 @@ function appendSoftLink(container, link) {
   note.className = "result-soft";
   note.innerHTML = link;
   container.appendChild(note);
+  const cta = note.querySelector("a[data-affiliate]");
+  if (cta) {
+    cta.addEventListener("click", () => {
+      trackEvent("cta_click", {
+        cta_label: cta.getAttribute("data-cta") || "tool-result-cta",
+        tool: cta.getAttribute("data-tool") || "reader-tool",
+        destination: cta.getAttribute("href")
+      });
+    });
+  }
 }
 
 function setResult(id, mainText, link) {
@@ -157,7 +173,8 @@ function initQuestionGenerator() {
     if (!container) return;
     const questions = buildQuestions(topic, style, context);
     const [slug, label] = QG.topicLink[topic] || QG.topicLink.self;
-    renderQuestions(container, questions, softLink(slug, label));
+    renderQuestions(container, questions, softLink(slug, label, "tarot-question-generator"));
+    trackEvent("tool_result", { tool: "tarot-question-generator", topic, style });
   });
 }
 
@@ -224,8 +241,9 @@ function initCostCalculator() {
     setResult(
       "cost-result",
       `Budget anchor: $${low}-$${high}. At this level you can expect ${buys}.${speedNote} Treat it as a comparison range for browsing, not a fixed market price.`,
-      softLink(slug, label)
+      softLink(slug, label, "astrology-reading-cost-calculator")
     );
+    trackEvent("tool_result", { tool: "astrology-reading-cost-calculator", category, depth, format, speed });
   });
 }
 
@@ -276,8 +294,9 @@ function initReaderMatcher() {
     setResult(
       "matcher-result",
       `Look for a ${reader} offering ${format} delivery. ${budgetNote} ${priorityNote}`,
-      softLink(slug, label)
+      softLink(slug, label, "psychic-reader-matcher")
     );
+    trackEvent("tool_result", { tool: "psychic-reader-matcher", topic, format, priority });
   });
 }
 

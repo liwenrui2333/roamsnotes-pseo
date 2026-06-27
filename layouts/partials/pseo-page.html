@@ -3,6 +3,12 @@
   <p class="eyebrow">{{ $item.category }} / {{ $item.type }}</p>
   <h1>{{ $item.h1 }}</h1>
   <p class="lede">{{ $item.description }}</p>
+  {{ if $item.affiliate }}
+  <div class="hero-cta">
+    <a class="button primary" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="hero-find-reader" rel="sponsored nofollow noopener">{{ $item.primary_cta }} &rarr;</a>
+    <span>Compare packages first; avoid urgency, certainty, and vague deliverables.</span>
+  </div>
+  {{ end }}
 
   {{ with $item.hero }}
   <figure class="hero-img">
