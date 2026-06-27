@@ -7,6 +7,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.RN_GA4_ID = '{{ . }}';
   gtag('js', new Date());
   gtag('config', '{{ . }}', { send_page_view: true });
 </script>
@@ -17,6 +18,44 @@
 </script>
 {{- end }}
 <script>
+  function rnClientId() {
+    var match = document.cookie.match(/(?:^|;\s*)_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+    return match ? match[1] : String(Date.now()) + "." + String(Math.floor(Math.random() * 1000000000));
+  }
+
+  window.rnSendGaEvent = function (name, payload) {
+    payload = payload || {};
+    if (typeof gtag === 'function') {
+      gtag('event', name, Object.assign({ send_to: window.RN_GA4_ID, transport_type: 'beacon' }, payload));
+    }
+    if (!window.RN_GA4_ID) return;
+    var params = new URLSearchParams({
+      v: '2',
+      tid: window.RN_GA4_ID,
+      cid: rnClientId(),
+      en: name,
+      dl: location.href,
+      dt: document.title,
+      ul: navigator.language || 'en-US',
+      sr: (screen.width || 0) + 'x' + (screen.height || 0),
+      sid: String(Math.floor(Date.now() / 1000)),
+      sct: '1',
+      seg: '1',
+      _p: String(Date.now())
+    });
+    Object.keys(payload).forEach(function (key) {
+      var value = payload[key];
+      if (value == null || typeof value === 'object') return;
+      params.set('ep.' + key, String(value).slice(0, 100));
+    });
+    var url = 'https://www.google-analytics.com/g/collect?' + params.toString();
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(url);
+    } else {
+      fetch(url, { mode: 'no-cors', keepalive: true }).catch(function () {});
+    }
+  };
+
   // Outbound affiliate click tracking: page_path, cta_label, destination, timestamp
   document.addEventListener('click', function (e) {
     var a = e.target.closest('a[data-affiliate]');
@@ -27,7 +66,7 @@
       destination: a.getAttribute('href'),
       timestamp: new Date().toISOString()
     };
-    if (typeof gtag === 'function') { gtag('event', 'affiliate_click', Object.assign({ transport_type: 'beacon' }, payload)); }
+    window.rnSendGaEvent('affiliate_click', payload);
     if (window.clarity) { try { clarity('event', 'affiliate_click'); } catch (_) {} }
   }, true);
 </script>

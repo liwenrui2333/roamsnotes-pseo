@@ -6,7 +6,9 @@
 /* ---------- shared helpers ---------- */
 
 function trackEvent(name, params) {
-  if (typeof gtag === "function") {
+  if (window.rnSendGaEvent) {
+    window.rnSendGaEvent(name, params || {});
+  } else if (typeof gtag === "function") {
     gtag("event", name, params || {});
   }
 }
