@@ -5360,7 +5360,7 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
-- I’ll draft the page as a strict YAML object, with the compatibility scoring table and the required sober astrology boundaries baked into the body. Since this is content generation rather than repo editing, I’ll keep it to the schema only.slug: aquarius-and-gemini-compatibility
+- slug: aquarius-and-gemini-compatibility
   type: info
   title: "Aquarius and Gemini Compatibility: Air Signs in Motion"
   h1: Aquarius and Gemini compatibility
@@ -5582,7 +5582,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-  slug: aquarius-and-gemini-compatibility
 - slug: pisces-and-cancer-compatibility
   type: info
   title: "Pisces and Cancer Compatibility: Water, Mood, Trust"
