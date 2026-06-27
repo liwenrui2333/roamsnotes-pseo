@@ -3,11 +3,22 @@
   <p class="eyebrow">{{ $item.category }} / {{ $item.type }}</p>
   <h1>{{ $item.h1 }}</h1>
   <p class="lede">{{ $item.description }}</p>
+  <p class="author-byline">Reviewed by <strong>{{ site.Params.authorName }}</strong>, {{ site.Params.authorTitle }}.</p>
   {{ if $item.affiliate }}
   <div class="hero-cta">
     <a class="button primary" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="hero-find-reader" rel="sponsored nofollow noopener">{{ $item.primary_cta }} &rarr;</a>
     <span>Compare packages first; avoid urgency, certainty, and vague deliverables.</span>
   </div>
+  {{ end }}
+  {{ if in (slice "does-he-love-me-tarot" "is-my-ex-coming-back-tarot") $item.slug }}
+  <section class="emotion-prompt">
+    <h2>Start with the question you actually have</h2>
+    <label>Your question
+      <input type="text" placeholder="e.g. what should I notice before I reach out?">
+    </label>
+    <p>Use this as a draft, then keep the reading focused on your choices instead of another person's private thoughts.</p>
+    <a class="button primary" href="/go/love-tarot/" data-affiliate data-cta="emotion-question-cta" rel="sponsored nofollow noopener">Find a relationship tarot reader &rarr;</a>
+  </section>
   {{ end }}
 
   {{ with $item.hero }}

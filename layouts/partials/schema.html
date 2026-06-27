@@ -12,7 +12,14 @@
     "url" .Site.BaseURL
     "description" .Site.Params.description
     "publisher" (dict "@id" (printf "%s#org" .Site.BaseURL)) -}}
-{{- $graph := slice $org $website -}}
+{{- $author := dict
+    "@type" "Person"
+    "@id" (printf "%s#author" .Site.BaseURL)
+    "name" .Site.Params.authorName
+    "jobTitle" .Site.Params.authorTitle
+    "description" .Site.Params.authorBio
+    "url" (printf "%sabout/" .Site.BaseURL) -}}
+{{- $graph := slice $org $website $author -}}
 {{- if not .IsHome -}}
   {{- $crumbs := slice
       (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.BaseURL)
@@ -26,7 +33,7 @@
       "url" .Permalink
       "inLanguage" "en-US"
       "isPartOf" (dict "@id" (printf "%s#website" .Site.BaseURL))
-      "author" (dict "@id" (printf "%s#org" .Site.BaseURL))
+      "author" (dict "@id" (printf "%s#author" .Site.BaseURL))
       "publisher" (dict "@id" (printf "%s#org" .Site.BaseURL)) -}}
   {{- $graph = $graph | append $breadcrumb $article -}}
 {{- end -}}
