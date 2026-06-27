@@ -16,6 +16,7 @@ for (const page of pages) {
     "---",
     `title: ${JSON.stringify(page.title)}`,
     `description: ${JSON.stringify(page.description)}`,
+    ...(page.noindex ? ["noindex: true"] : []),
     "---",
     "",
     "Generated from structured PSEO data. Edit data/pseo/pages.yaml, then rerun scripts/generate_pages.js.",

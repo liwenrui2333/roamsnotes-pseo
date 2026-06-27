@@ -263,6 +263,7 @@
     time, and the amount of birth data required, with realistic anchors and red
     flags.
 - slug: how-to-choose-a-tarot-reader-online
+  noindex: true
   type: guide
   title: How to Choose a Tarot Reader Online Without Overpaying
   h1: How to Choose a Tarot Reader Online Without Overpaying
@@ -604,6 +605,7 @@
   tldr: Understand what low-cost online tarot readings can and cannot provide, and
     how to compare fixed-price offers under $25 safely.
 - slug: love-tarot-reading-on-fiverr
+  noindex: true
   type: service
   title: "Love Tarot Reading on Fiverr: Choosing a Relationship Reader"
   h1: "Love Tarot Reading on Fiverr: Choosing a Relationship Reader"
@@ -715,6 +717,7 @@
     type, price, and honest scope, without buying into promises about other
     people.
 - slug: career-tarot-reading-on-fiverr
+  noindex: true
   type: service
   title: "Career Tarot Reading on Fiverr: Decisions, Timing, and Scope"
   h1: "Career Tarot Reading on Fiverr: Decisions, Timing, and Scope"
@@ -1060,6 +1063,7 @@
   tldr: What a natal birth chart reading on Fiverr costs, the birth data it
     requires, and how to tell a thorough reader from a generic one.
 - slug: compatibility-astrology-reading-on-fiverr
+  noindex: true
   type: service
   title: "Compatibility Astrology Reading on Fiverr: Synastry Without the Hype"
   h1: "Compatibility Astrology Reading on Fiverr: Synastry Without the Hype"
@@ -1179,6 +1183,7 @@
   tldr: How synastry and compatibility readings work on Fiverr, what two-person
     readings cost, and how to avoid gigs that overpromise about relationships.
 - slug: fiverr-vs-kasamba
+  noindex: true
   type: comparison
   title: "Fiverr vs Kasamba: Fixed-Price Readings or Live Chat?"
   h1: "Fiverr vs Kasamba: Fixed-Price Readings or Live Chat?"
@@ -1282,6 +1287,7 @@
   tldr: Compare Fiverr's fixed-price reading gigs with Kasamba-style live chat
     psychics on cost model, speed, and how to keep spending under control.
 - slug: fiverr-vs-purple-garden
+  noindex: true
   type: comparison
   title: "Fiverr vs Purple Garden: Which Fits Your Reading Style?"
   h1: "Fiverr vs Purple Garden: Which Fits Your Reading Style?"
@@ -1387,6 +1393,7 @@
   tldr: Compare Fiverr's fixed-price reading gigs with Purple Garden-style app
     readings on cost, format, and how to choose a reader you can trust.
 - slug: yearly-astrology-reading-on-fiverr
+  noindex: true
   type: service
   title: "Yearly Astrology Reading on Fiverr: Forecasts, Cost, and Limits"
   h1: "Yearly Astrology Reading on Fiverr: Forecasts, Cost, and Limits"
@@ -1503,6 +1510,7 @@
   tldr: What a year-ahead astrology reading on Fiverr covers, what it costs, and
     how to keep a forecast in healthy perspective.
 - slug: what-to-ask-a-tarot-reader
+  noindex: true
   type: guide
   title: "What to Ask a Tarot Reader: Questions That Get Useful Answers"
   h1: "What to Ask a Tarot Reader: Questions That Get Useful Answers"
@@ -1844,6 +1852,7 @@
     - /love-tarot-reading-on-fiverr/
     - /what-to-ask-a-tarot-reader/
 - slug: aries-and-leo-compatibility
+  noindex: true
   type: info
   title: "Aries and Leo compatibility: fire, pride, and pace"
   h1: Aries and Leo compatibility
@@ -2250,6 +2259,7 @@
     - /love-tarot-reading-on-fiverr/
     - /how-to-choose-a-tarot-reader-online/
 - slug: is-he-thinking-about-me-tarot
+  noindex: true
   type: info
   title: Is He Thinking About Me Tarot? A Healthier Way to Ask
   h1: Is He Thinking About Me Tarot?
@@ -2491,6 +2501,7 @@
     - /love-tarot-reading-on-fiverr/
     - /what-to-ask-a-tarot-reader/
 - slug: soulmate-tarot-reading
+  noindex: true
   type: info
   title: "Soulmate Tarot Reading: A Healthier Way to Ask in 2026"
   h1: Soulmate tarot reading, without the fate trap
@@ -2730,6 +2741,7 @@
     - /love-tarot-reading-on-fiverr/
     - /how-to-choose-a-tarot-reader-online/
 - slug: three-card-tarot-spread
+  noindex: true
   type: guide
   title: "Three Card Tarot Spread: A Clear Guide for Real Questions"
   h1: Three Card Tarot Spread
@@ -3031,6 +3043,7 @@
     - /fiverr-tarot-reading/
     - /what-to-ask-a-tarot-reader/
 - slug: yes-or-no-tarot
+  noindex: true
   type: guide
   title: "Yes or No Tarot: A Clear Single-Card Spread Guide"
   h1: Yes or No Tarot Spread
@@ -3316,6 +3329,7 @@
     - /fiverr-tarot-reading/
     - /how-to-choose-a-tarot-reader-online/
 - slug: celtic-cross-tarot-spread
+  noindex: true
   type: guide
   title: "Celtic Cross Tarot Spread: 10-Card Tutorial 2026"
   h1: Celtic Cross Tarot Spread
@@ -3613,6 +3627,7 @@
     - /fiverr-tarot-reading/
     - /written-tarot-reading-on-fiverr/
 - slug: gemini-and-libra-compatibility
+  noindex: true
   type: info
   title: "Gemini and Libra Compatibility: Air Sign Match Guide"
   h1: Gemini and Libra compatibility
@@ -3843,6 +3858,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: cancer-and-scorpio-compatibility
+  noindex: true
   type: info
   title: "Cancer and Scorpio Compatibility: Water Sign Match"
   h1: Cancer and Scorpio compatibility
@@ -4073,6 +4089,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: leo-and-sagittarius-compatibility
+  noindex: true
   type: info
   title: "Leo and Sagittarius Compatibility: Fire, Freedom, Trust"
   h1: Leo and Sagittarius Compatibility
@@ -4292,6 +4309,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: virgo-and-capricorn-compatibility
+  noindex: true
   type: info
   title: "Virgo and Capricorn Compatibility: Earth Signs in 2026"
   h1: Virgo and Capricorn compatibility
@@ -4512,6 +4530,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: libra-and-aquarius-compatibility
+  noindex: true
   type: info
   title: "Libra and Aquarius Compatibility: Air Signs in Love"
   h1: Libra and Aquarius compatibility
@@ -4733,6 +4752,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: scorpio-and-pisces-compatibility
+  noindex: true
   type: info
   title: "Scorpio and Pisces Compatibility: Water Signs in 2026"
   h1: Scorpio and Pisces compatibility
@@ -4951,6 +4971,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: sagittarius-and-aries-compatibility
+  noindex: true
   type: info
   title: "Sagittarius and Aries Compatibility: Fast Fire Match"
   h1: Sagittarius and Aries Compatibility
@@ -5143,6 +5164,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: capricorn-and-taurus-compatibility
+  noindex: true
   type: info
   title: "Capricorn and Taurus Compatibility: Steady Earth Love"
   h1: Capricorn and Taurus compatibility
@@ -5361,6 +5383,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: aquarius-and-gemini-compatibility
+  noindex: true
   type: info
   title: "Aquarius and Gemini Compatibility: Air Signs in Motion"
   h1: Aquarius and Gemini compatibility
@@ -5583,6 +5606,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: pisces-and-cancer-compatibility
+  noindex: true
   type: info
   title: "Pisces and Cancer Compatibility: Water, Mood, Trust"
   h1: Pisces and Cancer compatibility
@@ -5799,6 +5823,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: will-i-find-love-tarot
+  noindex: true
   type: info
   title: "Will I Find Love Tarot: A Healthier Way to Ask in 2026"
   h1: Will I Find Love Tarot
@@ -6010,6 +6035,7 @@
     - /love-tarot-reading-on-fiverr/
     - /cheap-online-tarot-reading/
 - slug: taurus-and-cancer-compatibility
+  noindex: true
   type: info
   title: "Taurus and Cancer Compatibility: Earth Meets Water"
   h1: Taurus and Cancer Compatibility
@@ -6213,6 +6239,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: aries-and-taurus-compatibility
+  noindex: true
   type: info
   title: "Aries and Taurus Compatibility: Fire-Earth Reality"
   h1: Aries and Taurus Compatibility
@@ -6421,6 +6448,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: taurus-and-gemini-compatibility
+  noindex: true
   type: info
   title: "Taurus and Gemini Compatibility: Earth Meets Air"
   h1: Taurus and Gemini compatibility
@@ -6637,6 +6665,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: gemini-and-cancer-compatibility
+  noindex: true
   type: info
   title: "Gemini and Cancer Compatibility: Air Meets Water"
   h1: Gemini and Cancer compatibility
@@ -6850,6 +6879,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: cancer-and-leo-compatibility
+  noindex: true
   type: info
   title: "Cancer and Leo Compatibility: Water-Fire Love Guide"
   h1: Cancer and Leo compatibility
@@ -7079,6 +7109,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: leo-and-virgo-compatibility
+  noindex: true
   type: info
   title: "Leo and Virgo Compatibility: Fire, Earth, and Real Work"
   h1: Leo and Virgo compatibility
@@ -7274,6 +7305,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: virgo-and-libra-compatibility
+  noindex: true
   type: info
   title: "Virgo and Libra Compatibility: Earth-Air Match Guide"
   h1: Virgo and Libra compatibility
@@ -7503,6 +7535,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: libra-and-scorpio-compatibility
+  noindex: true
   type: info
   title: "Libra and Scorpio Compatibility: Air Meets Water"
   h1: Libra and Scorpio Compatibility
@@ -7702,6 +7735,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: scorpio-and-sagittarius-compatibility
+  noindex: true
   type: info
   title: "Scorpio and Sagittarius Compatibility: Fire Meets Water"
   h1: Scorpio and Sagittarius compatibility
@@ -7896,6 +7930,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: sagittarius-and-capricorn-compatibility
+  noindex: true
   type: info
   title: "Sagittarius and Capricorn Compatibility: Fire Meets Earth"
   h1: Sagittarius and Capricorn compatibility
@@ -8100,6 +8135,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: capricorn-and-aquarius-compatibility
+  noindex: true
   type: info
   title: "Capricorn and Aquarius Compatibility: Earth Meets Air"
   h1: Capricorn and Aquarius compatibility
@@ -8316,6 +8352,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: aquarius-and-pisces-compatibility
+  noindex: true
   type: info
   title: "Aquarius and Pisces Compatibility: Air Meets Water"
   h1: Aquarius and Pisces compatibility
@@ -8545,6 +8582,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /birth-chart-reading-on-fiverr/
 - slug: pisces-and-aries-compatibility
+  noindex: true
   type: info
   title: "Pisces and Aries Compatibility: Water Meets Fire in Love"
   h1: Pisces and Aries Compatibility
@@ -8732,6 +8770,7 @@
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
 - slug: todays-sky
+  noindex: true
   type: info
   title: "Today's Sky (2026-06-20): Waxing Crescent Moon"
   h1: "Today's Sky: Waxing Crescent Moon"
@@ -8938,6 +8977,7 @@
     - /birth-chart-reading-on-fiverr/
 
 - slug: full-moon-june-2026
+  noindex: true
   type: info
   title: "June 2026 Full Moon: Date and Reflection Meaning"
   h1: June 2026 Full Moon Date and Meaning
@@ -9123,6 +9163,7 @@
     - /birth-chart-reading-on-fiverr/
 
 - slug: new-moon-july-2026
+  noindex: true
   type: info
   title: "July 2026 New Moon: Date and Reflection Guide"
   h1: July 2026 New Moon Date and Meaning
@@ -9301,6 +9342,7 @@
     - /birth-chart-reading-on-fiverr/
 
 - slug: full-moon-july-2026
+  noindex: true
   type: info
   title: "July 2026 Full Moon: Date and Reflection Guide"
   h1: July 2026 Full Moon Date and Meaning

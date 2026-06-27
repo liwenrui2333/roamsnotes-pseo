@@ -9,6 +9,7 @@
     <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}">
+    {{ if .Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
     {{ $desc := cond (ne .Description "") .Description .Site.Params.description }}
     <meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
     <meta property="og:site_name" content="{{ .Site.Params.brand }}">
