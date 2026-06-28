@@ -154,10 +154,10 @@
         not usually refundable, so vet reviews first.
     - q: What should I ask a Fiverr tarot reader?
       a: Ask one open question about your own choices, pattern, or next step. For
-        example, ask what to understand before deciding, what boundary would help,
-        or what you are not seeing clearly. Avoid yes/no demands and questions
-        that require the reader to claim certainty about another person's private
-        thoughts.
+        example, ask what to understand before deciding, what boundary would
+        help, or what you are not seeing clearly. Avoid yes/no demands and
+        questions that require the reader to claim certainty about another
+        person's private thoughts.
   related:
     - /tools/tarot-question-generator/
     - /how-to-choose-a-tarot-reader-online/
@@ -218,8 +218,9 @@
         Treat the gig page like a brief audit:
 
 
-        - **Review threshold:** prefer 30+ reviews for broad birth-chart reports,
-        or a smaller review count only when the seller shows a detailed sample.
+        - **Review threshold:** prefer 30+ reviews for broad birth-chart
+        reports, or a smaller review count only when the seller shows a detailed
+        sample.
 
         - **Chart method:** confirm whether they use Western, Vedic, tropical,
         sidereal, whole-sign, Placidus, or another house system.
@@ -230,9 +231,9 @@
         - **Deliverable:** check whether you receive a PDF, written message,
         audio, video, chart image, or live call.
 
-        - **Red flags:** avoid fear-based timing claims, fixed soulmate verdicts,
-        paid curse/blockage removal, or a promise that astrology can make a
-        legal, medical, or financial decision for you.
+        - **Red flags:** avoid fear-based timing claims, fixed soulmate
+        verdicts, paid curse/blockage removal, or a promise that astrology can
+        make a legal, medical, or financial decision for you.
     - heading: Red flags
       body: Claims of certain soulmate or marriage timing, urgent fear-based upsells,
         requests for unnecessary sensitive data, or pressure to buy add-ons to
@@ -296,8 +297,8 @@
 
         Look for a standard natal report around $35-$70 that explicitly covers
         Venus, Moon, Mars, rising sign, and relationship themes. Send birth
-        date, accurate birth time if you have it, location, and one sentence:
-        "I want to understand relationship patterns, not predict one person's
+        date, accurate birth time if you have it, location, and one sentence: "I
+        want to understand relationship patterns, not predict one person's
         feelings."
 
 
@@ -312,8 +313,8 @@
         chart interpretation and buying context.
 
 
-        **Weak question:** "When exactly will I meet my spouse?" It invites false
-        certainty and tends to attract sellers who overpromise timing.
+        **Weak question:** "When exactly will I meet my spouse?" It invites
+        false certainty and tends to attract sellers who overpromise timing.
 
 
         **Good question:** "What does my chart suggest about communication and
@@ -350,13 +351,13 @@
         delivery can take longer unless you pay for rush delivery.
     - q: Is a Fiverr astrology reading real?
       a: It is a real interpretive service when the seller reads your chart and
-        explains the method. It is not proof of a fixed future. Favor sellers who
-        show scope, chart type, and limitations instead of certainty.
+        explains the method. It is not proof of a fixed future. Favor sellers
+        who show scope, chart type, and limitations instead of certainty.
     - q: Can I get a refund if the astrology reading feels generic?
-      a: Read the gig's revision and cancellation policy before ordering. Fiverr
-        can help with undelivered or off-scope work, but a subjective
-        disagreement with an interpretation is harder to refund, so samples and
-        reviews matter.
+      a: Read the gig's revision and cancellation policy before ordering. Fiverr can
+        help with undelivered or off-scope work, but a subjective disagreement
+        with an interpretation is harder to refund, so samples and reviews
+        matter.
   related:
     - /tools/astrology-reading-cost-calculator/
     - /birth-chart-reading-on-fiverr/
@@ -504,17 +505,27 @@
   risk_level: Low
   last_updated: 2026-06-17
   sections:
-    - heading: "When Fiverr is the better first choice"
-      body: |
+    - heading: When Fiverr is the better first choice
+      body: >
         Choose Fiverr when you want a fixed price, a written or recorded
+
         deliverable, and time to compare sellers before paying. Keen-style live
-        chat can be useful for immediate back-and-forth, but the per-minute model
+
+        chat can be useful for immediate back-and-forth, but the per-minute
+        model
+
         makes cost control harder.
 
+
         - Your question fits one clear brief.
+
         - The order price is capped before checkout.
-        - The seller shows sample depth, delivery format, revision rules, and refund boundaries.
-        - Live chat is only better when you need back-and-forth in the moment and are comfortable watching the clock.
+
+        - The seller shows sample depth, delivery format, revision rules, and
+        refund boundaries.
+
+        - Live chat is only better when you need back-and-forth in the moment
+        and are comfortable watching the clock.
     - heading: "The core difference: fixed price vs per minute"
       body: >-
         Fiverr sells a packaged gig at a price you see before paying — typically
@@ -1316,17 +1327,26 @@
   risk_level: Low
   last_updated: 2026-06-17
   sections:
-    - heading: "When Fiverr gives better buyer control"
-      body: |
+    - heading: When Fiverr gives better buyer control
+      body: >
         Choose Fiverr when budget control matters more than a live conversation.
-        Kasamba-style platforms can feel faster, but the per-minute model rewards
+
+        Kasamba-style platforms can feel faster, but the per-minute model
+        rewards
+
         longer sessions. Fiverr wins for one focused tarot or astrology question
+
         because the scope, price, delivery format, and turnaround are visible
+
         before you order.
 
+
         - Start with a short written brief.
+
         - Compare at least three sellers before ordering.
-        - Avoid gigs that promise certainty, guaranteed reunion, energetic fixes, or urgent extra payments after the reading starts.
+
+        - Avoid gigs that promise certainty, guaranteed reunion, energetic
+        fixes, or urgent extra payments after the reading starts.
     - heading: Two different cost models
       body: >-
         Fiverr is fixed price: you pick a $5-$120 gig and know the cost before
@@ -1431,7 +1451,7 @@
   risk_level: Low
   last_updated: 2026-06-17
   sections:
-    - heading: "When Fiverr beats a live reading app"
+    - heading: When Fiverr beats a live reading app
       body: |
         Choose Fiverr when you want a fixed package, a saved written or recorded
         answer, and a slower decision path. Purple Garden-style apps are better
@@ -8908,213 +8928,6 @@
     - /tools/astrology-reading-cost-calculator/
     - /compatibility-astrology-reading-on-fiverr/
     - /fiverr-astrology-reading/
-- slug: todays-sky
-  noindex: true
-  type: info
-  title: "Today's Sky (2026-06-20): Waxing Crescent Moon"
-  h1: "Today's Sky: Waxing Crescent Moon"
-  description: Tonight's moon is a Waxing Crescent, about 32% illuminated. This
-    page uses today's real sky facts to translate the lunar phase, Cancer
-    season, and Mercury's direct motion into grounded reflection, not
-    prediction, so you can choose one honest question for the day.
-  intent: The reader wants to know what today's moon and sky mean without getting
-    a fake horoscope or a prediction.
-  audience: People who like astrology or tarot as reflection tools and want a
-    clear daily check-in based on real sky data.
-  primary_cta: Want to ask today's question more cleanly? Try the tarot question generator.
-  cta_url: /tools/tarot-question-generator/
-  category: Astrology
-  budget: N/A (free daily reflection)
-  delivery: Updated daily; read in 3 min
-  risk_level: Low
-  last_updated: 2026-06-20
-  tldr: "Today's moon is a Waxing Crescent, about 32% lit. Treat it as early
-    momentum: one small first step, one gentle commitment, and no grand
-    prophecy. Cancer season adds a quieter question about care, home, and
-    emotional safety."
-  hero:
-    src: /img/tarot/the-star.jpg
-    alt: The Star tarot card, evoking tonight's waxing crescent moon
-    caption: A 32% Waxing Crescent is not a command from the sky; it is a modest
-      light to think by.
-  sections:
-    - heading: What Is Actually in the Sky Today
-      body: >-
-        **Tonight's moon is a Waxing Crescent, about 32% illuminated.** That is
-        the clean fact to start with. Not a mood forecast, not a cosmic verdict.
-
-
-        Here is the limited sky report for 2026-06-20:
-
-
-        | Sky factor | Today's fact | Reflective use |
-
-        |---|---:|---|
-
-        | Moon phase | Waxing Crescent | Early momentum, small first steps |
-
-        | Illumination | 32% | Enough light to begin, not enough to pretend
-        everything is clear |
-
-        | Sun sign | Cancer | Seasonal focus on care, roots, and emotional
-        shelter |
-
-        | Mercury | Direct | No Mercury retrograde to blame today |
-
-
-        That is all I am using. No invented moon sign. No secret lucky hour. No
-        made-up planetary aspect dressed up as certainty.
-    - heading: The Waxing Crescent Reflection
-      body: >-
-        **A Waxing Crescent is a beginning with a little evidence behind it.**
-        The New Moon has passed, but the sky is still mostly dark. At 32%
-        illumination, this is not the moment for a theatrical life overhaul.
-
-
-        Think smaller. Better.
-
-
-        - Name the thing you have been circling.
-
-        - Choose the first visible step, not the whole staircase.
-
-        - Make the commitment gentle enough that you can keep it tomorrow.
-
-        - Notice where excitement is real, and where it is just pressure wearing
-        perfume.
-
-
-        The useful question is not "Will this work?" That asks the sky to
-        guarantee your future. Try this instead: "What small action would make
-        this intention more honest today?"
-    - heading: Cancer Season Without the Stereotype
-      body: >-
-        **The Sun is in Cancer today, so the seasonal theme leans toward care
-        and containment.** Cancer is a water sign, and in the northern seasonal
-        cycle it arrives around early summer, when heat rises and people often
-        need shade, food, rest, and a place to soften.
-
-
-        That does not mean every Cancer person is nurturing, moody, or secretly
-        psychic. Please leave that cartoon at the door.
-
-
-        For reflection, Cancer season can point you toward:
-
-
-        - Home: what feels supportive, not just familiar
-
-        - Boundaries: what protects you without sealing you off
-
-        - Memory: what past pattern is asking to be handled more gently
-
-        - Care: where you give too much, or receive too little
-
-
-        Pair that with a Waxing Crescent and the day gets practical: one small
-        step toward a life that feels less performative and more inhabitable.
-    - heading: Mercury Is Direct Today
-      body: >-
-        **Mercury is direct today, not retrograde.** So if a text is unclear or
-        a plan gets messy, you do not need to pin it on the planet.
-
-
-        Mercury retrograde gets blamed for everything because it is convenient.
-        Even when Mercury is retrograde, it does not make decisions for you; at
-        most, it is a useful reminder to reread, reconfirm, and slow down
-        communication.
-
-
-        Today, the honest version is simple:
-
-
-        - Check the message before you send it.
-
-        - Clarify the plan if it matters.
-
-        - Do not outsource your responsibility to astrology.
-
-
-        That is less dramatic than "cosmic chaos," I know. It is also cleaner.
-    - heading: Reality Check
-      body: >-
-        **The lunar cycle is about 29.5 days.** That is astronomy, not prophecy.
-        The Moon moves through its visible phases because of its position
-        relative to Earth and the Sun.
-
-
-        What we do with that cycle is symbolic. Humans like rhythm; we mark
-        beginnings, build-up, fullness, release, and rest because those patterns
-        help us think.
-
-
-        A fair boundary looks like this:
-
-
-        | Claim | Keep it? | Why |
-
-        |---|---|---|
-
-        | "The Moon is Waxing Crescent today" | Yes | Observable sky fact |
-
-        | "This phase can support reflection on early momentum" | Yes |
-        Symbolic, useful, optional |
-
-        | "Today guarantees progress" | No | That is prediction dressed as
-        certainty |
-
-        | "The sky decides your choice" | No | Your context still matters most |
-
-
-        If your emotions are heavy today, let this be one input, not the whole
-        room. Support from a trusted person or professional matters more than
-        any daily sky note.
-    - heading: A Small Move for Today
-      body: >-
-        **Use one question, not a whole spiritual performance.** If you read
-        tarot, pull one card and ask it to mirror your next honest step, not to
-        certify the future.
-
-
-        Try this:
-
-
-        1. Write the sentence: "The small commitment I am avoiding is..."
-
-        2. Pull one card, or sit with the sentence for two quiet minutes.
-
-        3. Ask: "What would make this step gentler and more real?"
-
-        4. Choose one action that takes under 20 minutes.
-
-
-        That is enough. If you want help turning the foggy version of your
-        question into something a reader can actually work with, the question
-        generator is a sensible next step.
-  faq:
-    - q: What moon phase is it today?
-      a: "Today, 2026-06-20, the moon is a Waxing Crescent, about 32% illuminated. In
-        reflective astrology, that phase is often treated as early momentum: the
-        first small steps after a new beginning. I would not use it to predict
-        what will happen to you today. A better use is to ask what tiny
-        commitment is ready to become visible."
-    - q: Does the moon affect mood today?
-      a: "The honest answer: the Moon has a real astronomical cycle of about 29.5
-        days, but that does not prove it controls your mood or decisions. You
-        can still use today's Waxing Crescent as a reflective rhythm. If you
-        feel tender, scattered, or hopeful, let the sky help you name the
-        feeling, not explain it away."
-    - q: Is Mercury retrograde today?
-      a: "No. Mercury is direct today, not retrograde. That means there is no need to
-        blame Mercury for unclear messages, delays, or second thoughts. Even
-        during retrograde periods, Mercury does not make choices for you. Today
-        the useful move is ordinary and boring in the best way: reread important
-        messages and clarify plans that matter."
-  related:
-    - /tools/tarot-question-generator/
-    - /tools/astrology-reading-cost-calculator/
-    - /birth-chart-reading-on-fiverr/
-
 - slug: full-moon-june-2026
   noindex: true
   type: info
@@ -9300,7 +9113,6 @@
     - /tools/tarot-question-generator/
     - /tools/astrology-reading-cost-calculator/
     - /birth-chart-reading-on-fiverr/
-
 - slug: new-moon-july-2026
   noindex: true
   type: info
@@ -9479,7 +9291,6 @@
     - /tools/tarot-question-generator/
     - /tools/astrology-reading-cost-calculator/
     - /birth-chart-reading-on-fiverr/
-
 - slug: full-moon-july-2026
   noindex: true
   type: info
@@ -9669,6 +9480,425 @@
         astronomical phase, not proof that your emotions are being controlled.
         If your mood feels intense or unsafe, take it seriously and seek
         appropriate support. The moon can be a prompt, not a diagnosis."
+  related:
+    - /tools/tarot-question-generator/
+    - /tools/astrology-reading-cost-calculator/
+    - /birth-chart-reading-on-fiverr/
+- slug: todays-sky
+  type: info
+  title: "Today's Sky (2026-06-28): Waxing Gibbous Moon"
+  h1: "Today's Sky: Waxing Gibbous Moon"
+  description: "Tonight's moon is a Waxing Gibbous, about 96% illuminated. Today's
+    Sky uses that real lunar fact, Cancer season, and Mercury's direct status to
+    frame a grounded reflection: what needs refining, what deserves care, and
+    what question is worth asking before you act."
+  intent: The reader wants to know today's moon phase and what today's sky can
+    mean without getting a fake prediction.
+  audience: People who like astrology or tarot as reflection tools, but do not
+    want fear-based cosmic weather or generic daily horoscopes.
+  primary_cta: Need a cleaner question for today's reflection? Try shaping it first.
+  cta_url: /tools/tarot-question-generator/
+  category: Astrology
+  budget: N/A (free daily reflection)
+  delivery: Updated daily; read in 3 min
+  risk_level: Low
+  last_updated: 2026-06-28
+  tldr: "Tonight's moon is Waxing Gibbous and about 96% illuminated. Treat today
+    as a refinement day: tighten what you already started, edit the plan,
+    prepare the next step, and avoid turning the sky into a verdict."
+  hero:
+    src: /img/tarot/the-star.jpg
+    alt: The Star tarot card, evoking tonight's waxing gibbous moon
+    caption: A nearly full moon is bright enough to reveal details, not wise enough
+      to make your decisions for you.
+  sections:
+    - heading: What is actually in today's sky
+      body: >
+        **Tonight's moon is Waxing Gibbous, about 96% illuminated.** That is the
+        anchor. Not a secret omen, not a guarantee, and not a reason to
+        panic-refresh your life.
+
+
+        Here is the simple weather report we can honestly use today:
+
+
+        | Sky fact | Today | Reflection use |
+
+        |---|---:|---|
+
+        | Moon phase | Waxing Gibbous 🌔 | Refine, edit, prepare |
+
+        | Illumination | 96% | Details are easier to notice |
+
+        | Sun sign | Cancer | Home, care, memory, protection |
+
+        | Mercury | Direct | No retrograde excuse needed |
+
+
+        I am not adding a moon sign, exact aspects, lucky hours, or "this will
+        happen today" claims because they were not part of the data. Clean
+        astrology starts with not inventing the sky.
+    - heading: "The Waxing Gibbous mood: refine before you declare it finished"
+      body: >
+        **A Waxing Gibbous moon is a tightening phase.** Something has enough
+        shape to be seen, but it may not be ready for the big dramatic reveal.
+
+
+        Think of it as an editing light. You are not starting from zero today;
+        you are checking the seams.
+
+
+        Useful questions for this phase:
+
+
+        - What did I begin recently that now needs better structure?
+
+        - Where am I confusing momentum with readiness?
+
+        - What small correction would save me trouble later?
+
+        - What am I preparing for, even if I am not ready to announce it?
+
+
+        Avoid this kind of cosmic marketing: "The 96% moon means your
+        manifestation is guaranteed." No. A bright moon can help you notice what
+        is there. It does not sign contracts on behalf of reality.
+    - heading: Cancer season keeps the question close to home
+      body: >
+        **The Sun is in Cancer today, so the seasonal theme is care.** Cancer is
+        a water sign, and in plain language that points toward emotional memory,
+        belonging, safety, family patterns, and the private rooms of your life.
+
+
+        That does not mean every Cancer, or every person reading this, will have
+        the same day. Please spare yourself that internet horoscope trap.
+
+
+        For today's reflection, Cancer season can point you toward:
+
+
+        - The place where you keep saying "I'm fine" when you mean "I need
+        steadiness"
+
+        - The boundary between caring for someone and carrying them
+
+        - The home habit, family script, or emotional routine that needs
+        updating
+
+        - The kind of comfort that actually restores you, not just distracts you
+
+
+        With a 96% Waxing Gibbous moon, the sharper question is not "What will
+        happen to me?" It is "What am I now ready to see more clearly?"
+    - heading: Mercury is direct, so do not use it as the villain
+      body: >
+        **Mercury is direct today, not retrograde.** So if a message is vague, a
+        plan is messy, or a conversation needs repair, Mercury does not get to
+        take the whole blame.
+
+
+        Even when Mercury is retrograde, it does not make your decisions for
+        you. At most, it is a useful reminder to review communication,
+        schedules, assumptions, and paperwork.
+
+
+        Today, the grounded version is simple:
+
+
+        - Reread the message before you send it.
+
+        - Check the time, place, and expectation.
+
+        - Ask what the other person actually agreed to.
+
+        - Do not call confusion "a sign" when a follow-up question would solve
+        it.
+
+
+        That is less glamorous than blaming a planet. It is also more useful.
+    - heading: "Reality check: the lunar cycle is rhythm, not a verdict"
+      body: >
+        **Astronomy gives us rhythm; it does not give us permission slips.** The
+        Moon's full cycle is about 29.5 days, from one New Moon to the next.
+        That is basic sky mechanics, not a prediction about your mood, your
+        relationship, or your bank account.
+
+
+        A nearly full moon can be a good reminder to pause and review because
+        the symbol is obvious: more light, more visibility, fewer places for
+        half-finished things to hide.
+
+
+        Keep the boundary clean:
+
+
+        | Claim | Worth trusting? | Why |
+
+        |---|---|---|
+
+        | "The moon is 96% illuminated" | Yes | It is a calculable sky fact |
+
+        | "This phase is good for refinement" | Useful as reflection | It is
+        symbolic, not forced |
+
+        | "Today guarantees a breakthrough" | No | That is prediction dressed as
+        certainty |
+
+        | "You should notice what needs editing" | Maybe | Only you can test
+        that honestly |
+
+
+        If emotions are heavy today, treat this page as one input, not the whole
+        map. For mental health, legal, medical, or financial stakes, get the
+        appropriate human support.
+    - heading: A small reflection you can actually use today
+      body: >
+        **Try one clean question.** Not "Will everything work out?" That
+        question sounds comforting, but it hands your agency to the ceiling.
+
+
+        Ask this instead:
+
+
+        - "What part of something I have already started needs refinement before
+        I take the next step?"
+
+
+        If you read tarot, pull one card for that question only. Give it one
+        job: show the edit, not the entire future.
+
+
+        If the question still feels tangled, shape it before you read. A better
+        question will not control the outcome, but it can keep you from
+        outsourcing your own judgment to a deck, a transit, or a stranger with a
+        dramatic sales page.
+  faq:
+    - q: What moon phase is it today?
+      a: "Today, 2026-06-28, the moon is Waxing Gibbous and about 96% illuminated. In
+        reflection terms, that phase is useful for refinement: tightening what
+        you started, editing the plan, and preparing before something reaches
+        full visibility. That is not a prediction that a specific event will
+        happen today. It is a symbolic rhythm you can use to ask better
+        questions about what already needs your attention."
+    - q: Does the moon affect mood today?
+      a: "The moon is about 96% illuminated tonight, but this page will not claim it
+        controls your mood. A fairer way to use the Waxing Gibbous phase is as a
+        prompt: what feels nearly ready, and what still needs adjustment? The
+        lunar cycle is about 29.5 days, which is an astronomical fact. Your
+        emotions are more complex than a moon phase, so treat the sky as
+        background, not a diagnosis."
+    - q: Is Mercury retrograde today?
+      a: "No. Mercury is direct today, not retrograde. That means there is no need to
+        blame Mercury for every delayed reply, awkward message, or uncertain
+        plan. Still, the practical lesson people associate with Mercury
+        retrograde can be useful any day: reread important communication, check
+        assumptions, and clarify timing. The planet does not make decisions for
+        you; your follow-through still matters."
+  related:
+    - /tools/tarot-question-generator/
+    - /tools/astrology-reading-cost-calculator/
+    - /birth-chart-reading-on-fiverr/
+
+- slug: new-moon-august-2026
+  type: info
+  title: "August 2026 New Moon: Date and Reflection Guide"
+  h1: August 2026 New Moon Date and Reflection
+  description: The August 2026 New Moon falls on 2026-08-14. Here is the plain
+    date, what a new moon can mean as a reflective reset, and a grounded way to
+    name one intention without pretending the sky decides your next month.
+  intent: The reader wants the exact date of the new moon august 2026 and a
+    grounded sense of how to work with it.
+  audience: People who use astrology as a reflective rhythm, not as a promise of
+    what will happen.
+  primary_cta: Want to turn this new-moon mood into a cleaner self-reflection question?
+  cta_url: /tools/tarot-question-generator/
+  category: Astrology
+  budget: N/A (free astro-event guide)
+  delivery: Read in 3 min; dated reference
+  risk_level: Low
+  last_updated: 2026-06-28
+  tldr: "The August 2026 New Moon is on 2026-08-14. Treat it as a quiet reset
+    point: name one intention, notice what needs less noise, and skip any claim
+    that this date guarantees a specific outcome."
+  hero:
+    src: /img/tarot/the-star.jpg
+    alt: Tarot card evoking the new-moon
+    caption: A new moon is a dark-sky pause, not a cosmic command.
+  sections:
+    - heading: "The exact date: 2026-08-14"
+      body: >-
+        **The August 2026 New Moon happens on 2026-08-14.** That is the anchor.
+        No invented lucky hour, no secret warning, no dramatic countdown.
+
+
+        Astronomically, a new moon is the point in the lunar cycle when the Moon
+        is aligned near the Sun from our view on Earth, so the lit side is
+        mostly turned away from us. In everyday sky-watching terms, it is the
+        dark-moon phase.
+
+
+        Use the date like this:
+
+
+        - Event: August 2026 New Moon
+
+        - Date: 2026-08-14
+
+        - Useful frame: reset, quiet, intention
+
+        - Not useful: predicting what someone else will do
+    - heading: What this new moon invites you to reflect on
+      body: >-
+        **A new moon is good for beginning, but not because it forces a
+        beginning.** It gives you a clean symbolic page.
+
+
+        If you came here hoping to know whether this date will make someone
+        text, choose you, forgive you, or change their mind, I get the pull.
+        Waiting can make astrology feel like a weather report for another
+        person's heart. But the better question is closer to home.
+
+
+        Try rewriting it:
+
+
+        | Fate-style question | Better reflective question |
+
+        |---|---|
+
+        | "Will this new moon bring them back?" | "What am I still organizing my
+        life around that is not being reciprocated?" |
+
+        | "Will something big happen on 2026-08-14?" | "What small beginning
+        would actually be mine to choose?" |
+
+        | "Is this a sign?" | "What meaning am I tempted to outsource?" |
+
+
+        That shift matters. It gives your agency back to you.
+    - heading: August as a seasonal checkpoint
+      body: >-
+        **August has a threshold feeling.** In many calendars, it sits between
+        peak summer and the slow turn toward structure, school terms, work
+        rhythms, or end-of-year planning.
+
+
+        Do not over-mystify that. The month itself is a practical cue: what felt
+        expansive may now need shape.
+
+
+        A grounded August new-moon check-in can look like this:
+
+
+        - What has become too loud since the start of summer?
+
+        - What needs a simpler container for the next few weeks?
+
+        - What do I want to begin quietly, before I announce it?
+
+        - What am I calling "intuition" when it might just be urgency?
+
+
+        That last one is not a scolding. It is a useful speed bump.
+    - heading: "Reality check: the Moon has rhythm, not a script"
+      body: >-
+        **The lunar cycle is about 29.5 days.** That is basic astronomy, not a
+        mystical sales hook.
+
+
+        A new moon is one phase in that repeating cycle. It can be meaningful
+        because humans are pattern-making creatures and rituals help us notice
+        change, but it does not hand you a personal forecast.
+
+
+        Keep the boundary clean:
+
+
+        | Claim | Grounded reading |
+
+        |---|---|
+
+        | "The new moon will change your life." | Too much. A date can support
+        reflection; it cannot guarantee events. |
+
+        | "You must act before the energy closes." | Red flag. Urgency is often
+        marketing. |
+
+        | "Everyone feels the same thing." | No. People bring different bodies,
+        histories, and stress levels. |
+
+        | "Use it as a reset cue." | Fair. That is reflective and practical. |
+
+
+        If your emotions feel heavy, intense, or unsafe, treat astrology as one
+        small input. It is not a substitute for mental health support or crisis
+        care.
+    - heading: A simple ritual for 2026-08-14
+      body: >-
+        **Keep it small enough to be honest.** One sentence is better than a
+        theatrical ritual you do not mean.
+
+
+        On 2026-08-14, set aside 10 quiet minutes. No special tools required.
+
+
+        1. Write the date at the top of a page: 2026-08-14.
+
+        2. Finish this sentence: "I am ready to begin practicing..."
+
+        3. Name one behavior that supports it within 24 hours.
+
+        4. Name one distraction you will not feed today.
+
+        5. Leave the page alone. Do not turn it into a contract with the
+        universe.
+
+
+        Example: "I am ready to begin practicing cleaner boundaries in
+        conversations." The 24-hour behavior might be replying after you have
+        actually thought, not after panic has drafted the message.
+    - heading: If you want to ask a better question
+      body: >-
+        **The quality of the question changes the reading.** A vague question
+        like "What will happen after the new moon?" invites vague answers, and
+        vague answers are where bad readers hide.
+
+
+        Better new-moon questions sound like this:
+
+
+        - What intention is mine, not borrowed from someone else's approval?
+
+        - What am I beginning because I want it, not because I am afraid?
+
+        - What pattern needs less attention before something new can grow?
+
+        - What would a quiet first step look like in the next 24 hours?
+
+
+        Avoid any gig or reading that promises a guaranteed result, a soulmate
+        confirmation, or a paid "truth" about another adult's hidden feelings.
+        If you want help shaping your own question, the question generator can
+        turn the date into something more useful than a yes-or-no prediction.
+  faq:
+    - q: When is the August 2026 New Moon?
+      a: "The August 2026 New Moon is on 2026-08-14. That is the useful, checkable
+        fact. This page does not add an invented lucky hour, zodiac placement,
+        or promise about what will happen that day. A new moon is best treated
+        as a reflective reset point: quiet down, name one intention, and choose
+        one small action that belongs to you."
+    - q: What should I do during a new-moon?
+      a: Keep it simple. For the August 2026 New Moon on 2026-08-14, write one
+        sentence beginning, "I am ready to begin practicing..." Then choose one
+        small behavior you can do within 24 hours. New-moon work is strongest
+        when it is specific and owned by you. It is not about forcing an outcome
+        or trying to control another person's choices.
+    - q: Does the new-moon affect mood?
+      a: Some people notice moods around lunar phases, and some do not. The grounded
+        reality check is that the lunar cycle is about 29.5 days, and a new moon
+        is an astronomical phase, not proof that a feeling was caused by the
+        Moon. If the date helps you pause and reflect, use it. If emotions feel
+        overwhelming, professional support matters more than astrology.
   related:
     - /tools/tarot-question-generator/
     - /tools/astrology-reading-cost-calculator/

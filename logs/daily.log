@@ -43,3 +43,41 @@ Total in 36 ms
 [2026-06-13 23:16:47]   canonical(http→)=301 home=200 sitemap=25 go=200 empty_ids=4/4
 [2026-06-13 23:16:47]   ⚠ 4 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
 [2026-06-13 23:16:47] ════ rn_daily END (OK) ════
+[2026-06-28 09:15:02] ════ rn_daily START ════
+[2026-06-28 09:15:02] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 96% | mercury_rx=false (no table)
+[2026-06-28 09:15:03]   ok
+[2026-06-28 09:15:03] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 96% | sun=Cancer(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 51 pages)
+[2026-06-28 09:15:43]   ok
+[2026-06-28 09:15:43] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-06-30 full-moon | 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-06-28 09:15:43]   ok
+[2026-06-28 09:15:43] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 1 events to build: new-moon-august-2026
+GEN new-moon-august-2026 (try 1) ...
+OK   new-moon-august-2026
+
+events done=1 failed=0
+[2026-06-28 09:16:22]   ok
+[2026-06-28 09:16:22] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 0 new) ==
+
+type mix(top80): {}
+
+wrote topics/trending.yaml (0 candidates).
+[2026-06-28 09:33:08]   ok
+[2026-06-28 09:33:08] [1/4] freshness audit
+freshness_audit: all 52 pages within 60d window
+[2026-06-28 09:33:09]   ok
+[2026-06-28 09:33:09] [2/4] quality gate
+FAIL new-moon-august-2026: missing=- banned=guaranteed result L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-06-28 09:33:09]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-06-28 09:33:09] ════ rn_daily END (FAIL) ════

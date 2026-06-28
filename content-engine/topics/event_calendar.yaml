@@ -1,4 +1,4 @@
-generated: 2026-06-20
+generated: 2026-06-28
 note: moons 段由 scripts/build_event_calendar.mjs 用 synodic
   算法计算（±1天，可验证、非臆造）。retrogrades/eclipses
   段必须人工从权威星历(timeanddate/astro.com)填入，脚本绝不计算或猜测——错误日期会毁掉页面可信度。

@@ -1,8 +1,8 @@
-updated: 2026-06-20
+updated: 2026-06-28
 moon:
-  name: Waxing Crescent
-  emoji: 🌒
-  illumination: 32
+  name: Waxing Gibbous
+  emoji: 🌔
+  illumination: 96
 mercury_retrograde: false
 mercury_retrograde_until: null
 mercury_known: false
