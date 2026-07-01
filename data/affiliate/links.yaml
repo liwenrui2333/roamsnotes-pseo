@@ -48,6 +48,11 @@
   label: compatibility & synastry readers
   gig: "https://www.fiverr.com/loveastrologist/do-a-synastry-chart-full-analysis-of-your-love-compatibility"
   target: "https://www.fiverr.com/search/gigs?query=astrology%20compatibility%20synastry%20reading"
+- slug: reconciliation
+  label: relationship dynamics astrology readers
+  # gig 故意留空：marriage-timing gig 与 RN 反预言定位冲突，降级到中性关系占星搜索页。
+  # 重选非预言型 gig 后再填 gig: 行即可秒切单品深链。
+  target: "https://www.fiverr.com/search/gigs?query=love%20relationship%20astrology%20reading"
 
 # --- Legacy compatibility slugs (avoid 404 on old inbound/crawled links) ---
 # Kept on search target intentionally: low-traffic compat redirects, not worth a gig pin.

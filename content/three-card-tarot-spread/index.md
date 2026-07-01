@@ -1,6 +1,8 @@
 ---
 title: "Three Card Tarot Spread: A Clear Guide for Real Questions"
 description: "Learn the three card tarot spread with clear card positions, named variations, a worked example, and honest limits so your reading stays useful."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

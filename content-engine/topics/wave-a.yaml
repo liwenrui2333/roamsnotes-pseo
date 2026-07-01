@@ -1,0 +1,42 @@
+# Wave A topics. Schema aligned to topics/wave1.yaml:
+# slug / type / target_kw / tool_path / money_path / related
+
+- slug: questions-to-ask-tarot-about-love
+  type: question
+  target_kw: "questions to ask tarot about love"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /go/love-tarot/
+  money_context: "a love tarot reader for outside perspective"
+  related: [/tools/tarot-question-generator/, /go/love-tarot/, /what-to-ask-a-tarot-reader/]
+
+- slug: questions-to-ask-tarot-about-an-ex
+  type: question
+  target_kw: "questions to ask tarot about an ex"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /go/reconciliation/
+  money_context: "a personal astrology reading on the relationship dynamics"
+  related: [/tools/tarot-question-generator/, /go/reconciliation/, /what-to-ask-a-tarot-reader/]
+
+- slug: yes-or-no-tarot-questions
+  type: question
+  target_kw: "yes or no tarot questions"
+  tool_path: /tools/tarot-question-generator/
+  money_path: /go/love-tarot/
+  money_context: "a love tarot reader for outside perspective"
+  related: [/tools/tarot-question-generator/, /go/love-tarot/, /yes-or-no-tarot/]
+
+- slug: mercury-retrograde-in-love
+  type: explainer
+  target_kw: "mercury retrograde in love"
+  tool_path: /todays-sky/
+  money_path: /go/reconciliation/
+  money_context: "a personal astrology reading on the relationship dynamics"
+  related: [/todays-sky/, /go/reconciliation/, /tools/tarot-question-generator/]
+
+- slug: mercury-retrograde-breakup
+  type: explainer
+  target_kw: "mercury retrograde breakup"
+  tool_path: /todays-sky/
+  money_path: /go/reconciliation/
+  money_context: "a personal astrology reading on the relationship dynamics"
+  related: [/todays-sky/, /go/reconciliation/, /go/love-tarot/]

@@ -16,6 +16,9 @@ for (const page of pages) {
     "---",
     `title: ${JSON.stringify(page.title)}`,
     `description: ${JSON.stringify(page.description)}`,
+    // last_updated -> date/lastmod so the sitemap emits <lastmod> (freshness signal;
+    // daily page todays-sky rewrites this each day => recrawl magnet).
+    ...(page.last_updated ? [`date: ${JSON.stringify(page.last_updated)}`, `lastmod: ${JSON.stringify(page.last_updated)}`] : []),
     ...(page.noindex ? ["noindex: true"] : []),
     "---",
     "",

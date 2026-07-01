@@ -1,33 +1,45 @@
-# Type: C 情绪意图（emotional-intent）
+# Type: C emotional-intent tarot page
 
-读者带着高情绪的命运式问题搜索（"我前任会回来吗"）。这类词转化最高，也最容易被恐吓营销收割。**我们的特色就是：满足这个搜索，然后健康改写，把主动权还给读者**——这正是 voice 的核心招式，别人没有。
+The reader arrives with a high-emotion search like "{{RAW_QUERY}}". The page should satisfy the search, then move the reader from fate-seeking to a healthier, answerable question.
 
-## 本页独家输入（来自 reframe-map.yaml，已为你取好）
+## Page inputs from reframe-map.yaml
 
-- 原始查询 raw_query: {{RAW_QUERY}}
-- 健康改写 reframed_question: {{REFRAMED}}
-- 改写原因 why: {{WHY}}
-- 要点名的红旗 red_flag: {{RED_FLAG}}
-- 适配的牌阵提示 spread_hint: {{SPREAD_HINT}}
+- raw_query: {{RAW_QUERY}}
+- reframed_question: {{REFRAMED}}
+- why: {{WHY}}
+- red_flag: {{RED_FLAG}}
+- spread_hint: {{SPREAD_HINT}}
 
-## 写作要求
+## Selected section skeleton
 
-1. **开头共情，不评判**：承认"你想知道 {{RAW_QUERY}} 是完全正常的"，不要居高临下。
-2. **核心一节专门做改写**：展示如何把 "{{RAW_QUERY}}" 改成 "{{REFRAMED}}"，并讲清 {{WHY}}——为什么关于你自己的问题才能得到有用的反思。这是本页的灵魂 section。
-3. **点名红旗**：自然地插入 {{RED_FLAG}}，提醒读者绕开靠这个查询收割焦虑的卖家。
-4. **给一个 worked example**：用一个具体小场景演示用改写后的问题去做一次反思（可结合 {{SPREAD_HINT}}）。
-5. **诚实边界**：明确塔罗不能决定另一个人的选择/未来；情绪很重的话也提示这只是一个反思输入。
-6. **收在反思**，不在指令。
-7. 软植入：`primary_cta` 与结尾自然导向 {{TOOL_PATH}}（问题生成器，帮读者把自己的问题问好）。related 含 {{MONEY_PATH}}。
+Use exactly these headings, in this exact order, as `sections[].heading`:
 
-## 给定字段
+{{SKELETON}}
 
-- slug: {{SLUG}}　type: info　category: "Tarot"
-- title 含目标词：{{TARGET_KW}}
+Do not add, remove, rename, or reorder same-level section headings.
+
+## Writing requirements
+
+1. Open with empathy and no scolding. Acknowledge that wanting to know "{{RAW_QUERY}}" is understandable.
+2. Make the reframe the core value: show how "{{RAW_QUERY}}" becomes "{{REFRAMED}}", and explain {{WHY}}.
+3. Name the red flag naturally: {{RED_FLAG}}. Help the reader avoid sellers who monetize anxiety.
+4. Include one worked example using the reframed question and, when useful, {{SPREAD_HINT}}.
+5. Include a small "reality check" data point labeled as general research, not a prediction.
+6. Keep agency with the reader. Tarot can support reflection; it cannot decide another person's choices or future.
+7. Keep `primary_cta` and the final section naturally pointed at {{TOOL_PATH}}. Keep {{MONEY_PATH}} only in `related`.
+
+## Fixed fields
+
+- slug: {{SLUG}}
+- type: info
+- category: "Tarot"
+- title must include the target keyword: {{TARGET_KW}}
 - cta_url: {{TOOL_PATH}}
 - related: {{RELATED}}
 - last_updated: {{DATE}}
-- budget: "N/A (free reflection-first guide)"　delivery: "Self-guided; pairs with a written reading if you want one"　risk_level: "Low"
-- hero: 填 `{ src: "{{HERO_SRC}}", alt: "{{HERO_ALT}}", caption: <一句呼应主题> }`，不要改 src
-- tldr: 写一句 30-50 词速览，先给结论（这一页帮你把命运式问题改成能行动的问题）
-- 结构：含一个小 "reality check" 数据点（标注为一般研究、非预言）；改写小节用对比呈现（原问题 vs 改写后），可用表格或加粗
+- budget: "N/A (free reflection-first guide)"
+- delivery: "Self-guided; pairs with a written reading if you want one"
+- risk_level: "Low"
+- hero: set `{ src: "{{HERO_SRC}}", alt: "{{HERO_ALT}}", caption: <one sentence tied to the theme> }`; do not change src
+- tldr: write 30-50 words. Start with the conclusion that this page helps turn a fate-style question into an action-oriented question.
+- structure: include a comparison of original question vs reframed question, using a table or bold labels.

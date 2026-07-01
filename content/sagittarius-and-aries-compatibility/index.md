@@ -1,6 +1,8 @@
 ---
 title: "Sagittarius and Aries Compatibility: Fast Fire Match"
 description: "Sagittarius and Aries compatibility is lively and direct: same-fire ease, mutable-cardinal momentum, and one real risk—moving too fast to listen."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

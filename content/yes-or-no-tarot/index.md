@@ -1,6 +1,8 @@
 ---
 title: "Yes or No Tarot: A Clear Single-Card Spread Guide"
 description: "Learn a practical yes or no tarot method, when to use one card, what upright and reversed really mean, and how to avoid forcing big questions into tiny answers."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

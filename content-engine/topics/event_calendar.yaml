@@ -1,15 +1,8 @@
-generated: 2026-06-28
+generated: 2026-07-01
 note: moons 段由 scripts/build_event_calendar.mjs 用 synodic
   算法计算（±1天，可验证、非臆造）。retrogrades/eclipses
   段必须人工从权威星历(timeanddate/astro.com)填入，脚本绝不计算或猜测——错误日期会毁掉页面可信度。
 moons:
-  - kind: full-moon
-    date: 2026-06-30
-    month: June
-    year: 2026
-    slug: full-moon-june-2026
-    target_kw: full moon june 2026
-    event_name: June 2026 Full Moon
   - kind: new-moon
     date: 2026-07-15
     month: July
@@ -206,6 +199,13 @@ moons:
     slug: full-moon-august-2027
     target_kw: full moon august 2027
     event_name: August 2027 Full Moon
+  - kind: new-moon
+    date: 2027-09-02
+    month: September
+    year: 2027
+    slug: new-moon-september-2027
+    target_kw: new moon september 2027
+    event_name: September 2027 New Moon
 retrogrades:
   - planet: mercury
     start: ""

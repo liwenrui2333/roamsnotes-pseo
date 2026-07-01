@@ -1,6 +1,8 @@
 ---
 title: "Aquarius and Pisces Compatibility: Air Meets Water"
 description: "Aquarius and Pisces compatibility blends fixed air with mutable water: inventive, tender, and real, but only if both learn each other's language."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

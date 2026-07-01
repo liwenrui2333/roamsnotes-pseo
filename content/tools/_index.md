@@ -15,6 +15,6 @@ Start with the question tool if you already know the topic but do not know how t
 
 ## Use the Result
 
-A tool result should make the next page easier to choose. If your question is now clear, compare [Fiverr tarot readings](/fiverr-tarot-reading/) or learn [what to ask a tarot reader](/what-to-ask-a-tarot-reader/). If the result points toward astrology, start with the [Fiverr astrology reading guide](/fiverr-astrology-reading/) or the [birth chart reading guide](/birth-chart-reading-on-fiverr/). If price is the main concern, read the [tarot and astrology cost guide](/tarot-reading-cost-guide/) before opening any seller page.
+A tool result should make the next page easier to choose. If your question is now clear, compare [Fiverr tarot readings](/fiverr-tarot-reading/) or learn what to ask a tarot reader. If the result points toward astrology, start with the [Fiverr astrology reading guide](/fiverr-astrology-reading/) or the [birth chart reading guide](/birth-chart-reading-on-fiverr/). If price is the main concern, read the [tarot and astrology cost guide](/tarot-reading-cost-guide/) before opening any seller page.
 
 None of the tools replaces a human reader. They help you narrow the scope, avoid yes-or-no prediction traps, and spend only when the reading format fits the question.

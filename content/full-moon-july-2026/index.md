@@ -1,6 +1,8 @@
 ---
 title: "July 2026 Full Moon: Date and Reflection Guide"
 description: "The July 2026 Full Moon falls on 2026-07-30. This guide gives the exact date, explains the simple astronomy behind a full moon, and turns the event into a grounded reflection prompt: what is ready to be seen, completed, or released without pretending the sky decides your life."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

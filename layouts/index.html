@@ -71,21 +71,55 @@
       <h3>Fiverr Astrology Reading</h3>
       <p>Best for natal charts, year-ahead readings, and the practical differences between astrology formats.</p>
     </a>
-    <a class="card" href="/compatibility-astrology-reading-on-fiverr/">
-      <span class="card-kicker">Compatibility</span>
-      <h3>Compatibility Astrology Reading</h3>
-      <p>Start here when the real question is synastry, two-chart comparison, and whether a compatibility report is worth buying.</p>
+    <a class="card" href="/birth-chart-reading-on-fiverr/">
+      <span class="card-kicker">Birth Chart</span>
+      <h3>Birth Chart Reading</h3>
+      <p>Start here for a natal chart read: what the placements mean, what a good report includes, and whether it is worth buying.</p>
+    </a>
+  </div>
+</section>
+
+<section class="band">
+  <div class="section-heading">
+    <h2>Ask a Clearer Tarot Question</h2>
+    <p>If you searched something emotional, start with the question behind it. These reframe an anxious yes/no search into something a reading can honestly help with — and keep your agency intact.</p>
+  </div>
+  <div class="grid three">
+    <a class="card" href="/is-he-thinking-about-me-tarot/">
+      <span class="card-kicker">Tarot</span>
+      <h3>Is He Thinking About Me?</h3>
+      <p>Turn an anxious "is he thinking about me" search into a question about where your energy is actually going.</p>
+    </a>
+    <a class="card" href="/does-he-love-me-tarot/">
+      <span class="card-kicker">Tarot</span>
+      <h3>Does He Love Me?</h3>
+      <p>A grounded way to read "does he love me" without letting a card pull decide your worth.</p>
+    </a>
+    <a class="card" href="/is-my-ex-coming-back-tarot/">
+      <span class="card-kicker">Tarot</span>
+      <h3>Is My Ex Coming Back?</h3>
+      <p>What tarot can honestly do with a breakup — and what it can't promise about reconciliation.</p>
+    </a>
+    <a class="card" href="/will-i-find-love-tarot/">
+      <span class="card-kicker">Tarot</span>
+      <h3>Will I Find Love?</h3>
+      <p>Reframe "will I find love" into a dating reflection instead of waiting on a fixed soulmate date.</p>
+    </a>
+    <a class="card" href="/soulmate-tarot-reading/">
+      <span class="card-kicker">Tarot</span>
+      <h3>Soulmate Tarot Reading</h3>
+      <p>Ask about soulmates without the fate trap — clarify your standards, not a guaranteed "the one".</p>
     </a>
   </div>
 </section>
 
 <section class="band muted">
   <div class="section-heading">
-    <h2>Fiverr Reading Guides</h2>
+    <h2>All Reading Guides</h2>
     <p>Start with the <a href="/fiverr-tarot-reading/">Fiverr tarot guide</a> or browse the <a href="/comparisons/">comparison hub</a> for platform-by-platform choices.</p>
   </div>
   <div class="list">
-    {{ range hugo.Data.pseo.pages }}
+    {{ range where hugo.Data.pseo.pages "noindex" "!=" true }}
       <a class="list-row" href="/{{ .slug }}/">
         <span>{{ .category }}</span>
         <strong>{{ .title }}</strong>

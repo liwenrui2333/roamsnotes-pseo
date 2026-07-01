@@ -1,5 +1,479 @@
-generated: 2026-06-28
+generated: 2026-07-01
 source: google-autocomplete
 note: 候选词。人工/打分挑 top N，按 suggested_type 转成对应 wave 选题再过 content-engine。event 类需配
   event_calendar 真实日期。
-candidates: []
+candidates:
+  - query: full moon april 2026
+    slug: full-moon-april-2026
+    suggested_type: event
+    score: 7
+    freq: 3
+    date_signal: true
+  - query: mercury retrograde june 2026
+    slug: mercury-retrograde-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde in cancer 2026
+    slug: mercury-retrograde-in-cancer-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 dates
+    slug: mercury-retrograde-2026-dates
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon may 2026
+    slug: full-moon-may-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon june
+    slug: full-moon-june
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon march 2026
+    slug: full-moon-march-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon march 2026
+    slug: new-moon-march-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon april 2026
+    slug: new-moon-april-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon may 2026
+    slug: new-moon-may-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon june 2026
+    slug: new-moon-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon july
+    slug: new-moon-july
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: new moon calendar 2026
+    slug: new-moon-calendar-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde of 2026
+    slug: mercury-retrograde-of-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 quotes
+    slug: mercury-retrograde-2026-quotes
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde year 2026
+    slug: mercury-retrograde-year-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon april
+    slug: full-moon-april
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon calendar 2026
+    slug: full-moon-calendar-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon capricorn 2026
+    slug: full-moon-capricorn-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: full moon capricorn june 2026
+    slug: full-moon-capricorn-june-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: retrograde 2026 what happens
+    slug: retrograde-2026-what-happens
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026 what not to do
+    slug: mercury-retrograde-2026-what-not-to-do
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
+  - query: mercury retrograde 2026
+    slug: mercury-retrograde-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde 2025
+    slug: mercury-retrograde-2025
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: mercury retrograde 2026 meaning
+    slug: mercury-retrograde-2026-meaning
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: full moon tonight
+    slug: full-moon-tonight
+    suggested_type: event
+    score: 5
+    freq: 3
+    date_signal: false
+  - query: full moons 2026
+    slug: full-moons-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: full moon today
+    slug: full-moon-today
+    suggested_type: event
+    score: 5
+    freq: 3
+    date_signal: false
+  - query: new moons 2026
+    slug: new-moons-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: solar eclipse 2026
+    slug: solar-eclipse-2026
+    suggested_type: event
+    score: 5
+    freq: 1
+    date_signal: true
+  - query: tarot card meanings
+    slug: tarot-card-meanings
+    suggested_type: info
+    score: 3
+    freq: 3
+    date_signal: false
+  - query: aries horoscope 2026
+    slug: aries-horoscope-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: aries horoscope june 30 2026
+    slug: aries-horoscope-june-30-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: aries horoscope april 2026
+    slug: aries-horoscope-april-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: aries horoscope july 2026
+    slug: aries-horoscope-july-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus horoscope 2026
+    slug: taurus-horoscope-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus horoscope july 2026
+    slug: taurus-horoscope-july-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus horoscope april 2026
+    slug: taurus-horoscope-april-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: gemini horoscope 2026
+    slug: gemini-horoscope-2026
+    suggested_type: sky
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: aries tarot july 2026
+    slug: aries-tarot-july-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: aries tarot march 2026
+    slug: aries-tarot-march-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus tarot june 2026
+    slug: taurus-tarot-june-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus tarot may 2026
+    slug: taurus-tarot-may-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: taurus tarot april 2026
+    slug: taurus-tarot-april-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: gemini tarot may 2026
+    slug: gemini-tarot-may-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: gemini tarot april 2026
+    slug: gemini-tarot-april-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: cancer tarot april 2026
+    slug: cancer-tarot-april-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: leo tarot may 2026
+    slug: leo-tarot-may-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: tarot spreads
+    slug: tarot-spreads
+    suggested_type: spread
+    score: 2
+    freq: 2
+    date_signal: false
+  - query: love tarot spread
+    slug: love-tarot-spread
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: love tarot reading spread
+    slug: love-tarot-reading-spread
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: tarot spread for strawberry moon
+    slug: tarot-spread-for-strawberry-moon
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: tarot spread for guidance
+    slug: tarot-spread-for-guidance
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: tarot spreads for love
+    slug: tarot-spreads-for-love
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: tarot spreads for career
+    slug: tarot-spreads-for-career
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: tarot spreads for self
+    slug: tarot-spreads-for-self
+    suggested_type: spread
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility
+    slug: zodiac-compatibility
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility chart
+    slug: zodiac-compatibility-chart
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility test
+    slug: zodiac-compatibility-test
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility calculator free
+    slug: zodiac-compatibility-calculator-free
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility by date of birth
+    slug: zodiac-compatibility-by-date-of-birth
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility calculator percentage
+    slug: zodiac-compatibility-calculator-percentage
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility friendship
+    slug: zodiac-compatibility-friendship
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility test free
+    slug: zodiac-compatibility-test-free
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility percentage
+    slug: zodiac-compatibility-percentage
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility by birthday
+    slug: zodiac-compatibility-by-birthday
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: birth chart compatibility
+    slug: birth-chart-compatibility
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame
+    slug: twin-flame
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame meaning
+    slug: twin-flame-meaning
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flames universe
+    slug: twin-flames-universe
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame vs soulmate
+    slug: twin-flame-vs-soulmate
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame staff osrs
+    slug: twin-flame-staff-osrs
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame definition
+    slug: twin-flame-definition
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame relationship
+    slug: twin-flame-relationship
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame lyrics
+    slug: twin-flame-lyrics
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame signs
+    slug: twin-flame-signs
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: twin flame tattoo
+    slug: twin-flame-tattoo
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: soulmate tarot cards
+    slug: soulmate-tarot-cards
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: soulmate tarot
+    slug: soulmate-tarot
+    suggested_type: emotional
+    score: 1
+    freq: 1
+    date_signal: false

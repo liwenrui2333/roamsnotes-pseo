@@ -81,3 +81,185 @@ FAIL new-moon-august-2026: missing=- banned=guaranteed result L0=-
 quality_gate=failed pages=1 warnings=0
 [2026-06-28 09:33:09]   ❌ quality gate FAILED — aborting, live site unchanged
 [2026-06-28 09:33:09] ════ rn_daily END (FAIL) ════
+[2026-06-29 09:15:03] ════ rn_daily START ════
+[2026-06-29 09:15:03] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 99% | mercury_rx=false (no table)
+[2026-06-29 09:15:03]   ok
+[2026-06-29 09:15:03] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 99% | sun=Cancer(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-06-29 09:15:06]   ⚠ failed (continuing)
+[2026-06-29 09:15:06] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-06-30 full-moon | 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-06-29 09:15:06]   ok
+[2026-06-29 09:15:06] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 1 events to build: full-moon-august-2026
+GEN full-moon-august-2026 (try 1) ...
+RETRY full-moon-august-2026: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN full-moon-august-2026 (try 2) ...
+FAIL  full-moon-august-2026: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+
+events done=0 failed=1
+[2026-06-29 09:15:09]   ok
+[2026-06-29 09:15:09] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1860 new) ==
+  [7] event         full moon april 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         mercury retrograde march 2026
+  [6] event         full moon june
+  [6] event         full moon may 2026
+  [6] event         new moon march 2026
+  [6] event         new moon april 2026
+  [6] event         new moon may 2026
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon april
+  [6] event         full moon calendar 2026
+  [6] event         full moon capricorn 2026
+  [6] event         full moon capricorn june 2026
+  [6] event         retrograde 2026 what happens
+  [6] event         mercury retrograde 2026 what not to do
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-06-29 09:16:26]   ok
+[2026-06-29 09:16:26] [1/4] freshness audit
+freshness_audit: all 52 pages within 60d window
+[2026-06-29 09:16:26]   ok
+[2026-06-29 09:16:26] [2/4] quality gate
+FAIL new-moon-august-2026: missing=- banned=guaranteed result L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-06-29 09:16:26]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-06-29 09:16:26] ════ rn_daily END (FAIL) ════
+[2026-06-30 09:44:41] ════ rn_daily START ════
+[2026-06-30 09:44:42] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌕 Full Moon 100% | mercury_rx=false (no table)
+[2026-06-30 09:44:42]   ok
+[2026-06-30 09:44:42] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌕 Full Moon 100% | sun=Cancer(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 52 pages)
+[2026-06-30 09:45:23]   ok
+[2026-06-30 09:45:23] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-06-30 09:45:23]   ok
+[2026-06-30 09:45:23] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 1 events to build: full-moon-august-2026
+GEN full-moon-august-2026 (try 1) ...
+RETRY full-moon-august-2026: Unexpected scalar at node end at line 102, column 265:
+
+…about your choices. For example, ask, "What am I learning from this ending?" r…
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GEN full-moon-august-2026 (try 2) ...
+OK   full-moon-august-2026
+
+events done=1 failed=0
+[2026-06-30 09:46:51]   ok
+[2026-06-30 09:46:51] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1850 new) ==
+  [7] event         full moon april 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde march 2026
+  [6] event         full moon june
+  [6] event         full moon may 2026
+  [6] event         full moon march 2026
+  [6] event         new moon march 2026
+  [6] event         new moon april 2026
+  [6] event         new moon may 2026
+  [6] event         new moon june 2026
+  [6] event         new moon july
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon april
+  [6] event         full moon calendar 2026
+  [6] event         full moon capricorn 2026
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-06-30 09:48:29]   ok
+[2026-06-30 09:48:29] [1/4] freshness audit
+freshness_audit: all 53 pages within 60d window
+[2026-06-30 09:48:29]   ok
+[2026-06-30 09:48:29] [2/4] quality gate
+FAIL new-moon-august-2026: missing=- banned=guaranteed result L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-06-30 09:48:30]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-06-30 09:48:30] ════ rn_daily END (FAIL) ════
+[2026-07-01 11:12:01] ════ rn_daily START ════
+[2026-07-01 11:12:01] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 98% | mercury_rx=false (no table)
+[2026-07-01 11:12:01]   ok
+[2026-07-01 11:12:01] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 98% | sun=Cancer(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 53 pages)
+[2026-07-01 11:12:45]   ok
+[2026-07-01 11:12:45] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-01 11:12:46]   ok
+[2026-07-01 11:12:46] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-01 11:12:46]   ok
+[2026-07-01 11:12:46] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1858 new) ==
+  [7] event         full moon april 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         full moon may 2026
+  [6] event         full moon june
+  [6] event         full moon march 2026
+  [6] event         new moon march 2026
+  [6] event         new moon april 2026
+  [6] event         new moon may 2026
+  [6] event         new moon june 2026
+  [6] event         new moon july
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon april
+  [6] event         full moon calendar 2026
+  [6] event         full moon capricorn 2026
+  [6] event         full moon capricorn june 2026
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-07-01 11:14:23]   ok
+[2026-07-01 11:14:23] [1/4] freshness audit
+freshness_audit: all 53 pages within 60d window
+[2026-07-01 11:14:23]   ok
+[2026-07-01 11:14:23] [2/4] quality gate
+FAIL todays-sky: missing=- banned=legal advice L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-01 11:14:24]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-01 11:14:24] ════ rn_daily END (FAIL) ════

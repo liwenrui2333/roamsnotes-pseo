@@ -46,7 +46,7 @@ Prices vary by seller, depth, and delivery format. Avoid any service that uses f
 
 ## When to use this tool
 
-Use it before you shop so you walk in with a realistic number instead of guessing. Astrology readings span $10 to $150 depending on depth and format, and that range makes it easy to overpay. A budget anchor helps you spot gigs that are suspiciously cheap (and likely templated) or padded with add-ons. If you are pricing a natal reading specifically, the [birth chart reading on Fiverr](/birth-chart-reading-on-fiverr/) guide breaks down what each tier actually includes, and the [compatibility astrology reading](/compatibility-astrology-reading-on-fiverr/) page covers two-chart synastry, which sits at the top of the range.
+Use it before you shop so you walk in with a realistic number instead of guessing. Astrology readings span $10 to $150 depending on depth and format, and that range makes it easy to overpay. A budget anchor helps you spot gigs that are suspiciously cheap (and likely templated) or padded with add-ons. If you are pricing a natal reading specifically, the [birth chart reading on Fiverr](/birth-chart-reading-on-fiverr/) guide breaks down what each tier actually includes, and the compatibility astrology reading page covers two-chart synastry, which sits at the top of the range.
 
 ## How to use it
 

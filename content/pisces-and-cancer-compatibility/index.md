@@ -1,6 +1,8 @@
 ---
 title: "Pisces and Cancer Compatibility: Water, Mood, Trust"
 description: "Pisces and Cancer compatibility is warm water meeting safe harbor: tender, intuitive, and loyal, but vulnerable to mood loops and blurred boundaries."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: "Capricorn and Taurus Compatibility: Steady Earth Love"
 description: "Capricorn and Taurus compatibility is strong on trust, pace, and shared earth-sign realism, but it needs warmth, flexibility, and honest timing."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

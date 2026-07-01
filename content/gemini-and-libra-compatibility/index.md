@@ -1,6 +1,8 @@
 ---
 title: "Gemini and Libra Compatibility: Air Sign Match Guide"
 description: "Gemini and Libra compatibility is airy, verbal, and socially fluent, but it needs grounding when ideas outrun decisions or emotional follow-through."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 noindex: true
 ---
 

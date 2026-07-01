@@ -80,25 +80,25 @@
   </section>
   {{ end }}
 
+  {{/* Per-page checklist only — no sitewide boilerplate. Pages opt in via $item.checklist. */}}
+  {{ with $item.checklist }}
   <section>
     <h2>Before You Click</h2>
     <ul class="checklist">
-      <li>Use readings for entertainment and self-reflection.</li>
-      <li>Avoid sellers promising guaranteed love, wealth, health, or legal outcomes.</li>
-      <li>Prefer clear packages, recent reviews, and transparent delivery formats.</li>
-      <li>Do not share unnecessary sensitive personal information.</li>
+      {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
     </ul>
   </section>
+  {{ end }}
 
   <section class="cta-panel">
     <h3>If you decide to book</h3>
-    <p>{{ $item.audience }} When you know what you want, you can {{ if $item.affiliate }}<a class="soft-cta" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="{{ $item.primary_cta }}" rel="sponsored nofollow noopener">{{ lower $item.primary_cta }} &rarr;</a>{{ else }}<a class="soft-cta" href="{{ $item.cta_url }}"{{ if hasPrefix $item.cta_url "http" }} rel="sponsored nofollow noopener"{{ end }}>{{ lower $item.primary_cta }} &rarr;</a>{{ end }} — there's no rush, and comparing a few sellers first is always fine.</p>
+    <p>{{ $item.audience }} When you know what you want, you can {{ if $item.affiliate }}<a class="soft-cta" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="{{ $item.primary_cta }}" rel="sponsored nofollow noopener">{{ lower $item.primary_cta }} &rarr;</a>{{ else }}<a class="soft-cta" href="{{ $item.cta_url }}"{{ if hasPrefix $item.cta_url "http" }} rel="sponsored nofollow noopener"{{ end }}>{{ lower $item.primary_cta }} &rarr;</a>{{ end }}.</p>
   </section>
 
   {{/* Category-contextual hub links — drives crawl equity to core hub pages from every PSEO page */}}
   {{ $hubs := dict
       "Tarot" (slice "/fiverr-tarot-reading/" "/tools/")
-      "Astrology" (slice "/fiverr-astrology-reading/" "/compatibility-astrology-reading-on-fiverr/")
+      "Astrology" (slice "/fiverr-astrology-reading/" "/birth-chart-reading-on-fiverr/")
       "Comparison" (slice "/fiverr-tarot-reading/" "/fiverr-astrology-reading/")
       "Safety" (slice "/tools/" "/fiverr-tarot-reading/")
       "Budget" (slice "/tools/" "/fiverr-tarot-reading/")
@@ -106,7 +106,7 @@
   {{ $hubLabels := dict
       "/fiverr-tarot-reading/" "Fiverr tarot reading guide"
       "/fiverr-astrology-reading/" "Fiverr astrology reading guide"
-      "/compatibility-astrology-reading-on-fiverr/" "Compatibility astrology reading"
+      "/birth-chart-reading-on-fiverr/" "Birth chart reading guide"
       "/tools/" "Free reading tools"
   }}
   {{ with index $hubs $item.category }}
@@ -122,7 +122,17 @@
 
   {{ with $item.related }}
   {{ $titleBySlug := dict }}
-  {{ range hugo.Data.pseo.pages }}{{ $titleBySlug = merge $titleBySlug (dict .slug .title) }}{{ end }}
+  {{ $noindex := dict }}
+  {{ range hugo.Data.pseo.pages }}
+    {{ $titleBySlug = merge $titleBySlug (dict .slug .title) }}
+    {{ if .noindex }}{{ $noindex = merge $noindex (dict .slug true) }}{{ end }}
+  {{ end }}
+  {{/* Skip related links that point to noindex pages — avoid leaking crawl equity into deindexed money pages. */}}
+  {{ $shown := slice }}
+  {{ range . }}
+    {{ if not (index $noindex (strings.Trim . "/")) }}{{ $shown = $shown | append . }}{{ end }}
+  {{ end }}
+  {{ with $shown }}
   <section>
     <h2>Related Guides</h2>
     <div class="related-links">
@@ -132,6 +142,7 @@
       {{ end }}
     </div>
   </section>
+  {{ end }}
   {{ end }}
 
   {{ with $item.last_updated }}<p class="last-updated">Data anchors last checked: {{ . }}.</p>{{ end }}
