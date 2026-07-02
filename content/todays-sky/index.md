@@ -1,6 +1,6 @@
 ---
 title: "Today's Sky (2026-07-01): Waning Gibbous Moon"
-description: "Today's Sky starts with a 98% Waning Gibbous moon, then turns Cancer season and direct Mercury into grounded reflection, not prediction."
+description: "Today's Sky starts with a Waning Gibbous Moon, about 98% illuminated. Use the day for digesting what you learned, naming gratitude, checking communication during Mercury retrograde, and asking cleaner questions instead of hunting for predictions."
 date: "2026-07-01"
 lastmod: "2026-07-01"
 ---

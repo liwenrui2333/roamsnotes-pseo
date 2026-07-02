@@ -44,3 +44,5 @@
 - faq: 3 条 { "q":..., "a":... }，问真实长尾（如 "What moon phase is it today?" / "Does the moon affect mood?" / "Is mercury retrograde today?"），答案只依据给定事实，诚实非预言。
 
 整页声音 = voice.md 的"怀疑但温暖的塔罗向导"。低 AI 味，变节奏，禁套话，禁预言式承诺。
+
+- 禁止出现确切短语 "medical advice"、"legal advice"、"financial certainty"、"guaranteed result"、"remove curse"、"curse removal"（会被 quality gate 判 FAIL）。免责声明改用 "medical care"、"legal counsel" 等等价措辞。
