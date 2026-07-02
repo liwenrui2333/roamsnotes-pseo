@@ -1,8 +1,8 @@
 ---
-title: "Today's Sky (2026-07-01): Waning Gibbous Moon"
-description: "Today's Sky starts with a Waning Gibbous Moon, about 98% illuminated. Use the day for digesting what you learned, naming gratitude, checking communication during Mercury retrograde, and asking cleaner questions instead of hunting for predictions."
-date: "2026-07-01"
-lastmod: "2026-07-01"
+title: "Today's Sky 2026-07-02: Waning Gibbous Moon"
+description: "Moon phase today: a 95% Waning Gibbous under Cancer season, with Mercury retrograde, for reflection without predictions or panic."
+date: "2026-07-02"
+lastmod: "2026-07-02"
 ---
 
 Generated from structured PSEO data. Edit data/pseo/pages.yaml, then rerun scripts/generate_pages.js.

@@ -1,8 +1,8 @@
 ---
-title: "Is My Ex Coming Back? What a Tarot Reading Can Honestly Do"
-description: "Searching 'is my ex coming back' for a tarot answer? The honest version: how a reading helps you decide your next move instead of guessing his."
-date: "2026-06-20"
-lastmod: "2026-06-20"
+title: "Is My Ex Coming Back? Tarot, No-Contact, and Honest Signals (2026)"
+description: "Searching is my ex coming back for a tarot answer? This guide covers the direct answer, four reasons you might be asking, no-contact reality checks, and how to avoid reconciliation scams."
+date: "2026-07-01"
+lastmod: "2026-07-01"
 ---
 
 Generated from structured PSEO data. Edit data/pseo/pages.yaml, then rerun scripts/generate_pages.js.

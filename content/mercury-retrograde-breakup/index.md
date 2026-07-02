@@ -1,6 +1,6 @@
 ---
-title: "Mercury Retrograde Breakup: What It Really Means"
-description: "Mercury retrograde in Cancer runs from June 29 to July 23, 2026. In breakups, it can highlight old conversations, mixed signals, emotional memory, and the need to check assumptions before acting."
+title: "Mercury Retrograde Breakup Meaning in Love"
+description: "Mercury retrograde breakup worries are common. Here is what Mercury retrograde in Cancer from June 29 to July 23, 2026 can highlight in love: review, mixed signals, old conversations, and clearer boundaries."
 date: "2026-07-01"
 lastmod: "2026-07-01"
 ---

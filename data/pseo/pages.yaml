@@ -723,7 +723,7 @@
   budget: $5-$25 for starter readings
   delivery: Usually short written or audio readings; 1-2 days
   risk_level: Medium
-  last_updated: 2026-06-17
+  last_updated: 2026-07-01
   sections:
     - heading: What cheap readings are good for
       body: A $5-$25 reading is enough for a single, focused question, for framing a
@@ -735,15 +735,19 @@
         professional medical, legal, or financial input. A cheap reading is also
         not the place to expect a long, deeply personalized report  -  that
         level of detail costs more time and money.
-    - heading: How to compare under $25
-      body: >-
-        Look for a clearly stated number of cards or questions, recent and
-        detailed reviews, and a transparent delivery example. Beware gigs that
-        advertise a low headline price but require add-ons to deliver anything
-        useful.
+    - heading: What you get at each price
+      body: |
+        Here is what cheap tarot gigs typically deliver in 2026:
 
+        | Service type | Price range | Delivery | Best for |
+        |---|---|---|---|
+        | Single-card yes/no | $5-$10 | Same day | Quick curiosity check |
+        | One-question text | $10-$15 | 1-2 days | Focused reflection |
+        | Three-card written spread | $15-$25 | 1-3 days | One question with notes |
+        | Audio or short video | $20-$35 | 2-3 days | Warmth, spoken walkthrough |
+        | Rush delivery add-on | +$10-$20 | Faster | When you need it sooner |
 
-        The honest cheap gigs tell you exactly what the base price includes.
+        The honest cheap gigs tell you exactly what the base price includes. Beware gigs that advertise a low headline price but require add-ons to deliver anything useful.
     - heading: Stretching a small budget
       body: >-
         Spend on one good question rather than a bundle of shallow ones. A
@@ -761,6 +765,18 @@
 
         If a cheap gig promises certainty about the future or pressures you to
         spend more to 'see the truth', skip it.
+    - heading: When not to buy a reading
+      body: |
+        Walk away from any gig that shows these signs:
+
+        - Promises guaranteed outcomes, specific dates, or certainty about another person's choices.
+        - Uses fear or urgency to push upsells ("your energy is blocked, pay to clear it").
+        - Shows no sample, no review detail, and no description of what the base package includes.
+        - Requires add-ons to deliver anything useful at the headline price.
+        - Claims to break curses, hexes, or negative energy for a fee.
+        - Asks for sensitive personal data unrelated to the reading (bank details, ID photos).
+
+        A reasonable cheap reading runs $10-$25 on Fiverr, delivered in 1-3 days. A reader who sets honest boundaries is a safer bet than one who promises certainty.
     - heading: Why some gigs can sell for $5 at all
       body: >-
         A $5 reading works for the seller because it is fast and templated: a
@@ -1061,7 +1077,7 @@
   budget: $10-$60 for written reports
   delivery: PDF or text; usually 1-4 days
   risk_level: Low
-  last_updated: 2026-06-17
+  last_updated: 2026-07-01
   sections:
     - heading: Why written reports are easy to compare
       body: >-
@@ -1078,19 +1094,35 @@
         Vague reports that could apply to anyone are the main quality risk;
         specificity to your question is the signal you are looking for.
     - heading: Price by length
-      body: >-
-        A one-question written reading is often $10-$20. A multi-card spread
-        with structured notes runs $25-$45.
+      body: |
+        Here is what written tarot reports typically cost on Fiverr in 2026:
 
+        | Service type | Price range | Delivery | Best for |
+        |---|---|---|---|
+        | One-question text | $10-$20 | 1-2 days | Quick, focused reflection |
+        | Multi-card written spread | $25-$45 | 2-4 days | Decision framing with notes |
+        | Long structured report | $45-$60 | 3-5 days | Options, patterns, synthesis |
+        | PDF with card photos | $20-$40 | 2-4 days | Visual record to revisit |
+        | Rush delivery add-on | +$10-$20 | Faster | When you need it sooner |
 
-        Longer reports that cover options and your own timing reach $60. Use
-        these as anchors; rush delivery or extra questions add to the base
-        price.
+        Use these as comparison anchors, not fixed rates. A careful $25 written reading from a specialist usually beats a rushed $60 one from a generalist.
     - heading: How to judge before ordering
       body: Read recent reviews that quote the report's usefulness, look for a sample
         in the gig, and confirm the word count or scope. A reader who shows a
         (redacted) example and states what the base package covers is lower risk
         than one selling only on confidence about the future.
+    - heading: When not to buy a reading
+      body: |
+        Walk away from any gig that shows these signs:
+
+        - Promises guaranteed outcomes or certainty about another person's choices.
+        - Uses fear or urgency to push upsells ("pay more to unlock the real truth").
+        - Shows no sample report, no review detail, and no scope description.
+        - Claims to break curses, hexes, or negative energy for a fee.
+        - Requires add-ons to deliver anything useful at the headline price.
+        - Asks for sensitive personal data unrelated to the reading (bank details, ID photos).
+
+        A reasonable written report runs $20-$45 on Fiverr, delivered in 2-4 days. A reader who shows a sample and states scope honestly is a safer bet than one selling only on confidence.
     - heading: Make the report more useful
       body: >-
         Give one clear question and the format you want. Written readings reward
@@ -1177,7 +1209,7 @@
   budget: $15-$90 for natal readings
   delivery: PDF report or audio; usually 2-5 days
   risk_level: Medium
-  last_updated: 2026-06-17
+  last_updated: 2026-07-01
   sections:
     - heading: What to provide
       body: >-
@@ -1189,27 +1221,35 @@
         If you do not know it, a good reader will still work but will tell you
         the interpretation is less precise rather than glossing over it.
     - heading: Price by depth
-      body: >-
-        A short natal overview is roughly $15-$30. A standard birth chart report
-        with structured sections runs $35-$70.
+      body: |
+        Here is what Fiverr birth chart gigs typically cost in 2026:
 
+        | Service type | Price range | Delivery | Best for |
+        |---|---|---|---|
+        | Short natal overview | $15-$30 | 1-3 days | Sun, moon, rising summary |
+        | Standard birth chart report | $35-$70 | 2-5 days | Full placements, aspects, synthesis |
+        | Detailed natal plus transits | $60-$90 | 3-6 days | Current timing, year-ahead themes |
+        | Audio or video delivery | +$15-$40 | Same as above | Spoken walkthrough |
+        | Rush delivery add-on | +$10-$30 | Faster | When you need it sooner |
 
-        Detailed work  -  natal plus current transits, or a long PDF  -  reaches
-        $90. Audio or video and faster delivery add to the base.
-
-
-        These are comparison anchors, not fixed prices.
+        These are comparison anchors, not fixed prices. Match the depth to a specific question rather than buying the largest package.
     - heading: Signs of a thorough reading
       body: Look for a reader who names the placements they are interpreting, ties
         them to your stated focus, and explains what the chart does and does not
         speak to. A sample report, a clear section structure, and a realistic
         2-5 day turnaround are good signals.
-    - heading: Red flags
-      body: Be cautious with gigs promising certain life events on fixed dates,
-        requiring extra payment to 'reveal' your real chart, or asking for
-        sensitive data unrelated to the reading. A natal reading is
-        interpretation and reflection, not a forecast you should act on without
-        your own judgment.
+    - heading: When not to buy a reading
+      body: |
+        Walk away from any gig that shows these signs:
+
+        - Promises specific life events on fixed dates (marriage, career move, meeting someone).
+        - Requires extra payment to "reveal" your real chart or "unlock" deeper placements.
+        - Uses fear or urgency to push upsells ("your Saturn return is dangerous, pay for protection").
+        - Claims to break curses, hexes, or negative energy for a fee.
+        - Asks for sensitive personal data unrelated to chart interpretation (bank details, ID photos).
+        - Shows no sample report, no method explained (Western, Vedic, house system), and no scope.
+
+        A careful reader explains what the chart can and cannot speak to. That honesty is the quality signal. A standard birth chart report runs $35-$70 on Fiverr, delivered in 2-5 days.
     - heading: Getting the most from it
       body: >-
         Tell the reader your focus  -  general overview, a specific area, or a
@@ -1274,7 +1314,7 @@
   related:
     - /tools/astrology-reading-cost-calculator/
     - /fiverr-astrology-reading/
-    - /compatibility-astrology-reading-on-fiverr/
+    - /fiverr-tarot-reading/
   hero:
     src: /img/tarot/the-star.jpg
     alt: The Star  -  celestial guidance
@@ -1890,7 +1930,7 @@
   budget: $5-$150 across reading types
   delivery: Varies by format; written 1-3 days, detailed reports 2-6 days
   risk_level: Low
-  last_updated: 2026-06-17
+  last_updated: 2026-07-01
   sections:
     - heading: Why prices vary so much
       body: >-
@@ -1902,17 +1942,18 @@
         Format matters too: audio and video cost more than text for the same
         insight, and rush delivery adds a premium.
     - heading: Tarot price ranges
-      body: >-
-        Single-question text reading: $5-$15. Three-card written spread:
-        $15-$35.
+      body: |
+        Here is what tarot readings typically cost by type in 2026:
 
+        | Service type | Price range | Delivery | Best for |
+        |---|---|---|---|
+        | Single-question text | $5-$15 | Same day to 24 hours | Quick yes/no or curiosity |
+        | Three-card written spread | $15-$35 | 1-3 days | One focused question with notes |
+        | Detailed multi-card report | $40-$90 | 2-4 days | Decision framing, options |
+        | Audio or video reading | $40-$90 | 2-4 days | Warmth, spoken walkthrough |
+        | Rush delivery add-on | +$10-$30 | Faster | When you need it sooner |
 
-        Detailed multi-card or audio/video reading: $40-$90. Use the lower end
-        to test a reader and the higher end only once you know you value the
-        depth.
-
-
-        Add-ons and rush delivery raise the base.
+        Use the lower end to test a reader and the higher end only once you know you value the depth.
     - heading: Astrology price ranges
       body: >-
         Short natal overview: $10-$30. Standard birth chart report: $35-$75.
@@ -1933,15 +1974,18 @@
 
 
         A well-chosen $25 reading usually beats a poorly matched $90 one.
-    - heading: Budget red flags
-      body: >-
-        Be cautious with very low headline prices that require add-ons to
-        deliver anything, and with high prices justified by promises of certain
-        outcomes. Fair pricing comes with a clear scope: what you get, in what
-        format, by when.
+    - heading: When not to buy a reading
+      body: |
+        Walk away from any gig that shows these signs:
 
+        - Very low headline prices that require add-ons to deliver anything useful.
+        - High prices justified by promises of certain outcomes or guaranteed accuracy.
+        - Uses fear or urgency to push upsells ("your window is closing", "pay to unlock the truth").
+        - Shows no sample, no review detail, and no scope description.
+        - Claims to break curses, hexes, or negative energy for a fee.
+        - Asks for sensitive personal data unrelated to the reading (bank details, ID photos).
 
-        If the scope is vague, the price is guesswork.
+        Fair pricing comes with a clear scope: what you get, in what format, by when. If the scope is vague, the price is guesswork.
     - heading: What drives the price up, line by line
       body: >-
         It helps to see the cost as a base plus add-ons. The base is the reading
