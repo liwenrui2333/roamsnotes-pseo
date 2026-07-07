@@ -19,6 +19,9 @@
   last_updated: 2026-07-01
   sections:
     - heading: What a Fiverr tarot reading actually is
+      image:
+        src: /img/gen/fiverr-tarot-reading/s1.png
+        alt: Tarot cards and notes showing a fixed-price online reading workflow
       body: >-
         On Fiverr you buy a fixed-price gig, not a live per-minute chat. You
         send a question, the reader pulls a spread, and you receive a written,
@@ -30,11 +33,17 @@
         platforms is immediacy: you wait a day or two, but you see the price and
         scope before paying, and you keep the file afterward.
     - heading: Best for
+      image:
+        src: /img/gen/fiverr-tarot-reading/s2.png
+        alt: Calm written tarot report for a first-time fixed-price buyer
       body: Low-budget, asynchronous readings where you can compare packages before
         ordering, and where you want a record you can re-read. It suits
         first-time buyers testing whether readings are useful to them, and
         people who think more clearly in writing than in a live call.
     - heading: Avoid if
+      image:
+        src: /img/gen/fiverr-tarot-reading/s3.png
+        alt: Boundary symbols around tarot cards for situations where not to buy
       body: >-
         You need same-hour support, you are in crisis, or you want help with
         medical, legal, or financial decisions. A tarot reading is for
@@ -44,6 +53,9 @@
         If you need a fast back-and-forth conversation, a fixed-price
         asynchronous gig will frustrate you.
     - heading: Selection checklist
+      image:
+        src: /img/gen/fiverr-tarot-reading/s4.png
+        alt: Checklist beside tarot cards for screening Fiverr tarot readers
       body: >-
         Use the gig description before you use the rating:
 
@@ -64,6 +76,9 @@
         control another person, ask for unnecessary private data, or use fear to
         push an add-on.
     - heading: When not to buy
+      image:
+        src: /img/gen/fiverr-tarot-reading/s5.png
+        alt: Warning symbols beside a tarot spread for unsafe reading promises
       body: >
         Walk away from any gig that shows these signs:
 
@@ -88,6 +103,9 @@
         A reader who sets honest boundaries and explains what the cards can and
         cannot do is a safer bet than one who promises certainty.
     - heading: What to send the reader
+      image:
+        src: /img/gen/fiverr-tarot-reading/s6.png
+        alt: Short written question prepared before ordering an online tarot reading
       body: >-
         One focused, open question works better than five vague ones. Give light
         context (the situation, not your life story) and state the format you
@@ -98,6 +116,9 @@
         private choices; readers who set that boundary tend to deliver more
         useful, honest work.
     - heading: Good questions vs weak questions
+      image:
+        src: /img/gen/fiverr-tarot-reading/s7.png
+        alt: Two tarot question notes comparing clear and vague reading prompts
       body: >-
         **Good question:** "What pattern should I notice before I decide whether
         to keep dating this person?" It gives the reader a clear emotional field
@@ -117,6 +138,9 @@
         **Weak question:** "Tell me exactly what will happen." That is too broad
         to buy a useful fixed-price gig.
     - heading: Typical price by gig type
+      image:
+        src: /img/gen/fiverr-tarot-reading/s8.png
+        alt: Tarot cards arranged with simple price tiers for different gig types
       body: >
         Prices vary by seller, but these ranges hold across most Fiverr tarot
         gigs in 2026:
@@ -148,6 +172,9 @@
         written reading from a specialist usually beats a rushed $60 video from
         a generalist.
     - heading: "A worked example: spending $20 well"
+      image:
+        src: /img/gen/fiverr-tarot-reading/s9.png
+        alt: A twenty dollar tarot reading plan with three cards and written notes
       body: >-
         Say you have one relationship question and a $20 budget. Skip the $5
         'ask anything' gigs  -  at that price you usually get a generic
@@ -164,6 +191,9 @@
         you can re-read, which is far more useful than a longer chat you cannot
         revisit.
     - heading: What real gigs look like at each price
+      image:
+        src: /img/gen/fiverr-tarot-reading/s10.png
+        alt: Tarot gig packages shown as visual tiers without readable text
       body: >-
         At the $5 floor you are buying speed and novelty: a one-card or yes/no
         answer, often delivered same day. Around $15-$25 the better-reviewed
@@ -206,8 +236,8 @@
     - /how-to-choose-a-tarot-reader-online/
     - /fiverr-vs-keen-psychics/
   hero:
-    src: /img/tarot/the-high-priestess.jpg
-    alt: The High Priestess  -  inner knowing
+    src: /img/gen/fiverr-tarot-reading/hero.png
+    alt: Editorial tarot and astrology illustration for choosing a Fiverr tarot reader
   tldr: Fiverr is the easiest place to buy a first tarot reading because you
     compare fixed-price packages before paying, usually $5-$35 for a solid
     written one. Pick by recent detailed reviews and a clear question, not the
