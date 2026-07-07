@@ -1,131 +1,234 @@
 {{ define "main" }}
-<section class="hero">
-  <div>
-    <p class="eyebrow">Tarot, Astrology, and Spiritual Reading Tools</p>
-    <h1>Choose an online reader with clearer questions and safer expectations.</h1>
-    <p class="lede">RoamsNotes combines free tools, practical checklists, and Fiverr-focused comparison pages so you can compare reading services before paying.</p>
-    <div class="hero-actions">
-      <a class="button primary" href="/tools/tarot-question-generator/">Start with a question</a>
-      <a class="button secondary" href="/fiverr-tarot-reading/">Compare Fiverr readers</a>
+
+<!-- ===== HERO: deep tarot table ===== -->
+<div class="rn-hero-wrap">
+<section class="rn-hero">
+  <div class="rn-hero__text">
+    <p class="eyebrow">Free tarot clarity tools</p>
+    <h1 class="rn-hero__h1">Ask a love question.<br>Pull three cards.<br>Get a calmer next step.</h1>
+    <p class="rn-hero__sub">Free tarot clarity first. Paid readers only when it makes sense.</p>
+  </div>
+
+  <div class="rn-hero__panel" id="hero-pull-panel">
+    <div class="rn-pull-prompt" id="pull-prompt">
+      <p class="rn-pull-prompt__text">Hold your question in mind.</p>
+      <p class="rn-pull-prompt__sub">Or pick one below — then pull when you're ready.</p>
+      <div class="rn-pull-chips-panel">
+        <button class="rn-chip rn-chip--panel" data-q="Will my ex come back?" data-topic="love">Will my ex come back?</button>
+        <button class="rn-chip rn-chip--panel" data-q="Should I text my ex?" data-topic="love">Should I text my ex?</button>
+        <button class="rn-chip rn-chip--panel" data-q="Does he miss me?" data-topic="love">Does he miss me?</button>
+        <button class="rn-chip rn-chip--panel" data-q="Is no contact working?" data-topic="love">Is no contact working?</button>
+      </div>
+      <div class="rn-tarot-mat">
+        <div class="rn-cards" id="pull-cards" aria-live="polite">
+          <div class="rn-card-slot" data-slot="0" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+          <div class="rn-card-slot" data-slot="1" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+          <div class="rn-card-slot" data-slot="2" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+        </div>
+        <p class="rn-mat-hint">Pick a question above, then pull.</p>
+      </div>
+      <button class="rn-pull-btn" id="pull-btn" type="button">Pull 3 cards</button>
+      <p class="rn-pull-note">Symbolic, not literal. Take what helps, leave what doesn't.</p>
     </div>
-    <div class="intent-strip" aria-label="Popular starting points">
-      <a href="/tools/tarot-question-generator/">
-        <span>Question</span>
-        <strong>Shape what to ask</strong>
+
+    <div class="rn-pull-result" id="pull-result" hidden>
+      <div class="rn-tarot-mat rn-tarot-mat--result">
+        <div class="rn-cards" id="pull-cards-result" aria-live="polite">
+          <div class="rn-card-slot" data-slot="0" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+          <div class="rn-card-slot" data-slot="1" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+          <div class="rn-card-slot" data-slot="2" aria-hidden="true">
+            <div class="rn-card-inner">
+              <div class="rn-card-face rn-card-back-face"></div>
+              <div class="rn-card-face rn-card-front-face"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pull-result-inner"></div>
+      <div class="rn-pull-result__ctas" id="pull-result-ctas"></div>
+    </div>
+  </div>
+</section>
+</div><!-- /.rn-hero-wrap -->
+
+<!-- ===== TOOLS: warm cream section ===== -->
+<section class="rn-band rn-band--cream">
+  <div class="rn-band__inner">
+    <h2 class="rn-section-title">Free tools — no signup</h2>
+    <div class="rn-tool-grid">
+      <a class="rn-tool-card" href="/tools/tarot-question-generator/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/cards.svg" alt="" width="26" height="26">
+        </div>
+        <div>
+          <strong>Tarot Question Generator</strong>
+          <p>Turn vague worries into clearer reading questions.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
       </a>
+      <a class="rn-tool-card" href="/is-my-ex-coming-back-tarot/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/heart.svg" alt="" width="26" height="26">
+        </div>
+        <div>
+          <strong>Free Ex Tarot Reading</strong>
+          <p>Clarity on your ex situation before you spiral.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
+      </a>
+      <a class="rn-tool-card" href="/tarot-reading-cost-guide/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/receipt.svg" alt="" width="26" height="26">
+        </div>
+        <div>
+          <strong>Reading Cost Calculator</strong>
+          <p>Know what a fair reading costs before you pay.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
+      </a>
+      <a class="rn-tool-card" href="/tools/psychic-reader-matcher/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/user-search.svg" alt="" width="26" height="26">
+        </div>
+        <div>
+          <strong>Psychic Reader Matcher</strong>
+          <p>Match your budget, topic, and style to reader types.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUYER GUIDES: editorial layout ===== -->
+<section class="rn-band rn-band--guides">
+  <div class="rn-band__inner">
+    <div class="rn-guides-header">
+      <h2>Choose a reader without getting scared into spending more.</h2>
+      <p>Honest comparisons. No urgency. No fear.</p>
+    </div>
+    <div class="rn-guides-editorial">
+      <!-- Featured left -->
+      <a class="rn-guide-featured" href="/fiverr-tarot-reading/">
+        <div class="rn-guide-featured__label">Start here</div>
+        <strong class="rn-guide-featured__title">Fiverr Tarot Reading</strong>
+        <p>Fixed prices, real red flags to watch for, and exactly what a fair reading delivers. The one guide to read before you pay anyone anything.</p>
+        <span class="rn-guide-featured__cta">Read the guide &rarr;</span>
+      </a>
+      <!-- Right stack: 4 secondary -->
+      <div class="rn-guides-stack">
+        <a class="rn-guide-row" href="/fiverr-astrology-reading/">
+          <span class="rn-guide-row__num">01</span>
+          <div>
+            <strong>Fiverr Astrology Reading</strong>
+            <p>Natal charts and year-ahead readings — what's worth paying for.</p>
+          </div>
+        </a>
+        <a class="rn-guide-row" href="/birth-chart-reading-on-fiverr/">
+          <span class="rn-guide-row__num">02</span>
+          <div>
+            <strong>Birth Chart Reading</strong>
+            <p>What a good report includes and whether it's worth buying.</p>
+          </div>
+        </a>
+        <a class="rn-guide-row" href="/is-my-ex-coming-back-tarot/">
+          <span class="rn-guide-row__num">03</span>
+          <div>
+            <strong>Is My Ex Coming Back?</strong>
+            <p>What cards can clarify — and what they can't promise.</p>
+          </div>
+        </a>
+        <a class="rn-guide-row" href="/does-he-love-me-tarot/">
+          <span class="rn-guide-row__num">04</span>
+          <div>
+            <strong>Does He Love Me?</strong>
+            <p>A grounded read without letting a card decide your worth.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Bottom pricing/safety strip -->
+    <div class="rn-guides-strip">
       <a href="/tarot-reading-cost-guide/">
-        <span>Budget</span>
-        <strong>Know what to pay</strong>
+        <span>Pricing</span>
+        What a reading actually costs — fair ranges before you pay.
       </a>
-      <a href="/fiverr-tarot-reading/">
-        <span>Tarot</span>
-        <strong>Compare fixed-price readers</strong>
-      </a>
-      <a href="/fiverr-astrology-reading/">
-        <span>Astrology</span>
-        <strong>Check charts and red flags</strong>
+      <a href="/how-to-choose-a-tarot-reader-online/">
+        <span>Safety</span>
+        How to spot a reader you shouldn't pay.
       </a>
     </div>
   </div>
 </section>
 
-{{ partial "sky-today.html" . }}
-
-<section class="band">
-  <div class="section-heading">
-    <h2>Start Here</h2>
-    <p>Use the full <a href="/tools/">tools hub</a> first, then compare services only when you know what you need.</p>
-  </div>
-  <div class="grid three">
-    <a class="card" href="/tools/tarot-question-generator/">
-      <span class="card-kicker">Tool</span>
-      <h3>Tarot Question Generator</h3>
-      <p>Turn vague worries into clearer reading questions.</p>
-    </a>
-    <a class="card" href="/tools/psychic-reader-matcher/">
-      <span class="card-kicker">Tool</span>
-      <h3>Psychic Reader Matcher</h3>
-      <p>Match your budget, topic, and delivery style to reader types.</p>
-    </a>
-    <a class="card" href="/fiverr-tarot-reading/">
-      <span class="card-kicker">Guide</span>
-      <h3>Fiverr Tarot Reading</h3>
-      <p>Compare fixed-price tarot services with a safety-first checklist.</p>
-    </a>
-  </div>
-</section>
-
-<section class="band">
-  <div class="section-heading">
-    <h2>Core Guides</h2>
-    <p>These are the clearest entry points when you already know the reading type and want a page with enough detail to compare before clicking out.</p>
-  </div>
-  <div class="grid three">
-    <a class="card" href="/fiverr-tarot-reading/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Fiverr Tarot Reading</h3>
-      <p>Use this first if you want a fixed-price tarot reading and need help sorting real packages from vague promises.</p>
-    </a>
-    <a class="card" href="/fiverr-astrology-reading/">
-      <span class="card-kicker">Astrology</span>
-      <h3>Fiverr Astrology Reading</h3>
-      <p>Best for natal charts, year-ahead readings, and the practical differences between astrology formats.</p>
-    </a>
-    <a class="card" href="/birth-chart-reading-on-fiverr/">
-      <span class="card-kicker">Birth Chart</span>
-      <h3>Birth Chart Reading</h3>
-      <p>Start here for a natal chart read: what the placements mean, what a good report includes, and whether it is worth buying.</p>
-    </a>
+<!-- ===== ANTI-SCAM BLOCK: dark contrast ===== -->
+<section class="rn-band rn-band--dark">
+  <div class="rn-band__inner rn-trust-block">
+    <div class="rn-trust-block__copy">
+      <p class="eyebrow">Three red flags</p>
+      <h2>A good reading should not scare you into spending more.</h2>
+      <p class="rn-trust-block__sub">Legitimate readers give you what they found — and stop there. Fear-based upsells are a business model, not a spiritual service.</p>
+      <a class="rn-trust-link" href="/how-to-choose-a-tarot-reader-online/">How to choose a reader safely &rarr;</a>
+    </div>
+    <div class="rn-trust-block__flags">
+      <div class="rn-flag">
+        <span class="rn-flag__num" aria-hidden="true">1</span>
+        <div>
+          <strong>Urgency pressure</strong>
+          <p>"A curse is attached to you — act today or it gets worse."</p>
+        </div>
+      </div>
+      <div class="rn-flag">
+        <span class="rn-flag__num" aria-hidden="true">2</span>
+        <div>
+          <strong>Vague unlimited packages</strong>
+          <p>"Full clearing ritual — only $299 for a limited time."</p>
+        </div>
+      </div>
+      <div class="rn-flag">
+        <span class="rn-flag__num" aria-hidden="true">3</span>
+        <div>
+          <strong>Promises of outcomes</strong>
+          <p>"I can make your ex come back — guaranteed."</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="band">
-  <div class="section-heading">
-    <h2>Ask a Clearer Tarot Question</h2>
-    <p>If you searched something emotional, start with the question behind it. These reframe an anxious yes/no search into something a reading can honestly help with — and keep your agency intact.</p>
-  </div>
-  <div class="grid three">
-    <a class="card" href="/is-he-thinking-about-me-tarot/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Is He Thinking About Me?</h3>
-      <p>Turn an anxious "is he thinking about me" search into a question about where your energy is actually going.</p>
-    </a>
-    <a class="card" href="/does-he-love-me-tarot/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Does He Love Me?</h3>
-      <p>A grounded way to read "does he love me" without letting a card pull decide your worth.</p>
-    </a>
-    <a class="card" href="/is-my-ex-coming-back-tarot/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Is My Ex Coming Back?</h3>
-      <p>What tarot can honestly do with a breakup — and what it can't promise about reconciliation.</p>
-    </a>
-    <a class="card" href="/will-i-find-love-tarot/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Will I Find Love?</h3>
-      <p>Reframe "will I find love" into a dating reflection instead of waiting on a fixed soulmate date.</p>
-    </a>
-    <a class="card" href="/soulmate-tarot-reading/">
-      <span class="card-kicker">Tarot</span>
-      <h3>Soulmate Tarot Reading</h3>
-      <p>Ask about soulmates without the fate trap — clarify your standards, not a guaranteed "the one".</p>
-    </a>
+<!-- ===== SOFT FIVERR CTA ===== -->
+<section class="rn-band rn-band--cream">
+  <div class="rn-band__inner rn-soft-cta-block">
+    <p class="rn-soft-cta-block__label">When you're ready — no rush.</p>
+    <p>Use the tools above to get clear first. If a paid reading still feels right, Fiverr has fixed-price readers you can compare before paying.</p>
+    <a class="rn-btn rn-btn--primary" href="/go/fiverr-tarot/" data-affiliate data-cta="homepage-soft-cta" rel="sponsored nofollow noopener">Browse Fiverr tarot readers &rarr;</a>
+    <p class="rn-soft-cta-block__note">Affiliate link — we may earn a commission at no extra cost to you.</p>
   </div>
 </section>
 
-<section class="band muted">
-  <div class="section-heading">
-    <h2>All Reading Guides</h2>
-    <p>Start with the <a href="/fiverr-tarot-reading/">Fiverr tarot guide</a> or browse the <a href="/comparisons/">comparison hub</a> for platform-by-platform choices.</p>
-  </div>
-  <div class="list">
-    {{ range where hugo.Data.pseo.pages "noindex" "!=" true }}
-      <a class="list-row" href="/{{ .slug }}/">
-        <span>{{ .category }}</span>
-        <strong>{{ .title }}</strong>
-        <em>{{ .risk_level }} risk</em>
-      </a>
-    {{ end }}
-  </div>
-</section>
 {{ end }}

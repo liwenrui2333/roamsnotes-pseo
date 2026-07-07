@@ -1,16 +1,40 @@
-<footer class="site-footer">
-  <nav class="footer-guides" aria-label="Reading guides">
-    <strong>Reading guides:</strong>
-    <a href="/fiverr-tarot-reading/">Fiverr tarot reading</a>
-    <a href="/fiverr-astrology-reading/">Fiverr astrology reading</a>
-    <a href="/birth-chart-reading-on-fiverr/">Birth chart reading</a>
-    <a href="/tools/">Free reading tools</a>
-  </nav>
-  <p>{{ .Site.Params.affiliateDisclosure }}</p>
-  <nav aria-label="Footer navigation">
-    <a href="/about/">About</a>
-    <a href="/contact/">Contact</a>
-    <a href="/privacy/">Privacy</a>
-    <a href="/affiliate-disclosure/">Affiliate disclosure</a>
-  </nav>
+<footer class="rn-footer">
+  <div class="rn-footer__inner">
+    <div class="rn-footer__brand">
+      <p class="rn-footer__tagline">RoamsNotes is a calm tarot and astrology guide for people who want clarity without fear-selling.</p>
+      <p class="rn-footer__sub">Reflection, not prediction.</p>
+    </div>
+    <nav class="rn-footer__col" aria-label="Free tools">
+      <strong>Free tools</strong>
+      <a href="/tools/tarot-question-generator/">Question Generator</a>
+      <a href="/tools/psychic-reader-matcher/">Reader Matcher</a>
+      <a href="/tarot-reading-cost-guide/">Cost Calculator</a>
+      <a href="/tools/">All tools</a>
+    </nav>
+    <nav class="rn-footer__col" aria-label="Buyer guides">
+      <strong>Buyer guides</strong>
+      <a href="/fiverr-tarot-reading/">Fiverr Tarot</a>
+      <a href="/fiverr-astrology-reading/">Fiverr Astrology</a>
+      <a href="/birth-chart-reading-on-fiverr/">Birth Chart</a>
+      <a href="/is-my-ex-coming-back-tarot/">Ex Tarot</a>
+    </nav>
+    <nav class="rn-footer__col" aria-label="Safety">
+      <strong>Safety</strong>
+      <a href="/how-to-choose-a-tarot-reader-online/">Choosing a reader</a>
+      <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+  <div class="rn-footer__bottom">
+    <div class="rn-footer__moon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+        <circle cx="24" cy="24" r="20" stroke="rgba(176,138,79,0.4)" stroke-width="1"/>
+        <circle cx="24" cy="24" r="13" stroke="rgba(176,138,79,0.25)" stroke-width="1"/>
+        <path d="M24 4 C16 4 10 14 10 24 C10 34 16 44 24 44 C18 40 14 32 14 24 C14 16 18 8 24 4Z" fill="rgba(176,138,79,0.12)"/>
+      </svg>
+    </div>
+    <p>{{ .Site.Params.affiliateDisclosure }}</p>
+    <p>&copy; {{ now.Year }} RoamsNotes</p>
+  </div>
 </footer>

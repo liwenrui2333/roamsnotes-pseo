@@ -319,3 +319,443 @@ FAIL todays-sky: missing=- banned=medical advice,legal advice L0=-
 quality_gate=failed pages=1 warnings=0
 [2026-07-02 09:17:42]   ❌ quality gate FAILED — aborting, live site unchanged
 [2026-07-02 09:17:42] ════ rn_daily END (FAIL) ════
+[2026-07-03 09:15:02] ════ rn_daily START ════
+[2026-07-03 09:15:03] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 89% | mercury_rx=true
+[2026-07-03 09:15:03]   ok
+[2026-07-03 09:15:03] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 89% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-03 09:15:43]   ok
+[2026-07-03 09:15:43] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-03 09:15:44]   ok
+[2026-07-03 09:15:44] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-03 09:15:44]   ok
+[2026-07-03 09:15:44] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1858 new) ==
+  [7] event         full moon april 2026
+  [7] event         full moon april
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         mercury retrograde july 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde march 2026
+  [6] event         full moon may 2026
+  [6] event         full moon march 2026
+  [6] event         full moon july
+  [6] event         new moon march 2026
+  [6] event         new moon april 2026
+  [6] event         new moon may 2026
+  [6] event         new moon july
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon calendar 2026
+  [6] event         full moon cycle 2026
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-07-03 09:16:58]   ok
+[2026-07-03 09:16:58] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-03 09:16:58]   ok
+[2026-07-03 09:16:59] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-03 09:16:59]   ok
+[2026-07-03 09:16:59] [3/4] build + deploy
+[09:16:59] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[09:17:00] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[09:17:00] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 41 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 179 ms
+[09:17:01]       built 75 html files
+[09:17:01] [4/7] backup remote webroot
+[09:17:05] [5/7] push build
+[09:17:13] [6/7] extract + prune + chown
+[09:17:17] [7/7] verify live
+[09:17:20]       home=200 tarot=200 go=200
+[09:17:20] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-03 09:17:20]   ✓ deployed
+[2026-07-03 09:17:20] [4/4] health check
+[2026-07-03 09:17:24]   canonical(http→)=301 home=200 sitemap=28 go=200 empty_ids=1/4
+[2026-07-03 09:17:24]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-03 09:17:24] ════ rn_daily END (OK) ════
+[2026-07-04 09:15:03] ════ rn_daily START ════
+[2026-07-04 09:15:03] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 81% | mercury_rx=true
+[2026-07-04 09:15:03]   ok
+[2026-07-04 09:15:03] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 81% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-04 09:15:05]   ⚠ failed (continuing)
+[2026-07-04 09:15:05] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-04 09:15:05]   ok
+[2026-07-04 09:15:05] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-04 09:15:05]   ok
+[2026-07-04 09:15:05] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 992 new) ==
+  [6] event         retrograde 2026 what happens
+  [6] event         mercury retrograde 2026 what not to do
+  [6] event         eclipse 2026 spain
+  [6] event         eclipse 2026 new york
+  [5] event         new moon april 2026
+  [5] event         new moon april
+  [5] event         new moon april 2026 astrology
+  [5] event         new moon aries 2026
+  [5] event         new moon and full moon 2026
+  [5] event         new moon calendar 2026
+  [5] event         new moon dates 2026
+  [5] event         new moon december 2026
+  [5] event         new moon december 2025
+  [5] event         new moon day in may 2026
+  [5] event         new moon days 2026
+  [5] event         new moon eclipse 2026
+  [5] event         new moon february 2026
+  [5] event         new moon for april 2026
+  [5] event         new moon for may 2026
+  [5] event         new moon february 2027
+
+type mix(top80): {"event":30,"info":10,"spread":8}
+
+wrote topics/trending.yaml (48 candidates).
+[2026-07-04 09:23:52]   ok
+[2026-07-04 09:23:52] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-04 09:23:52]   ok
+[2026-07-04 09:23:52] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-04 09:23:52]   ok
+[2026-07-04 09:23:52] [3/4] build + deploy
+[09:23:52] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[09:23:53] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[09:23:53] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 41 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 277 ms
+[09:23:54]       built 75 html files
+[09:23:54] [4/7] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[09:28:02]       ⚠ backup step returned non-zero (continuing)
+[09:28:02] [5/7] push build
+Connection to 23.95.128.137 closed by remote host.
+scp: Connection closed
+[09:32:44] ❌ scp failed
+[2026-07-04 09:32:44]   ❌ deploy FAILED — see log
+[2026-07-04 09:32:44] ════ rn_daily END (FAIL) ════
+[2026-07-05 10:44:05] ════ rn_daily START ════
+[2026-07-05 10:44:05] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 72% | mercury_rx=true
+[2026-07-05 10:44:06]   ok
+[2026-07-05 10:44:06] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 72% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-05 10:46:15]   ok
+[2026-07-05 10:46:15] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-05 10:46:15]   ok
+[2026-07-05 10:46:15] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-05 10:46:15]   ok
+[2026-07-05 10:46:15] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1853 new) ==
+  [7] event         full moon april 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde july 2026
+  [6] event         mercury retrograde 2026 cancer
+  [6] event         full moon may 2026
+  [6] event         full moon march 2026
+  [6] event         new moon may 2026
+  [6] event         new moon april 2026
+  [6] event         new moon june 2026
+  [6] event         new moon march 2026
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde dates 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon april
+  [6] event         full moon calendar 2026
+  [6] event         full moon cycle 2026
+  [6] event         retrograde 2026 what happens
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-07-05 10:47:48]   ok
+[2026-07-05 10:47:48] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-05 10:47:48]   ok
+[2026-07-05 10:47:48] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-05 10:47:49]   ok
+[2026-07-05 10:47:49] [3/4] build + deploy
+[10:47:49] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[10:47:49] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[10:47:49] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 42 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 228 ms
+[10:47:50]       built 76 html files
+[10:47:50] [4/7] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[10:50:41]       ⚠ backup step returned non-zero (continuing)
+[10:50:41] [5/7] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[10:50:46] ❌ scp failed
+[2026-07-05 10:50:46]   ❌ deploy FAILED — see log
+[2026-07-05 10:50:46] ════ rn_daily END (FAIL) ════
+[2026-07-06 09:38:11] ════ rn_daily START ════
+[2026-07-06 09:38:11] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 62% | mercury_rx=true
+[2026-07-06 09:38:12]   ok
+[2026-07-06 09:38:12] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 62% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-06 09:38:54]   ok
+[2026-07-06 09:38:54] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-06 09:38:54]   ok
+[2026-07-06 09:38:54] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-06 09:38:54]   ok
+[2026-07-06 09:38:54] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1855 new) ==
+  [7] event         full moon april 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde july 2026
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         full moon may 2026
+  [6] event         full moon march 2026
+  [6] event         new moon may 2026
+  [6] event         new moon april 2026
+  [6] event         new moon june 2026
+  [6] event         new moon march 2026
+  [6] event         new moon july
+  [6] event         mercury retrograde dates 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon april
+  [6] event         full moon calendar 2026
+  [6] event         full moon cycle 2026
+  [6] event         retrograde 2026 what happens
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":10,"emotional":12}
+
+wrote topics/trending.yaml (78 candidates).
+[2026-07-06 09:40:27]   ok
+[2026-07-06 09:40:27] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-06 09:40:28]   ok
+[2026-07-06 09:40:28] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-06 09:40:28]   ok
+[2026-07-06 09:40:28] [3/4] build + deploy
+[09:40:28] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[09:40:28] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[09:40:28] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 42 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 286 ms
+[09:40:29]       built 76 html files
+[09:40:29] [4/7] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[09:40:35]       ⚠ backup step returned non-zero (continuing)
+[09:40:35] [5/7] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:42:03] ❌ scp failed
+[2026-07-06 09:42:03]   ❌ deploy FAILED — see log
+[2026-07-06 09:42:03] ════ rn_daily END (FAIL) ════
+[2026-07-07 10:38:29] ════ rn_daily START ════
+[2026-07-07 10:38:29] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌗 Last Quarter 51% | mercury_rx=true
+[2026-07-07 10:38:39]   ok
+[2026-07-07 10:38:39] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌗 Last Quarter 51% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-07 10:39:23]   ok
+[2026-07-07 10:39:23] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-07 10:39:23]   ok
+[2026-07-07 10:39:23] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-07 10:39:24]   ok
+[2026-07-07 10:39:24] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1853 new) ==
+  [7] event         full moon april 2026
+  [7] event         full moon april
+  [6] event         mercury retrograde july 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         full moon march 2026
+  [6] event         full moon may
+  [6] event         new moon may 2026
+  [6] event         new moon april 2026
+  [6] event         new moon june 2026
+  [6] event         new moon july
+  [6] event         new moon march 2026
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde dates 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon calendar 2026
+  [6] event         full moon cycle 2026
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-07-07 10:40:49]   ok
+[2026-07-07 10:40:50] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-07 10:40:50]   ok
+[2026-07-07 10:40:50] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-07 10:40:50]   ok
+[2026-07-07 10:40:50] [3/4] build + deploy
+[10:40:50] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[10:40:51] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[10:40:51] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 53 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 299 ms
+[10:40:52]       built 76 html files
+[10:40:52] [4/7] backup remote webroot
+[10:40:55] [5/7] push build
+[10:41:01] [6/7] extract + prune + chown
+[10:41:03] [7/7] verify live
+[10:41:07]       home=200 tarot=200 go=200
+[10:41:07] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-07 10:41:07]   ✓ deployed
+[2026-07-07 10:41:07] [4/4] health check
+[2026-07-07 10:41:09]   canonical(http→)=301 home=200 sitemap=28 go=200 empty_ids=1/4
+[2026-07-07 10:41:09]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-07 10:41:09] ════ rn_daily END (OK) ════

@@ -26,14 +26,11 @@
   --rn-trust: #3E6B57;
   --rn-warn: #A64B3A;
   /* signature accent — lavender tarot memory colour */
-  --rn-lav: #8A6DA8;
-  --rn-lav-bg: #ECE4F0;
-  --rn-lav-solid: #7A5E96;
-  --rn-nude: #ECD8CE;
-  --rn-peach: #EDC29A;
+  --rn-lav: #C4A8E8;
+  --rn-lav-bg: #EDE8F7;
   /* radius grade: card > media > default > btn */
-  --radius-card: 16px;
-  --radius-media: 12px;
+  --radius-card: 24px;
+  --radius-media: 16px;
   --radius-btn: 8px;
   /* legacy aliases — map old names to new tokens */
   --ink: var(--rn-ink);
@@ -47,7 +44,7 @@
   --gold: var(--rn-gold);
   --lav: var(--rn-lav);
   --danger: var(--rn-warn);
-  --radius: 10px;
+  --radius: 12px;
   --serif: "Fraunces", "Newsreader", Georgia, "Times New Roman", serif;
 }
 
@@ -60,6 +57,8 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--rn-ink);
   background: var(--rn-bg);
+  background-image: radial-gradient(ellipse at 0% 0%, rgba(176, 138, 79, 0.07) 0%, transparent 60%),
+                    radial-gradient(ellipse at 100% 100%, rgba(62, 107, 87, 0.05) 0%, transparent 50%);
   line-height: 1.6;
 }
 
@@ -84,8 +83,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--rn-bg);
-  border-bottom: 1px solid var(--rn-line);
+  background: rgba(246, 241, 233, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(228, 219, 206, 0.7);
 }
 
 .site-header {
@@ -621,9 +622,9 @@ input {
 
 .card:hover,
 .intent-strip a:hover {
-  transform: translate(-2px, -2px);
+  transform: translateY(-3px);
   border-color: var(--rn-gold);
-  box-shadow: 6px 6px 0 rgba(33, 28, 23, 0.18);
+  box-shadow: 0 8px 20px rgba(33, 28, 23, 0.1);
 }
 
 .list-row:hover {
@@ -695,7 +696,7 @@ input {
 }
 .rn-chip {
   border: 1px solid var(--rn-line);
-  border-radius: 20px;
+  border-radius: 100px;
   background: var(--rn-surface);
   color: var(--rn-ink);
   font: inherit;
@@ -714,13 +715,12 @@ input {
 /* --- Hero interactive panel --- */
 .rn-hero__panel {
   background: var(--rn-surface);
-  border: 2px solid var(--rn-ink);
-  border-radius: var(--radius-card, 22px);
+  border: 1px solid var(--rn-line);
+  border-radius: 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 6px 6px 0 rgba(33,28,23,0.12);
 }
 .rn-pull-prompt__text {
   font-family: var(--serif);
@@ -749,8 +749,8 @@ input {
 .rn-pull-btn {
   width: 100%;
   min-height: 48px;
-  background: var(--rn-lav);
-  color: var(--rn-ink);
+  background: var(--rn-accent);
+  color: #fff;
   border: none;
   border-radius: var(--radius-btn, 8px);
   font: inherit;
@@ -758,13 +758,10 @@ input {
   font-weight: 600;
   cursor: pointer;
   box-shadow: 4px 4px 0 rgba(33,28,23,0.8);
-  transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.12s ease;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
 }
 .rn-pull-btn:hover {
-  background: var(--rn-lav-solid);
-  color: var(--rn-ink);
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(33,28,23,0.6);
+  background: var(--rn-accent-hover);
 }
 .rn-pull-note {
   font-size: 0.82rem;
@@ -806,7 +803,7 @@ input {
   box-shadow: 0 3px 10px rgba(33, 28, 23, 0.16);
 }
 .rn-card-back-face {
-  background: #1C2235;
+  background: #2E3A59;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -953,8 +950,8 @@ input {
 }
 .rn-tool-card:hover {
   border-color: var(--rn-accent);
-  box-shadow: 6px 6px 0 rgba(33, 28, 23, 0.14);
-  transform: translate(-2px, -2px);
+  box-shadow: 0 6px 18px rgba(33, 28, 23, 0.08);
+  transform: translateY(-2px);
   text-decoration: none;
 }
 .rn-tool-card__icon {
@@ -1134,7 +1131,7 @@ input {
   font-size: 0.97rem;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.12s ease;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
 }
 .rn-btn--primary {
   background: var(--rn-accent);
@@ -1147,8 +1144,6 @@ input {
   border-color: var(--rn-accent-hover);
   text-decoration: none;
   color: #fff;
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 rgba(33,28,23,0.6);
 }
 .rn-btn--ghost {
   background: transparent;
@@ -1202,10 +1197,10 @@ input {
 
 /* --- Hero background: CHANI/Moonlight inspired --- */
 .rn-hero-wrap {
-  background: var(--rn-bg);
+  background: #1C2235;
   background-image:
-    radial-gradient(ellipse 70% 55% at 50% -5%, rgba(196,168,232,0.35) 0%, transparent 70%),
-    radial-gradient(circle at 88% 30%, rgba(176,138,79,0.10) 0%, transparent 45%);
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(176, 138, 79, 0.18) 0%, transparent 70%),
+    radial-gradient(circle at 85% 40%, rgba(62, 107, 87, 0.12) 0%, transparent 45%);
   position: relative;
   overflow: hidden;
 }
@@ -1217,7 +1212,7 @@ input {
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  border: 1px solid rgba(196,168,232,0.5);
+  border: 1px solid rgba(176, 138, 79, 0.15);
   pointer-events: none;
 }
 .rn-hero-wrap::after {
@@ -1228,7 +1223,7 @@ input {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  border: 1px solid rgba(196,168,232,0.25);
+  border: 1px solid rgba(176, 138, 79, 0.08);
   pointer-events: none;
 }
 .rn-hero-wrap .rn-hero {
@@ -1236,19 +1231,19 @@ input {
   padding-bottom: 64px;
 }
 .rn-hero-wrap .rn-hero__h1 {
-  color: var(--rn-ink);
+  color: #F0EBE1;
   font-weight: 900;
   font-variation-settings: "opsz" 144;
 }
 .rn-hero-wrap .rn-hero__sub {
-  color: rgba(33, 28, 23, 0.72);
+  color: rgba(240, 235, 225, 0.72);
 }
 .rn-hero-wrap .eyebrow {
   color: var(--rn-gold);
 }
 .rn-hero-wrap .rn-hero__panel {
   background: rgba(246, 241, 233, 0.97);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.28);
 }
 
 /* --- Chips inside panel --- */
@@ -1268,7 +1263,7 @@ input {
   width: 100%;
   text-align: left;
   border: 1px solid var(--rn-line);
-  border-radius: 20px;
+  border-radius: 8px;
   background: var(--rn-bg);
   color: var(--rn-ink);
   font: inherit;
@@ -1356,6 +1351,9 @@ input {
 /* --- Body: subtle warm wash so it's never pure flat --- */
 body {
   background: var(--rn-bg);
+  background-image:
+    radial-gradient(ellipse 120% 60% at 0% 0%, rgba(176,138,79,0.06) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 80% at 100% 100%, rgba(62,107,87,0.05) 0%, transparent 50%);
 }
 
 /* --- Section colour palette --- */
@@ -1365,7 +1363,7 @@ body {
   border-bottom: 1px solid var(--rn-line);
 }
 .rn-band--guides {
-  background: var(--rn-lav-solid);
+  background: var(--rn-bg);
 }
 .rn-band--dark {
   background: #1C2235;
@@ -1398,22 +1396,6 @@ body {
 .rn-band--dark .rn-flag__num {
   color: var(--rn-gold);
   border-color: rgba(176,138,79,0.35);
-}
-
-/* Step 4 — celestial ✦ accent on homepage band headings only */
-.rn-band h2::before {
-  content: "✦";
-  display: inline-block;
-  margin-right: 0.45em;
-  font-size: 0.65em;
-  vertical-align: 0.15em;
-  color: var(--rn-lav);
-  opacity: 0.7;
-  font-style: normal;
-}
-/* suppress on dark band — gold is already the accent there */
-.rn-band--dark h2::before {
-  display: none;
 }
 
 /* Red flag number badge (replaces icon) */

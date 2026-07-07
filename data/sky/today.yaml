@@ -1,8 +1,8 @@
-updated: 2026-07-02
+updated: 2026-07-07
 moon:
-  name: Waning Gibbous
-  emoji: 🌖
-  illumination: 95
+  name: Last Quarter
+  emoji: 🌗
+  illumination: 51
 mercury_retrograde: true
 mercury_retrograde_until: 2026-07-23
 mercury_known: true

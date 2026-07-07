@@ -305,3 +305,130 @@ function initReaderMatcher() {
 initQuestionGenerator();
 initReaderMatcher();
 initCostCalculator();
+
+/* ---------- Hero pull interaction (homepage) ---------- */
+
+const HERO_CARDS = [
+  { name: "The Star",          img: "/img/tarot/the-star.jpg",           hint: "Hope after difficulty. A sign to rest and trust the process." },
+  { name: "Two of Cups",       img: "/img/tarot/two-of-cups.jpg",        hint: "A meaningful connection forms. Don't force — let it develop." },
+  { name: "The High Priestess",img: "/img/tarot/the-high-priestess.jpg", hint: "Clarity comes from going inward, not from answers outside you." },
+  { name: "Three of Swords",   img: "/img/tarot/three-of-swords.jpg",    hint: "Pain that's real. But naming it is the first step past it." },
+  { name: "The Moon",          img: "/img/tarot/the-moon.jpg",           hint: "Uncertainty is the environment right now — not a verdict on the outcome." },
+  { name: "Ace of Cups",       img: "/img/tarot/ace-of-cups.jpg",        hint: "Something is opening emotionally. Keep your expectations loose." },
+  { name: "The Lovers",        img: "/img/tarot/the-lovers.jpg",         hint: "A real choice is involved — not just between people, but values." },
+  { name: "Eight of Cups",     img: "/img/tarot/eight-of-cups.jpg",      hint: "You may already know you need to walk away. The question is when." },
+  { name: "The Tower",         img: "/img/tarot/the-tower.jpg",          hint: "Something is breaking down so something better can replace it." },
+  { name: "Wheel of Fortune",  img: "/img/tarot/wheel-of-fortune.jpg",   hint: "A cycle is turning. Timing is out of your control; positioning is not." },
+  { name: "Six of Cups",       img: "/img/tarot/six-of-cups.jpg",        hint: "The past is asking for attention. Nostalgia and healing overlap." },
+  { name: "The Magician",      img: "/img/tarot/the-magician.jpg",       hint: "You have more tools available than you're using right now." }
+];
+
+const HERO_POSITIONS = ["Past influence", "Present energy", "Likely direction"];
+
+const HERO_NEXT = {
+  love:    { guideHref: "/is-my-ex-coming-back-tarot/",     guideLabel: "Read the ex tarot guide",        fiverrSlug: "love-tarot" },
+  career:  { guideHref: "/tools/tarot-question-generator/", guideLabel: "Shape a better career question", fiverrSlug: "fiverr-tarot" },
+  default: { guideHref: "/tools/tarot-question-generator/", guideLabel: "Shape a clearer question",       fiverrSlug: "fiverr-tarot" }
+};
+
+function heroPickThree() {
+  return shuffle(HERO_CARDS.slice()).slice(0, 3);
+}
+
+function heroDetectTopic(text) {
+  const t = (text || "").toLowerCase();
+  if (/\bex\b|come back|miss me|no contact|text.*ex|love|does he|will he|relationship/.test(t)) return "love";
+  if (/\bjob\b|career|work|boss|salary|promotion/.test(t)) return "career";
+  return "default";
+}
+
+function initHeroPull() {
+  const panel         = document.getElementById("hero-pull-panel");
+  const promptEl      = document.getElementById("pull-prompt");
+  const btn           = document.getElementById("pull-btn");
+  const resultEl      = document.getElementById("pull-result");
+  const resultInner   = document.getElementById("pull-result-inner");
+  const resultCtas    = document.getElementById("pull-result-ctas");
+  const resultCardsEl = document.getElementById("pull-cards-result");
+  const chips         = document.querySelectorAll(".rn-chip--panel");
+
+  if (!panel || !btn) return;
+
+  let activeTopic = "default";
+
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      activeTopic = chip.dataset.topic || "default";
+    });
+  });
+
+  btn.addEventListener("click", doPull);
+
+  function doPull() {
+    const topic = activeTopic;
+    const drawn = heroPickThree();
+    const next  = HERO_NEXT[topic] || HERO_NEXT.default;
+
+    // Inject real card images into result card slots, then flip
+    const slots = resultCardsEl ? resultCardsEl.querySelectorAll(".rn-card-slot") : [];
+    slots.forEach((slot, i) => {
+      const front = slot.querySelector(".rn-card-front-face");
+      if (front && drawn[i]) {
+        front.innerHTML = `<img src="${drawn[i].img}" alt="${drawn[i].name}" loading="eager">`;
+      }
+      setTimeout(() => slot.classList.add("flipped"), i * 220);
+    });
+
+    // Build label row — position labels below result cards
+    const labelsHTML = drawn.map((c, i) => `
+      <div class="card-label" style="animation-delay:${i * 130 + 400}ms">
+        <span class="card-pos">${HERO_POSITIONS[i]}</span>
+        <span class="card-name">${c.name}</span>
+        <span class="card-hint">${c.hint}</span>
+      </div>`).join("");
+
+    resultInner.innerHTML = `<div class="card-labels">${labelsHTML}</div>`;
+
+    const fiverrHref = `/go/${next.fiverrSlug}/`;
+    resultCtas.innerHTML = `
+      <div class="result-cta-group">
+        <a class="cta-secondary" href="${next.guideHref}">${next.guideLabel} &rarr;</a>
+        <a class="cta-fiverr" href="${fiverrHref}" data-affiliate data-cta="hero-pull-result" rel="sponsored nofollow noopener">
+          When you're ready: browse Fiverr readers &rarr;
+        </a>
+        <button class="rn-pull-reset" id="pull-reset-btn" type="button">Pull again</button>
+      </div>`;
+
+    const fiverrLink = resultCtas.querySelector("a[data-affiliate]");
+    if (fiverrLink) {
+      fiverrLink.addEventListener("click", () => {
+        trackEvent("cta_click", { cta_label: "hero-pull-result", tool: "hero-pull", destination: fiverrLink.getAttribute("href") });
+      });
+    }
+
+    const resetBtn = document.getElementById("pull-reset-btn");
+    if (resetBtn) resetBtn.addEventListener("click", doReset);
+
+    if (promptEl) promptEl.hidden = true;
+    if (resultEl) resultEl.hidden = false;
+
+    trackEvent("tool_result", { tool: "hero-pull", topic, cards: drawn.map(c => c.name).join("|") });
+  }
+
+  function doReset() {
+    if (promptEl) promptEl.hidden = false;
+    if (resultEl) resultEl.hidden = true;
+    activeTopic = "default";
+    chips.forEach(c => c.classList.remove("active"));
+    const slots = resultCardsEl ? resultCardsEl.querySelectorAll(".rn-card-slot") : [];
+    slots.forEach(slot => {
+      slot.classList.remove("flipped");
+      const front = slot.querySelector(".rn-card-front-face");
+      if (front) front.innerHTML = "";
+    });
+  }
+}
+
+initHeroPull();
