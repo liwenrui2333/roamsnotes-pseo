@@ -28,7 +28,10 @@ step "[0/4] refresh sky data (moon phase + mercury rx)" node scripts/update_sky.
 step "[0b/4] generate today's sky article (gpt-5.5)" node content-engine/generate_sky_article.mjs --write
 step "[0c/4] rebuild astro event calendar (computed moons)" node scripts/build_event_calendar.mjs
 step "[0d/4] generate upcoming event pages (skip existing)" node content-engine/generate_event_pages.mjs --window 60 --max 2 --write
-step "[0e/4] harvest trending long-tails -> trending.yaml" node content-engine/trend_harvest.mjs
+# NOTE: trend_harvest.mjs removed from the daily run 2026-07-08. It wrote topics/trending.yaml
+# but nothing downstream consumes that file, so it burned ~17 min/day for no output and widened
+# the window for a transient SSH drop. Run it on demand instead:
+#   node content-engine/trend_harvest.mjs
 
 # ── 1: FRESHNESS AUDIT — flag stale data anchors (non-fatal) ─────────────────
 step "[1/4] freshness audit" node scripts/freshness_audit.js
