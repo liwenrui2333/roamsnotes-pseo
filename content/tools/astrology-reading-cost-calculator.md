@@ -1,6 +1,6 @@
 ---
 title: "Astrology Reading Cost Calculator"
-description: "Estimate a realistic budget for online astrology or birth chart reading services."
+description: "Pick your reading type and depth: see an instant price range ($10–$120) for tarot, natal, and synastry readings. Free calculator, no signup."
 ---
 
 This calculator gives a rough budget anchor so you can compare astrology reading services with less guesswork.

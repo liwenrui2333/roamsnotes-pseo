@@ -759,3 +759,423 @@ Total in 299 ms
 [2026-07-07 10:41:09]   canonical(http→)=301 home=200 sitemap=28 go=200 empty_ids=1/4
 [2026-07-07 10:41:09]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
 [2026-07-07 10:41:09] ════ rn_daily END (OK) ════
+[2026-07-08 09:42:31] ════ rn_daily START ════
+[2026-07-08 09:42:31] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 41% | mercury_rx=true
+[2026-07-08 09:42:32]   ok
+[2026-07-08 09:42:32] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 41% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-08 09:43:21]   ok
+[2026-07-08 09:43:21] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-08 09:43:21]   ok
+[2026-07-08 09:43:21] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-08 09:43:21]   ok
+[2026-07-08 09:43:21] [0e/4] harvest trending long-tails -> trending.yaml
+harvesting 41 bare seeds + 6×26 a–z expansions ...
+
+== top 20 candidates (of 1854 new) ==
+  [7] event         full moon april 2026
+  [7] event         full moon april
+  [6] event         mercury retrograde july 2026
+  [6] event         mercury retrograde in cancer 2026
+  [6] event         mercury retrograde june 2026
+  [6] event         mercury retrograde 2026 dates
+  [6] event         full moon may 2026
+  [6] event         full moon march 2026
+  [6] event         new moon may 2026
+  [6] event         new moon april 2026
+  [6] event         new moon june 2026
+  [6] event         new moon july
+  [6] event         new moon march 2026
+  [6] event         new moon calendar 2026
+  [6] event         mercury retrograde dates 2026
+  [6] event         mercury retrograde of 2026
+  [6] event         mercury retrograde 2026 quotes
+  [6] event         mercury retrograde year 2026
+  [6] event         full moon calendar 2026
+  [6] event         full moon cycle 2026
+
+type mix(top80): {"event":30,"info":10,"sky":8,"spread":8,"compatibility":11,"emotional":12}
+
+wrote topics/trending.yaml (79 candidates).
+[2026-07-08 09:44:54]   ok
+[2026-07-08 09:44:54] [1/4] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-08 09:44:54]   ok
+[2026-07-08 09:44:54] [2/4] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-08 09:44:55]   ok
+[2026-07-08 09:44:55] [3/4] build + deploy
+[09:44:55] [1/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[09:44:55] [2/7] generate pages + /go/ redirects
+generated=57
+go_redirects=10 affiliate_id=set
+[09:44:55] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 64 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 272 ms
+[09:44:57]       built 76 html files
+[09:44:57] [4/7] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[09:46:36]       ⚠ backup step returned non-zero (continuing)
+[09:46:36] [5/7] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:50:24] ❌ scp failed
+[2026-07-08 09:50:24]   ❌ deploy FAILED — see log
+[2026-07-08 09:50:25] ════ rn_daily END (FAIL) ════
+[2026-07-09 09:43:13] ════ rn_daily START ════
+[2026-07-09 09:43:13] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 31% | mercury_rx=true
+[2026-07-09 09:43:15]   ok
+[2026-07-09 09:43:15] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 31% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 55 pages)
+[2026-07-09 09:44:11]   ok
+[2026-07-09 09:44:11] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-09 09:44:11]   ok
+[2026-07-09 09:44:11] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-09 09:44:11]   ok
+[2026-07-09 09:44:11] [1/4] freshness audit
+freshness_audit: all 55 pages within 60d window
+[2026-07-09 09:44:12]   ok
+[2026-07-09 09:44:12] [2/4] quality gate
+quality_gate=passed pages=55 warnings=0
+[2026-07-09 09:44:12]   ok
+[2026-07-09 09:44:12] [3/4] build + deploy
+[09:44:12] [1/7] quality gate
+quality_gate=passed pages=55 warnings=0
+[09:44:12] [2/7] generate pages + /go/ redirects
+generated=55
+go_redirects=10 affiliate_id=set
+[09:44:13] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 64 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 253 ms
+[09:44:14]       built 76 html files
+[09:44:14] [4/7] backup remote webroot
+Connection timed out during banner exchange
+Connection to 23.95.128.137 port 2222 timed out
+[09:44:49]       ↻ backup attempt 1/3 failed — retrying in 5s
+ssh: connect to host 23.95.128.137 port 2222: Connection timed out
+[09:45:16]       ↻ backup attempt 2/3 failed — retrying in 10s
+ssh: connect to host 23.95.128.137 port 2222: Connection timed out
+[09:45:47]       ⚠ backup failed after 3 attempts
+[09:45:47]       ⚠ backup step failed (continuing — push still proceeds)
+[09:45:50] [5/7] push build
+Connection timed out during banner exchange
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[09:46:24]       ↻ scp push attempt 1/3 failed — retrying in 5s
+ssh: connect to host 23.95.128.137 port 2222: Connection timed out
+scp: Connection closed
+[09:46:50]       ↻ scp push attempt 2/3 failed — retrying in 10s
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[09:49:10]       ⚠ scp push failed after 3 attempts
+[09:49:10] ❌ scp failed after retries
+[2026-07-09 09:49:10]   ❌ deploy FAILED — see log
+[2026-07-09 09:49:10] ════ rn_daily END (FAIL) ════
+[2026-07-10 10:05:17] ════ rn_daily START ════
+[2026-07-10 10:05:17] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 22% | mercury_rx=true
+[2026-07-10 10:05:19]   ok
+[2026-07-10 10:05:19] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 22% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 55 pages)
+[2026-07-10 10:06:20]   ok
+[2026-07-10 10:06:20] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-10 10:06:20]   ok
+[2026-07-10 10:06:20] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-10 10:06:21]   ok
+[2026-07-10 10:06:21] [1/4] freshness audit
+freshness_audit: all 55 pages within 60d window
+[2026-07-10 10:06:21]   ok
+[2026-07-10 10:06:21] [2/4] quality gate
+quality_gate=passed pages=55 warnings=0
+[2026-07-10 10:06:21]   ok
+[2026-07-10 10:06:21] [3/4] build + deploy
+[10:06:21] [1/7] quality gate
+quality_gate=passed pages=55 warnings=0
+[10:06:22] [2/7] generate pages + /go/ redirects
+generated=55
+go_redirects=10 affiliate_id=set
+[10:06:22] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 64 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 398 ms
+[10:06:23]       built 76 html files
+[10:06:23] [4/7] backup remote webroot
+[10:06:30] [5/7] push build
+[10:06:42] [6/7] extract + prune + chown
+[10:06:44] [7/7] verify live
+[10:06:47]       home=200 tarot=200 go=200
+[10:06:47] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-10 10:06:47]   ✓ deployed
+[2026-07-10 10:06:47] [4/4] health check
+[2026-07-10 10:06:51]   canonical(http→)=301 home=200 sitemap=28 go=200 empty_ids=1/4
+[2026-07-10 10:06:51]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-10 10:06:51] ════ rn_daily END (OK) ════
+[2026-07-11 09:15:04] ════ rn_daily START ════
+[2026-07-11 09:15:04] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 14% | mercury_rx=true
+[2026-07-11 09:15:05]   ok
+[2026-07-11 09:15:05] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 14% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 55 pages)
+[2026-07-11 09:15:52]   ok
+[2026-07-11 09:15:52] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-11 09:15:52]   ok
+[2026-07-11 09:15:53] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-11 09:15:53]   ok
+[2026-07-11 09:15:53] [1/4] freshness audit
+freshness_audit: all 55 pages within 60d window
+[2026-07-11 09:15:53]   ok
+[2026-07-11 09:15:53] [2/4] quality gate
+quality_gate=passed pages=55 warnings=0
+[2026-07-11 09:15:54]   ok
+[2026-07-11 09:15:54] [3/4] build + deploy
+[09:15:54] [1/7] quality gate
+quality_gate=passed pages=55 warnings=0
+[09:15:54] [2/7] generate pages + /go/ redirects
+generated=55
+go_redirects=10 affiliate_id=set
+[09:15:55] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 64 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 258 ms
+[09:15:56]       built 76 html files
+[09:15:56] [4/7] backup remote webroot
+[09:16:06] [5/7] push build
+[09:16:31] [6/7] extract + prune + chown
+[09:16:38] [7/7] verify live
+[09:16:42]       home=200 tarot=200 go=200
+[09:16:43] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-11 09:16:43]   ✓ deployed
+[2026-07-11 09:16:43] [4/4] health check
+[2026-07-11 09:16:48]   canonical(http→)=301 home=200 sitemap=28 go=200 empty_ids=1/4
+[2026-07-11 09:16:48]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-11 09:16:48] ════ rn_daily END (OK) ════
+[2026-07-12 09:15:37] ════ rn_daily START ════
+[2026-07-12 09:15:37] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 7% | mercury_rx=true
+[2026-07-12 09:15:43]   ok
+[2026-07-12 09:15:43] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 7% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-12 09:15:45]   ⚠ failed (continuing)
+[2026-07-12 09:15:45] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-12 09:15:45]   ok
+[2026-07-12 09:15:45] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-12 09:15:46]   ok
+[2026-07-12 09:15:46] [1/4] freshness audit
+freshness_audit: all 55 pages within 60d window
+[2026-07-12 09:15:46]   ok
+[2026-07-12 09:15:46] [2/4] quality gate
+quality_gate=passed pages=55 warnings=0
+[2026-07-12 09:15:46]   ok
+[2026-07-12 09:15:46] [3/4] build + deploy
+[09:15:46] [1/7] quality gate
+quality_gate=passed pages=55 warnings=0
+[09:15:46] [2/7] generate pages + /go/ redirects
+generated=55
+go_redirects=10 affiliate_id=set
+[09:15:47] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 87 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 311 ms
+[09:15:48]       built 76 html files
+[09:15:48] [4/7] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[09:15:53]       ↻ backup attempt 1/3 failed — retrying in 5s
+Connection closed by 23.95.128.137 port 2222
+[09:16:03]       ↻ backup attempt 2/3 failed — retrying in 10s
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 23.95.128.137 port 2222
+[09:16:25]       ⚠ backup failed after 3 attempts
+[09:16:25]       ⚠ backup step failed (continuing — push still proceeds)
+[09:16:28] [5/7] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:16:35]       ↻ scp push attempt 1/3 failed — retrying in 5s
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[09:18:24]       ↻ scp push attempt 2/3 failed — retrying in 10s
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:18:40]       ⚠ scp push failed after 3 attempts
+[09:18:40] ❌ scp failed after retries
+[2026-07-12 09:18:40]   ❌ deploy FAILED — see log
+[2026-07-12 09:18:40] ════ rn_daily END (FAIL) ════
+[2026-07-13 09:39:07] ════ rn_daily START ════
+[2026-07-13 09:39:07] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌘 Waning Crescent 3% | mercury_rx=true
+[2026-07-13 09:39:08]   ok
+[2026-07-13 09:39:08] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌘 Waning Crescent 3% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: fetch failed
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: fetch failed
+[2026-07-13 09:39:18]   ⚠ failed (continuing)
+[2026-07-13 09:39:18] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-13 09:39:18]   ok
+[2026-07-13 09:39:18] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-13 09:39:18]   ok
+[2026-07-13 09:39:18] [1/4] freshness audit
+freshness_audit: all 55 pages within 60d window
+[2026-07-13 09:39:19]   ok
+[2026-07-13 09:39:19] [2/4] quality gate
+quality_gate=passed pages=55 warnings=0
+[2026-07-13 09:39:19]   ok
+[2026-07-13 09:39:19] [3/4] build + deploy
+[09:39:19] [1/7] quality gate
+quality_gate=passed pages=55 warnings=0
+[09:39:19] [2/7] generate pages + /go/ redirects
+generated=55
+go_redirects=10 affiliate_id=set
+[09:39:19] [3/7] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 70 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 87 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 411 ms
+[09:39:21]       built 76 html files
+[09:39:21] [4/7] backup remote webroot
+Connection timed out during banner exchange
+Connection to 23.95.128.137 port 2222 timed out
+[09:39:52]       ↻ backup attempt 1/3 failed — retrying in 5s
+Connection timed out during banner exchange
+Connection to 23.95.128.137 port 2222 timed out
+[09:40:27]       ↻ backup attempt 2/3 failed — retrying in 10s
+Connection closed by 23.95.128.137 port 2222
+[09:40:42]       ⚠ backup failed after 3 attempts
+[09:40:42]       ⚠ backup step failed (continuing — push still proceeds)
+[09:40:45] [5/7] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:40:51]       ↻ scp push attempt 1/3 failed — retrying in 5s
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[09:42:51]       ↻ scp push attempt 2/3 failed — retrying in 10s
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[09:43:06]       ⚠ scp push failed after 3 attempts
+[09:43:06] ❌ scp failed after retries
+[2026-07-13 09:43:06]   ❌ deploy FAILED — see log
+[2026-07-13 09:43:06] ════ rn_daily END (FAIL) ════

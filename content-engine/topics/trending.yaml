@@ -1,4 +1,4 @@
-generated: 2026-07-07
+generated: 2026-07-08
 source: google-autocomplete
 note: 候选词。人工/打分挑 top N，按 suggested_type 转成对应 wave 选题再过 content-engine。event 类需配
   event_calendar 真实日期。
@@ -21,6 +21,12 @@ candidates:
     score: 6
     freq: 2
     date_signal: true
+  - query: mercury retrograde in cancer 2026
+    slug: mercury-retrograde-in-cancer-2026
+    suggested_type: event
+    score: 6
+    freq: 2
+    date_signal: true
   - query: mercury retrograde june 2026
     slug: mercury-retrograde-june-2026
     suggested_type: event
@@ -33,20 +39,14 @@ candidates:
     score: 6
     freq: 2
     date_signal: true
-  - query: mercury retrograde in cancer 2026
-    slug: mercury-retrograde-in-cancer-2026
+  - query: full moon may 2026
+    slug: full-moon-may-2026
     suggested_type: event
     score: 6
     freq: 2
     date_signal: true
   - query: full moon march 2026
     slug: full-moon-march-2026
-    suggested_type: event
-    score: 6
-    freq: 2
-    date_signal: true
-  - query: full moon may
-    slug: full-moon-may
     suggested_type: event
     score: 6
     freq: 2
@@ -171,14 +171,14 @@ candidates:
     score: 5
     freq: 1
     date_signal: true
-  - query: solar eclipse 2026
-    slug: solar-eclipse-2026
+  - query: solar eclipse of august 12 2026
+    slug: solar-eclipse-of-august-12-2026
     suggested_type: event
     score: 5
     freq: 1
     date_signal: true
-  - query: solar eclipse 2024
-    slug: solar-eclipse-2024
+  - query: solar eclipse 2026
+    slug: solar-eclipse-2026
     suggested_type: event
     score: 5
     freq: 1
@@ -195,14 +195,14 @@ candidates:
     score: 3
     freq: 1
     date_signal: true
-  - query: aries horoscope july 2026
-    slug: aries-horoscope-july-2026
+  - query: aries horoscope april 2026
+    slug: aries-horoscope-april-2026
     suggested_type: sky
     score: 3
     freq: 1
     date_signal: true
-  - query: aries horoscope april 2026
-    slug: aries-horoscope-april-2026
+  - query: aries horoscope for july 7 2026
+    slug: aries-horoscope-for-july-7-2026
     suggested_type: sky
     score: 3
     freq: 1
@@ -219,8 +219,8 @@ candidates:
     score: 3
     freq: 1
     date_signal: true
-  - query: taurus horoscope july 6 2026
-    slug: taurus-horoscope-july-6-2026
+  - query: taurus horoscope july 7 2026
+    slug: taurus-horoscope-july-7-2026
     suggested_type: sky
     score: 3
     freq: 1
@@ -231,15 +231,9 @@ candidates:
     score: 3
     freq: 1
     date_signal: true
-  - query: gemini horoscope july 6 2026
-    slug: gemini-horoscope-july-6-2026
+  - query: gemini horoscope april 2026
+    slug: gemini-horoscope-april-2026
     suggested_type: sky
-    score: 3
-    freq: 1
-    date_signal: true
-  - query: aries tarot july 2026
-    slug: aries-tarot-july-2026
-    suggested_type: info
     score: 3
     freq: 1
     date_signal: true
@@ -287,6 +281,12 @@ candidates:
     date_signal: true
   - query: leo tarot july 2026
     slug: leo-tarot-july-2026
+    suggested_type: info
+    score: 3
+    freq: 1
+    date_signal: true
+  - query: leo tarot may 2026
+    slug: leo-tarot-may-2026
     suggested_type: info
     score: 3
     freq: 1
@@ -357,12 +357,6 @@ candidates:
     score: 1
     freq: 1
     date_signal: false
-  - query: zodiac compatibility calculator
-    slug: zodiac-compatibility-calculator
-    suggested_type: compatibility
-    score: 1
-    freq: 1
-    date_signal: false
   - query: zodiac compatibility calculator free
     slug: zodiac-compatibility-calculator-free
     suggested_type: compatibility
@@ -395,6 +389,12 @@ candidates:
     date_signal: false
   - query: zodiac compatibility percentage
     slug: zodiac-compatibility-percentage
+    suggested_type: compatibility
+    score: 1
+    freq: 1
+    date_signal: false
+  - query: zodiac compatibility free
+    slug: zodiac-compatibility-free
     suggested_type: compatibility
     score: 1
     freq: 1
