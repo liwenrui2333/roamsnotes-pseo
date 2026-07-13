@@ -36,6 +36,10 @@
     {{- $js := resources.Get "js/tools.js" | minify | fingerprint -}}
     {{ if .IsHome }}
     <script src="{{ $js.RelPermalink }}" defer></script>
+    {{ $tarotData := resources.Get "js/tarot-data.js" | minify | fingerprint }}
+    {{ $tarotDraw := resources.Get "js/tarot-draw.js" | minify | fingerprint }}
+    <script src="{{ $tarotData.RelPermalink }}" defer></script>
+    <script src="{{ $tarotDraw.RelPermalink }}" defer></script>
     {{ end }}
   </body>
 </html>

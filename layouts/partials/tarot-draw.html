@@ -1,0 +1,57 @@
+{{ $embed := .Embed | default false }}
+<section class="rn-tarot-tool{{ if $embed }} rn-tarot-tool--embedded{{ end }}" id="free-love-tarot" data-tarot-tool="free_love_tarot" aria-labelledby="tarot-tool-title">
+  {{ if not $embed }}<div class="rn-tarot-tool__intro">
+    <p class="eyebrow">A private, no-signup reflection tool</p>
+    <h1 id="tarot-tool-title">Free Love Tarot Reading</h1>
+    <p class="rn-tarot-tool__lede">Ask about love, an ex, no contact, or reconciliation. Pull one card for a clear prompt, or three cards for a past / present / next-step view.</p>
+    <p class="rn-tarot-tool__disclaimer">For reflection and entertainment only. Use the cards as prompts, not guarantees.</p>
+  </div>{{ end }}
+
+  <div class="rn-tarot-tool__workspace">
+    <div class="rn-tarot-tool__controls">
+      <fieldset class="rn-tarot-tool__modes">
+        <legend>Choose a reading</legend>
+        <div class="rn-tarot-mode-group">
+          <label class="rn-tarot-mode"><input type="radio" name="tarot-spread" value="one_card" checked><span>1 Card Reading<small>One focused prompt</small></span></label>
+          <label class="rn-tarot-mode"><input type="radio" name="tarot-spread" value="three_card"><span>3 Card Reading<small>Past · Present · Next Step</small></span></label>
+        </div>
+      </fieldset>
+      <label class="rn-tarot-question" for="tarot-question">Your question <span>(optional)</span>
+        <input id="tarot-question" name="tarot-question" maxlength="160" type="text" placeholder="e.g. What would help me handle no contact with more clarity?">
+      </label>
+      <div class="rn-tarot-chips" aria-label="Common love questions">
+        <button type="button" class="rn-tarot-chip" data-question="What is he thinking right now?">What is he thinking?</button>
+        <button type="button" class="rn-tarot-chip" data-question="Can we reconcile?">Can we reconcile?</button>
+        <button type="button" class="rn-tarot-chip" data-question="Where is this relationship heading?">Where is this heading?</button>
+        <button type="button" class="rn-tarot-chip" data-question="Should I keep reaching out?">Keep reaching out?</button>
+        <button type="button" class="rn-tarot-chip" data-question="Will he contact me first?">Will he contact me?</button>
+        <button type="button" class="rn-tarot-chip" data-question="What is blocking this connection?">What is blocking this?</button>
+      </div>
+      <div class="rn-tarot-tool__actions">
+        <button class="rn-tarot-button rn-tarot-button--primary" id="tarot-shuffle" type="button">Start reading</button>
+        <button class="rn-tarot-button rn-tarot-button--quiet" id="tarot-reset" type="button" hidden>Draw again</button>
+      </div>
+      <p class="rn-tarot-status" id="tarot-status" role="status" aria-live="polite">Choose a spread, hold your question in mind, then shuffle.</p>
+    </div>
+
+    <div class="rn-tarot-tool__reading" aria-live="polite">
+      <div class="rn-tarot-spread rn-tarot-spread--one" id="tarot-spread" data-spread="one_card">
+        <button class="rn-tarot-card" type="button" data-card-index="0" aria-label="Face-down tarot card. Shuffle first." disabled>
+          <span class="rn-tarot-card__inner"><span class="rn-tarot-card__back" aria-hidden="true"></span><span class="rn-tarot-card__front"></span></span>
+        </button>
+      </div>
+      <p class="rn-tarot-hint" id="tarot-hint">Your cards will reveal one at a time.</p>
+      <div class="rn-tarot-results" id="tarot-results"></div>
+      <div class="rn-tarot-results__actions" id="tarot-result-actions" hidden>
+        <button class="rn-tarot-copy" id="tarot-copy" type="button">Copy result</button>
+        <a class="rn-tarot-guide" href="/fiverr-tarot-reading/" data-tarot-guide>Explore your situation in depth →</a>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="rn-tarot-noscript">
+      <p><strong>Free Love Tarot Reading</strong> works as an interactive tool when JavaScript is enabled. Without JavaScript, you can still read our <a href="/fiverr-tarot-reading/">Fiverr tarot reading guide</a> or use the <a href="/tools/tarot-question-generator/">tarot question generator</a>.</p>
+    </div>
+  </noscript>
+</section>

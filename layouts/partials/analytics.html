@@ -64,8 +64,15 @@
       page_path: location.pathname,
       cta_label: a.getAttribute('data-cta') || (a.textContent || '').trim(),
       destination: a.getAttribute('href'),
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      source_page: location.pathname === '/' ? 'homepage' : 'page'
     };
+    var tarotRoot = a.closest('[data-tarot-tool]');
+    if (tarotRoot) {
+      payload.tool_name = tarotRoot.getAttribute('data-tarot-tool');
+      var selectedSpread = tarotRoot.querySelector('input[name="tarot-spread"]:checked');
+      payload.spread_type = selectedSpread ? selectedSpread.value : 'one_card';
+    }
     window.rnSendGaEvent('affiliate_click', payload);
     if (window.clarity) { try { clarity('event', 'affiliate_click'); } catch (_) {} }
   }, true);

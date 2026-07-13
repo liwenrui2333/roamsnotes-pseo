@@ -10,67 +10,8 @@
   </div>
 
   <div class="rn-hero__panel" id="hero-pull-panel">
-    <div class="rn-pull-prompt" id="pull-prompt">
-      <p class="rn-pull-prompt__text">Hold your question in mind.</p>
-      <p class="rn-pull-prompt__sub">Or pick one below — then pull when you're ready.</p>
-      <div class="rn-pull-chips-panel">
-        <button class="rn-chip rn-chip--panel" data-q="Will my ex come back?" data-topic="love">Will my ex come back?</button>
-        <button class="rn-chip rn-chip--panel" data-q="Should I text my ex?" data-topic="love">Should I text my ex?</button>
-        <button class="rn-chip rn-chip--panel" data-q="Does he miss me?" data-topic="love">Does he miss me?</button>
-        <button class="rn-chip rn-chip--panel" data-q="Is no contact working?" data-topic="love">Is no contact working?</button>
-      </div>
-      <div class="rn-tarot-mat">
-        <div class="rn-cards" id="pull-cards" aria-live="polite">
-          <div class="rn-card-slot" data-slot="0" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-          <div class="rn-card-slot" data-slot="1" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-          <div class="rn-card-slot" data-slot="2" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-        </div>
-        <p class="rn-mat-hint">Pick a question above, then pull.</p>
-      </div>
-      <button class="rn-pull-btn" id="pull-btn" type="button">Pull 3 cards</button>
-      <p class="rn-pull-note">Symbolic, not literal. Take what helps, leave what doesn't.</p>
-    </div>
-
-    <div class="rn-pull-result" id="pull-result" hidden>
-      <div class="rn-tarot-mat rn-tarot-mat--result">
-        <div class="rn-cards" id="pull-cards-result" aria-live="polite">
-          <div class="rn-card-slot" data-slot="0" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-          <div class="rn-card-slot" data-slot="1" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-          <div class="rn-card-slot" data-slot="2" aria-hidden="true">
-            <div class="rn-card-inner">
-              <div class="rn-card-face rn-card-back-face"></div>
-              <div class="rn-card-face rn-card-front-face"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="pull-result-inner"></div>
-      <div class="rn-pull-result__ctas" id="pull-result-ctas"></div>
+    <div class="rn-tarot-mat rn-tarot-mat--tool">
+      {{ partial "tarot-draw.html" (dict "Page" . "Embed" true) }}
     </div>
   </div>
 </section>
