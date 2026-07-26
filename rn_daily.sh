@@ -127,12 +127,20 @@ say "  canonical(http→)=$CANON home=$HOME sitemap=$SMAP go=$GO empty_ids=$IDS_
 # live daily page. Only meaningful while daily content generation is enabled.
 if [ "$DAILY_CONTENT" = "1" ]; then
   TODAY="$(date +%Y-%m-%d)"
-  LIVE_SKY="$(curl -sS --max-time 25 "$SITE_URL/todays-sky/" \
-              | grep -oE '<title>[^<]*' | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -1)"
-  if [ "$LIVE_SKY" = "$TODAY" ]; then
-    say "  ✓ live content verified: /todays-sky/ = $LIVE_SKY"
+  # Primary anchor: the sitemap <lastmod> for /todays-sky/. Hugo derives it from the
+  # page's frontmatter, so it is deterministic. The page <title> is written by gpt-5.5
+  # and its wording drifts between runs (2026-07-26 saw "Today's Sky (2026-07-26):"
+  # become "Today's Sky 2026-07-26:"), so title matching alone would eventually raise a
+  # false alarm — and a false alarm is exactly what trains you to ignore real ones.
+  SM_LASTMOD="$(curl -sS --max-time 25 "$SITE_URL/sitemap.xml" \
+                | tr '<' '\n<' | grep -A4 'todays-sky' \
+                | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -1)"
+  TITLE_DATE="$(curl -sS --max-time 25 "$SITE_URL/todays-sky/" \
+                | grep -oE '<title>[^<]*' | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -1)"
+  if [ "$SM_LASTMOD" = "$TODAY" ] || [ "$TITLE_DATE" = "$TODAY" ]; then
+    say "  ✓ live content verified: sitemap lastmod=${SM_LASTMOD:-?} title=${TITLE_DATE:-?} (today=$TODAY)"
   else
-    die "线上内容未更新: /todays-sky/ 显示 ${LIVE_SKY:-<读取失败>}, 应为 $TODAY (deploy 报成功但产物没到线上)"
+    die "线上内容未更新: /todays-sky/ sitemap lastmod=${SM_LASTMOD:-<读取失败>} title=${TITLE_DATE:-<读取失败>}, 应为 $TODAY (deploy 报成功但产物没到线上)"
   fi
 fi
 
