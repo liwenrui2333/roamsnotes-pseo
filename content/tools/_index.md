@@ -1,6 +1,8 @@
 ---
 title: "Tarot, Psychic, and Astrology Reading Tools"
 description: "Free tarot question generator, psychic reader matcher, and astrology cost calculator for choosing online readings more safely."
+date: "2026-07-01"
+lastmod: "2026-07-01"
 ---
 
 Use these tools before paying for a reading. They are designed for self-reflection and comparison, not guaranteed predictions.
@@ -10,8 +12,10 @@ Start with the question tool if you already know the topic but do not know how t
 ## Choose the Right Tool
 
 - [Tarot Question Generator](/tools/tarot-question-generator/): turns a vague worry into clearer tarot questions for love, career, money, timing, or self-reflection.
+- [Tarot Question Builder](/tools/tarot-question-builder/): rewrites a specific yes-or-no worry into three questions about your choices and next steps.
 - [Psychic Reader Matcher](/tools/psychic-reader-matcher/): matches your topic, format, budget, and priority to a safer reader type before you compare sellers.
 - [Astrology Reading Cost Calculator](/tools/astrology-reading-cost-calculator/): estimates a realistic price range for tarot, natal chart, compatibility, and year-ahead readings.
+- [Reader and Platform Credibility Checklist](/tools/tarot-reader-platform-credibility-checklist/): flags pressure, fear-based upsells, and payment risks before you buy.
 
 ## Use the Result
 

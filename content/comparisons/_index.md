@@ -1,6 +1,8 @@
 ---
 title: "Fiverr Tarot and Astrology Service Comparisons"
 description: "Compare Fiverr tarot readings, astrology reports, and live psychic platforms by price, delivery style, and risk."
+date: "2026-07-01"
+lastmod: "2026-07-01"
 ---
 
 Compare formats, pricing, delivery speed, and risk before choosing a reading service.

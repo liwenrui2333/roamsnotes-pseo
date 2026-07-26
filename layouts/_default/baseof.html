@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/brand/favicon-32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/brand/favicon-16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/brand/apple-touch-icon.png?v=3">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Newsreader:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -17,9 +20,14 @@
     <meta property="og:description" content="{{ $desc }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:locale" content="en_US">
+    {{ $ogImage := "/img/gen/fiverr-tarot-reading/hero-1024.webp" }}
+    <meta property="og:image" content="{{ $ogImage | absURL }}">
+    <meta property="og:image:alt" content="{{ .Title }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ .Title }}">
     <meta name="twitter:description" content="{{ $desc }}">
+    <meta name="twitter:image" content="{{ $ogImage | absURL }}">
+    <meta name="twitter:image:alt" content="{{ .Title }}">
     {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     {{ partial "schema.html" . }}

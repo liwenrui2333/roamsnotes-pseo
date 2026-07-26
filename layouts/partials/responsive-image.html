@@ -1,0 +1,32 @@
+{{ $image := .image }}
+{{ $src := $image.src }}
+{{ $alt := $image.alt }}
+{{ $isHero := .hero }}
+{{ $match := findRE `^/img/gen/fiverr-tarot-reading/(hero|s[1-9]|s10)\.png$` $src }}
+{{ $dimensions := dict
+  "/img/tarot/the-high-priestess.jpg" (dict "width" 960 "height" 1649)
+  "/img/tarot/the-lovers.jpg" (dict "width" 960 "height" 1643)
+  "/img/tarot/the-magician.jpg" (dict "width" 960 "height" 1664)
+  "/img/tarot/the-star.jpg" (dict "width" 960 "height" 1654)
+  "/img/tarot/three-of-swords.jpg" (dict "width" 960 "height" 1671)
+  "/img/tarot/two-of-cups.jpg" (dict "width" 960 "height" 1662)
+  "/img/tarot/wheel-of-fortune.jpg" (dict "width" 960 "height" 1670)
+}}
+{{ if $match }}
+  {{ $name := replaceRE `^/img/gen/fiverr-tarot-reading/([a-z0-9]+)\.png$` `$1` $src }}
+  {{ if $isHero }}
+    <picture>
+      <source type="image/webp" srcset="/img/gen/fiverr-tarot-reading/{{ $name }}-640.webp 640w, /img/gen/fiverr-tarot-reading/{{ $name }}-1024.webp 1024w" sizes="(max-width: 760px) calc(100vw - 32px), 900px">
+      <img src="{{ $src }}" alt="{{ $alt }}" width="1024" height="768" fetchpriority="high" decoding="async">
+    </picture>
+  {{ else }}
+    <picture>
+      <source type="image/webp" srcset="/img/gen/fiverr-tarot-reading/{{ $name }}-320.webp 320w, /img/gen/fiverr-tarot-reading/{{ $name }}-640.webp 640w" sizes="(max-width: 560px) min(100vw - 32px, 320px), 320px">
+      <img src="{{ $src }}" alt="{{ $alt }}" width="768" height="768" loading="lazy" decoding="async">
+    </picture>
+  {{ end }}
+{{ else }}
+  {{ $size := index $dimensions $src }}
+  {{ if and (not $size) (hasPrefix $src "/img/zodiac/") }}{{ $size = dict "width" 420 "height" 200 }}{{ end }}
+  <img src="{{ $src }}" alt="{{ $alt }}"{{ with $size }} width="{{ .width }}" height="{{ .height }}"{{ end }}{{ if not $isHero }} loading="lazy"{{ end }} decoding="async"{{ if $isHero }} fetchpriority="high"{{ end }}>
+{{ end }}

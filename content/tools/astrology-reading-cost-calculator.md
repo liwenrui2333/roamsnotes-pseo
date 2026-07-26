@@ -1,6 +1,8 @@
 ---
 title: "Astrology Reading Cost Calculator"
 description: "Pick your reading type and depth: see an instant price range ($10–$120) for tarot, natal, and synastry readings. Free calculator, no signup."
+date: "2026-07-13"
+lastmod: "2026-07-13"
 ---
 
 This calculator gives a rough budget anchor so you can compare astrology reading services with less guesswork.

@@ -1,6 +1,8 @@
 ---
 title: "Tarot Question Generator"
 description: "Generate clearer tarot reading questions for love, career, money, or self-reflection before ordering a reading."
+date: "2026-06-28"
+lastmod: "2026-06-28"
 ---
 
 Use this tool to turn a vague worry into a clearer question before paying for a tarot reading.

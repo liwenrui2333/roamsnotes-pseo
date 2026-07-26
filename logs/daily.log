@@ -1179,3 +1179,770 @@ scp: Connection closed
 [09:43:06] ❌ scp failed after retries
 [2026-07-13 09:43:06]   ❌ deploy FAILED — see log
 [2026-07-13 09:43:06] ════ rn_daily END (FAIL) ════
+[2026-07-14 09:15:02] ════ rn_daily START ════
+[2026-07-14 09:15:02] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌑 New Moon 0% | mercury_rx=true
+[2026-07-14 09:15:02]   ok
+[2026-07-14 09:15:02] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌑 New Moon 0% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 55 pages)
+[2026-07-14 09:15:55]   ok
+[2026-07-14 09:15:55] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-15 new-moon | 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-14 09:15:55]   ok
+[2026-07-14 09:15:55] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 1 events to build: new-moon-september-2026
+GEN new-moon-september-2026 (try 1) ...
+OK   new-moon-september-2026
+
+events done=1 failed=0
+[2026-07-14 09:16:49]   ok
+[2026-07-14 09:16:50] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-14 09:16:50]   ok
+[2026-07-14 09:16:50] [2/4] quality gate
+FAIL new-moon-september-2026: missing=- banned=guaranteed love L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-14 09:16:50]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-14 09:16:50] ════ rn_daily END (FAIL) ════
+[2026-07-15 10:29:26] ════ rn_daily START ════
+[2026-07-15 10:29:26] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌑 New Moon 0% | mercury_rx=true
+[2026-07-15 10:29:27]   ok
+[2026-07-15 10:29:27] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌑 New Moon 0% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-15 10:29:28]   ⚠ failed (continuing)
+[2026-07-15 10:29:28] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-15 10:29:28]   ok
+[2026-07-15 10:29:28] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-15 10:29:28]   ok
+[2026-07-15 10:29:28] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-15 10:29:28]   ok
+[2026-07-15 10:29:28] [2/4] quality gate
+FAIL new-moon-september-2026: missing=- banned=guaranteed love L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-15 10:29:29]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-15 10:29:29] ════ rn_daily END (FAIL) ════
+[2026-07-16 10:14:03] ════ rn_daily START ════
+[2026-07-16 10:14:03] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 2% | mercury_rx=true
+[2026-07-16 10:14:03]   ok
+[2026-07-16 10:14:03] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 2% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-16 10:14:52]   ok
+[2026-07-16 10:14:52] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-16 10:14:52]   ok
+[2026-07-16 10:14:52] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-16 10:14:53]   ok
+[2026-07-16 10:14:53] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-16 10:14:53]   ok
+[2026-07-16 10:14:53] [2/4] quality gate
+FAIL new-moon-september-2026: missing=- banned=guaranteed love L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-16 10:14:53]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-16 10:14:53] ════ rn_daily END (FAIL) ════
+[2026-07-17 09:21:53] ════ rn_daily START ════
+[2026-07-17 09:21:53] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 7% | mercury_rx=true
+[2026-07-17 09:21:53]   ok
+[2026-07-17 09:21:53] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 7% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-17 09:22:35]   ok
+[2026-07-17 09:22:35] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-17 09:22:35]   ok
+[2026-07-17 09:22:35] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-17 09:22:35]   ok
+[2026-07-17 09:22:35] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-17 09:22:35]   ok
+[2026-07-17 09:22:35] [2/4] quality gate
+FAIL new-moon-september-2026: missing=- banned=guaranteed love L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-17 09:22:36]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-17 09:22:36] ════ rn_daily END (FAIL) ════
+[2026-07-18 10:01:08] ════ rn_daily START ════
+[2026-07-18 10:01:08] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 13% | mercury_rx=true
+[2026-07-18 10:01:08]   ok
+[2026-07-18 10:01:08] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 13% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-18 10:02:05]   ok
+[2026-07-18 10:02:05] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-18 10:02:05]   ok
+[2026-07-18 10:02:05] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-18 10:02:05]   ok
+[2026-07-18 10:02:05] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-18 10:02:05]   ok
+[2026-07-18 10:02:05] [2/4] quality gate
+FAIL new-moon-september-2026: missing=- banned=guaranteed love L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-18 10:02:06]   ❌ quality gate FAILED — aborting, live site unchanged
+[2026-07-18 10:02:06] ════ rn_daily END (FAIL) ════
+[2026-07-19 09:15:02] ════ rn_daily START ════
+[2026-07-19 09:15:02] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 21% | mercury_rx=true
+[2026-07-19 09:15:02]   ok
+[2026-07-19 09:15:02] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 21% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-19 09:15:03]   ⚠ failed (continuing)
+[2026-07-19 09:15:03] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-19 09:15:03]   ok
+[2026-07-19 09:15:04] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-19 09:15:04]   ok
+[2026-07-19 09:15:04] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-19 09:15:04]   ok
+[2026-07-19 09:15:04] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-19 09:15:04]   ok
+[2026-07-19 09:15:04] [3/4] build + deploy
+[09:15:04] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[09:15:04] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[09:15:05] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  71 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 111 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 287 ms
+[09:15:06]       built 79 html files
+[09:15:06] [4/8] release gate
+release_gate=finished html=79 sitemap=29 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+release_gate=passed
+[09:15:06] [5/8] backup remote webroot
+[09:15:13] [6/8] push build
+[09:15:40] [7/8] extract + prune + chown
+[09:15:44] [8/8] verify live
+[09:15:46]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=1 sitemap_noindex=0
+FAIL missing canonical /tools/
+homepage_h1=1
+go_routes=12
+internal_links_checked=1 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=1
+[09:15:53]       ↻ post-deploy acceptance attempt 1/2 failed — retrying in 5s
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=1 sitemap_noindex=0
+FAIL missing canonical /tools/
+homepage_h1=1
+go_routes=12
+internal_links_checked=1 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=1
+[09:16:06]       ⚠ post-deploy acceptance failed after 2 attempts
+[09:16:06] ❌ post-deploy acceptance failed
+[2026-07-19 09:16:06]   ❌ deploy FAILED — see log
+[2026-07-19 09:16:06] ════ rn_daily END (FAIL) ════
+[2026-07-20 18:56:04] ════ rn_daily START ════
+[2026-07-20 18:56:04] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 34% | mercury_rx=true
+[2026-07-20 18:56:04]   ok
+[2026-07-20 18:56:04] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 34% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-20 18:56:56]   ok
+[2026-07-20 18:56:56] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-20 18:56:56]   ok
+[2026-07-20 18:56:56] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-20 18:56:56]   ok
+[2026-07-20 18:56:56] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-20 18:56:56]   ok
+[2026-07-20 18:56:56] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-20 18:56:56]   ok
+[2026-07-20 18:56:56] [3/4] build + deploy
+[18:56:56] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[18:56:57] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[18:56:57] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 112 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 209 ms
+[18:56:57]       built 81 html files
+[18:56:57] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+release_gate=passed
+[18:56:57] [5/8] backup remote webroot
+[18:57:05] [6/8] push build
+[18:57:23] [7/8] extract + prune + chown
+[18:57:26] [8/8] verify live
+[18:57:29]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=31 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=26 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[18:57:52] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-20 18:57:52]   ✓ deployed
+[2026-07-20 18:57:52] [4/4] health check
+[2026-07-20 18:57:55]   canonical(http→)=301 home=200 sitemap=31 go=200 empty_ids=1/4
+[2026-07-20 18:57:55]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-20 18:57:55] ════ rn_daily END (OK) ════
+[2026-07-21 09:15:02] ════ rn_daily START ════
+[2026-07-21 09:15:02] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌒 Waxing Crescent 40% | mercury_rx=true
+[2026-07-21 09:15:02]   ok
+[2026-07-21 09:15:02] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌒 Waxing Crescent 40% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-21 09:16:21]   ok
+[2026-07-21 09:16:21] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-21 09:16:21]   ok
+[2026-07-21 09:16:21] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-21 09:16:21]   ok
+[2026-07-21 09:16:21] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-21 09:16:22]   ok
+[2026-07-21 09:16:22] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-21 09:16:22]   ok
+[2026-07-21 09:16:22] [3/4] build + deploy
+[09:16:22] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[09:16:22] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[09:16:22] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 112 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 232 ms
+[09:16:23]       built 81 html files
+[09:16:23] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+release_gate=passed
+[09:16:23] [5/8] backup remote webroot
+[09:16:30] [6/8] push build
+[09:16:45] [7/8] extract + prune + chown
+[09:16:48] [8/8] verify live
+[09:16:52]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=31 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=26 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[09:17:14] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-21 09:17:14]   ✓ deployed
+[2026-07-21 09:17:14] [4/4] health check
+[2026-07-21 09:17:17]   canonical(http→)=301 home=200 sitemap=31 go=200 empty_ids=1/4
+[2026-07-21 09:17:17]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-21 09:17:17] ════ rn_daily END (OK) ════
+[2026-07-22 10:27:56] ════ rn_daily START ════
+[2026-07-22 10:27:56] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌓 First Quarter 51% | mercury_rx=true
+[2026-07-22 10:27:56]   ok
+[2026-07-22 10:27:56] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌓 First Quarter 51% | sun=Cancer(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-22 10:28:37]   ok
+[2026-07-22 10:28:37] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-22 10:28:38]   ok
+[2026-07-22 10:28:38] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-22 10:28:38]   ok
+[2026-07-22 10:28:38] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-22 10:28:38]   ok
+[2026-07-22 10:28:38] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-22 10:28:38]   ok
+[2026-07-22 10:28:38] [3/4] build + deploy
+[10:28:38] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[10:28:38] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[10:28:39] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 112 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 249 ms
+[10:28:39]       built 81 html files
+[10:28:39] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+release_gate=passed
+[10:28:40] [5/8] backup remote webroot
+Connection closed by 23.95.128.137 port 2222
+[10:28:45]       ↻ backup attempt 1/3 failed — retrying in 5s
+Connection closed by 23.95.128.137 port 2222
+[10:28:55]       ↻ backup attempt 2/3 failed — retrying in 10s
+Connection to 23.95.128.137 port 2222 timed out
+[10:30:47]       ⚠ backup failed after 3 attempts
+[10:30:47]       ⚠ backup step failed (continuing — push still proceeds)
+[10:30:50] [6/8] push build
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[10:30:56]       ↻ scp push attempt 1/3 failed — retrying in 5s
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[10:32:57]       ↻ scp push attempt 2/3 failed — retrying in 10s
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[10:33:12]       ⚠ scp push failed after 3 attempts
+[10:33:12] ❌ scp failed after retries
+[2026-07-22 10:33:12]   ❌ deploy FAILED — see log
+[2026-07-22 10:33:12] ════ rn_daily END (FAIL) ════
+[2026-07-23 10:07:23] ════ rn_daily START ════
+[2026-07-23 10:07:23] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 61% | mercury_rx=true
+[2026-07-23 10:07:23]   ok
+[2026-07-23 10:07:23] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 61% | sun=Leo(summer) | mercury=RETROGRADE (until 2026-07-23)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-23 10:07:25]   ⚠ failed (continuing)
+[2026-07-23 10:07:25] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-23 10:07:25]   ok
+[2026-07-23 10:07:25] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-23 10:07:25]   ok
+[2026-07-23 10:07:25] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-23 10:07:25]   ok
+[2026-07-23 10:07:25] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-23 10:07:26]   ok
+[2026-07-23 10:07:26] [3/4] build + deploy
+[10:07:26] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[10:07:26] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[10:07:26] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 364 ms
+[10:07:27]       built 81 html files
+[10:07:27] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+release_gate=passed
+[10:07:27] [5/8] backup remote webroot
+[10:09:40] [6/8] push build
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[10:12:19]       ↻ scp push attempt 1/3 failed — retrying in 5s
+Connection to 23.95.128.137 port 2222 timed out
+scp: Connection closed
+[10:14:18]       ↻ scp push attempt 2/3 failed — retrying in 10s
+Connection closed by 23.95.128.137 port 2222
+scp: Connection closed
+[10:14:33]       ⚠ scp push failed after 3 attempts
+[10:14:34] ❌ scp failed after retries
+[2026-07-23 10:14:34]   ❌ deploy FAILED — see log
+[2026-07-23 10:14:34] ════ rn_daily END (FAIL) ════
+[2026-07-24 09:15:02] ════ rn_daily START ════
+[2026-07-24 09:15:02] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 71% | mercury_rx=false
+[2026-07-24 09:15:02]   ok
+[2026-07-24 09:15:02] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 71% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-24 09:15:03]   ⚠ failed (continuing)
+[2026-07-24 09:15:03] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-24 09:15:04]   ok
+[2026-07-24 09:15:04] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-24 09:15:04]   ok
+[2026-07-24 09:15:04] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-24 09:15:04]   ok
+[2026-07-24 09:15:04] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-24 09:15:05]   ok
+[2026-07-24 09:15:05] [3/4] build + deploy
+[09:15:05] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[09:15:05] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[09:15:05] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 340 ms
+[09:15:06]       built 81 html files
+[09:15:06] [4/8] release gate
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/about/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/affiliate-disclosure/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/astrology-reading-cost-calculator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/contact/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/comparisons/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/privacy/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/psychic-reader-matcher/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-reader-platform-credibility-checklist/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-builder/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-generator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+[09:15:06] ❌ release gate failed - aborting deploy
+[2026-07-24 09:15:06]   ❌ deploy FAILED — see log
+[2026-07-24 09:15:07] ════ rn_daily END (FAIL) ════
+[2026-07-25 09:33:07] ════ rn_daily START ════
+[2026-07-25 09:33:07] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 80% | mercury_rx=false
+[2026-07-25 09:33:07]   ok
+[2026-07-25 09:33:08] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 80% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+RETRY todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+GEN todays-sky (try 2) ...
+FAIL  todays-sky: API 403: {"code":"INSUFFICIENT_BALANCE","message":"error: code=400 reason=\"INSUFFICIENT_BALANCE\" message=\"insufficient balance\" metadata=map[]"}
+[2026-07-25 09:33:09]   ⚠ failed (continuing)
+[2026-07-25 09:33:09] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-25 09:33:09]   ok
+[2026-07-25 09:33:09] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-25 09:33:09]   ok
+[2026-07-25 09:33:09] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-25 09:33:09]   ok
+[2026-07-25 09:33:09] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-25 09:33:09]   ok
+[2026-07-25 09:33:10] [3/4] build + deploy
+[09:33:10] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[09:33:10] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[09:33:10] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 451 ms
+[09:33:11]       built 81 html files
+[09:33:11] [4/8] release gate
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/about/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/affiliate-disclosure/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/astrology-reading-cost-calculator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/contact/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/comparisons/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/privacy/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/psychic-reader-matcher/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-reader-platform-credibility-checklist/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-builder/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-generator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+[09:33:11] ❌ release gate failed - aborting deploy
+[2026-07-25 09:33:11]   ❌ deploy FAILED — see log
+[2026-07-25 09:33:11] ════ rn_daily END (FAIL) ════
+[2026-07-26 09:45:30] ════ rn_daily START ════
+[2026-07-26 09:45:30] [0/4] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 88% | mercury_rx=false
+[2026-07-26 09:45:31]   ok
+[2026-07-26 09:45:31] [0b/4] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 88% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-26 09:46:00]   ok
+[2026-07-26 09:46:00] [0c/4] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-26 09:46:00]   ok
+[2026-07-26 09:46:00] [0d/4] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-26 09:46:00]   ok
+[2026-07-26 09:46:00] [1/4] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-26 09:46:00]   ok
+[2026-07-26 09:46:00] [2/4] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-26 09:46:00]   ok
+[2026-07-26 09:46:00] [3/4] build + deploy
+[09:46:01] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[09:46:01] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[09:46:01] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 252 ms
+[09:46:02]       built 81 html files
+[09:46:02] [4/8] release gate
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/about/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/affiliate-disclosure/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/astrology-reading-cost-calculator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/contact/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/comparisons/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/privacy/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/psychic-reader-matcher/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-reader-platform-credibility-checklist/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-builder/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/tarot-question-generator/
+FAIL sitemap URL missing lastmod: https://www.roamsnotes.com/tools/
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0
+[09:46:02] ❌ release gate failed - aborting deploy
+[2026-07-26 09:46:02]   ❌ deploy FAILED — see log
+[2026-07-26 09:46:02] ════ rn_daily END (FAIL) ════

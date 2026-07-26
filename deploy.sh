@@ -39,23 +39,27 @@ retry() {
 }
 
 # --- 1. quality gate (blocks bad content before anything ships) ---
-say "[1/7] quality gate"
+say "[1/8] quality gate"
 node scripts/quality_gate.js || fail "quality gate failed — fix pages.yaml"
 
 # --- 2. generate pages + /go/ redirects from data ---
-say "[2/7] generate pages + /go/ redirects"
+say "[2/8] generate pages + /go/ redirects"
 node scripts/generate_pages.js || fail "generate failed"
 
 # --- 3. hugo build (clean) ---
-say "[3/7] hugo build"
+say "[3/8] hugo build"
 rm -rf "$REPO/public"
-"$HUGO_BIN" --gc --minify --destination "$REPO/public" || fail "hugo build failed"
+"$HUGO_BIN" --gc --minify --baseURL "$SITE_URL/" --destination "$REPO/public" || fail "hugo build failed"
 PAGES=$(find "$REPO/public" -name index.html | wc -l)
 [ "$PAGES" -lt 10 ] && fail "only $PAGES html files built — aborting"
 say "      built $PAGES html files"
 
 # --- 4. backup remote webroot (retry; keep only the last 7 archives) ---
-say "[4/7] backup remote webroot"
+say "[4/8] release gate"
+node scripts/release_gate.js || fail "release gate failed - aborting deploy"
+
+# --- 5. backup remote webroot (retry; keep only the last 7 archives) ---
+say "[5/8] backup remote webroot"
 retry "backup" 3 $SSH "mkdir -p /www/backups \
   && tar czf /www/backups/roamsnotes_deploy_\$(date +%Y%m%d_%H%M%S).tar.gz -C $WEB_ROOT . 2>/dev/null \
   && ls -1t /www/backups/roamsnotes_deploy_*.tar.gz | tail -n +8 | xargs -r rm -f" \
@@ -63,20 +67,28 @@ retry "backup" 3 $SSH "mkdir -p /www/backups \
 sleep 3
 
 # --- 5. push public/ (tar over ssh; no rsync on Git Bash) ---
-say "[5/7] push build"
+say "[6/8] push build"
 tar czf /tmp/roams_public.tar.gz -C "$REPO/public" . || fail "tar failed"
 retry "scp push" 3 \
   scp -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ConnectTimeout=30 -i "$SSH_KEY" -P "$SSH_PORT" /tmp/roams_public.tar.gz "$SSH_HOST:/tmp/" \
   || fail "scp failed after retries"
 
+# Keep the server-side acceptance check beside the static site, but outside the webroot.
+retry "post-deploy checker upload" 3 \
+  scp -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ConnectTimeout=30 -i "$SSH_KEY" -P "$SSH_PORT" \
+  "$REPO/scripts/rn_post_deploy_check.sh" "$SSH_HOST:/tmp/rn_post_deploy_check.sh" \
+  || fail "post-deploy checker upload failed"
+
 # Compute the set of valid /go/ slugs so we can prune stale redirects on the server.
 GO_SLUGS=$(find "$REPO/public/go" -maxdepth 1 -mindepth 1 -type d -printf '%f\n' 2>/dev/null | tr '\n' ' ')
 
 # --- 6. extract + prune stale /go/ + fix ownership (retry on transient close) ---
-say "[6/7] extract + prune + chown"
+say "[7/8] extract + prune + chown"
 remote_extract() {
   $SSH "set -e
     tar xzf /tmp/roams_public.tar.gz -C $WEB_ROOT
+    mkdir -p /root/scripts
+    install -m 0755 /tmp/rn_post_deploy_check.sh /root/scripts/rn_post_deploy_check.sh
     # prune /go/ dirs no longer in the build
     for d in $WEB_ROOT/go/*/; do
       s=\$(basename \"\$d\")
@@ -88,11 +100,14 @@ remote_extract() {
 retry "extract" 3 remote_extract || fail "remote extract/prune failed after retries"
 
 # --- 7. verify live ---
-say "[7/7] verify live"
+say "[8/8] verify live"
 HOME_CODE=$(curl -sS -o /dev/null -w '%{http_code}' "$SITE_URL/")
 TAROT_CODE=$(curl -sS -o /dev/null -w '%{http_code}' "$SITE_URL/fiverr-tarot-reading/")
 GO_CODE=$(curl -sS -o /dev/null -w '%{http_code}' "$SITE_URL/go/fiverr-tarot/")
 say "      home=$HOME_CODE tarot=$TAROT_CODE go=$GO_CODE"
 [ "$HOME_CODE" = 200 ] && [ "$TAROT_CODE" = 200 ] || fail "live verification failed"
+
+retry "post-deploy acceptance" 2 $SSH "RN_SITE_URL='$SITE_URL' RN_WEB_ROOT='$WEB_ROOT' /root/scripts/rn_post_deploy_check.sh" \
+  || fail "post-deploy acceptance failed"
 
 say "✅ deploy complete → $SITE_URL/"

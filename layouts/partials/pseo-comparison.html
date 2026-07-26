@@ -1,0 +1,10 @@
+{{ $item := .Item }}
+<article class="content pseo-page pseo-page--comparison">
+  <p class="eyebrow">{{ $item.category }} / decision guide</p><h1>{{ $item.h1 }}</h1><p class="lede">{{ $item.description }}</p><p class="author-byline">Reviewed by <strong>{{ site.Params.authorName }}</strong>, {{ site.Params.authorTitle }}.</p>
+  {{ with $item.tldr }}<aside class="tldr"><strong>Bottom line:</strong> {{ . | markdownify }}</aside>{{ end }}
+  <section class="decision-matrix"><h2>Choose by the job you need done</h2><div class="matrix-grid"><div><h3>Fixed-price marketplace</h3><p>Best when you want a capped spend, a re-readable file, and time to compare packages.</p></div><div><h3>Live psychic platform</h3><p>Best when you need immediate back-and-forth and can stop the session before the timer runs away.</p></div></div></section>
+  {{ range $item.sections }}<section class="pseo-section pseo-section--comparison"><h2>{{ .heading }}</h2>{{ with .image }}<figure class="section-img">{{ partial "responsive-image.html" (dict "image" . "hero" false) }}</figure>{{ end }}{{ .body | markdownify }}</section>{{ end }}
+  <section class="cost-control"><h2>Set your stop point before checkout</h2><p>Write down the maximum spend, delivery format, and one question. If a seller or platform needs urgency to close the sale, pause instead.</p></section>
+  {{ with $item.faq }}<section class="faq"><h2>FAQ</h2>{{ range . }}<details><summary>{{ .q }}</summary>{{ .a | markdownify }}</details>{{ end }}</section>{{ end }}
+  {{ if $item.affiliate }}<section class="cta-panel cta-panel--comparison"><h2>Make the choice that matches your constraints</h2><p>Start with the model whose price and delivery you can explain before paying.</p><a class="button primary" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="comparison-bottom" rel="sponsored nofollow noopener">{{ $item.primary_cta }} &rarr;</a></section>{{ end }}
+</article>

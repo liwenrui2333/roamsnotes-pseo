@@ -3,22 +3,12 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ if eq .Section "tools" }}
-    <div class="grid three">
-      <a class="card" href="/tools/tarot-question-generator/">
-        <span class="card-kicker">Tool</span>
-        <h2>Tarot Question Generator</h2>
-        <p>Prepare clearer questions before ordering a reading.</p>
-      </a>
-      <a class="card" href="/tools/psychic-reader-matcher/">
-        <span class="card-kicker">Tool</span>
-        <h2>Psychic Reader Matcher</h2>
-        <p>Match topic, budget, and format to a reader type.</p>
-      </a>
-      <a class="card" href="/tools/astrology-reading-cost-calculator/">
-        <span class="card-kicker">Tool</span>
-        <h2>Astrology Cost Calculator</h2>
-        <p>Estimate what kind of reading fits your budget.</p>
-      </a>
+    <div class="tools-paths">
+      <section class="tools-path"><span class="card-kicker">01 / clarify</span><h2>Put the question into words</h2><p>Turn a yes/no worry into a focused prompt you can actually reflect on.</p><a class="button secondary" href="/tools/tarot-question-generator/">Draft a better question &rarr;</a></section>
+      <section class="tools-path"><span class="card-kicker">02 / focus</span><h2>Build a question for your situation</h2><p>Use a real starting question and get three prompts about choices, clarity, and boundaries.</p><a class="button secondary" href="/tools/tarot-question-builder/">Build three questions &rarr;</a></section>
+      <section class="tools-path"><span class="card-kicker">03 / compare</span><h2>Find a format that fits</h2><p>Match your topic, budget, and preferred delivery before opening a marketplace.</p><a class="button secondary" href="/tools/psychic-reader-matcher/">Match a reader type &rarr;</a></section>
+      <section class="tools-path"><span class="card-kicker">04 / safety</span><h2>Check the reader and platform</h2><p>Pause on curse claims, extra payment requests, urgency, and weak buyer protection.</p><a class="button secondary" href="/tools/tarot-reader-platform-credibility-checklist/">Run the safety check &rarr;</a></section>
+      <section class="tools-path"><span class="card-kicker">05 / budget</span><h2>Set a sensible spend</h2><p>Estimate the depth of an astrology reading so the package does not decide for you.</p><a class="button secondary" href="/tools/astrology-reading-cost-calculator/">Estimate the cost &rarr;</a></section>
     </div>
   {{ end }}
 </article>

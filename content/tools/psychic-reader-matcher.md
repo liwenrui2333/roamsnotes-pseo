@@ -1,6 +1,8 @@
 ---
 title: "Psychic Reader Matcher"
 description: "Match your topic, budget, and preferred delivery style to a safer online reading format."
+date: "2026-06-20"
+lastmod: "2026-06-20"
 ---
 
 Use this matcher before browsing readers. It helps you compare formats without assuming any reading can guarantee an outcome.

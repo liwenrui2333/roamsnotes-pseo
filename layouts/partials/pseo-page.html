@@ -1,16 +1,24 @@
 {{ $item := .Item }}
+{{ if eq $item.layout_variant "service" }}{{ partial "pseo-service.html" . }}
+{{ else if eq $item.layout_variant "comparison" }}{{ partial "pseo-comparison.html" . }}
+{{ else if eq $item.layout_variant "guide" }}{{ partial "pseo-guide.html" . }}
+{{ else if eq $item.layout_variant "info" }}{{ partial "pseo-info.html" . }}
+{{ else }}
+{{ $isInfo := eq $item.type "info" }}
+{{ $isCommercial := in (slice "service" "comparison") $item.type }}
+{{ $hideInfoHero := and $isInfo (in $item.slug "-and-") }}
 <article class="content pseo-page">
   <p class="eyebrow">{{ $item.category }} / {{ $item.type }}</p>
   <h1>{{ $item.h1 }}</h1>
   <p class="lede">{{ $item.description }}</p>
   <p class="author-byline">Reviewed by <strong>{{ site.Params.authorName }}</strong>, {{ site.Params.authorTitle }}.</p>
-  {{ if $item.affiliate }}
+  {{ if and $isCommercial $item.affiliate }}
   <div class="hero-cta">
     <a class="button primary" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="hero-find-reader" rel="sponsored nofollow noopener">{{ $item.primary_cta }} &rarr;</a>
     <span>Compare packages first; avoid urgency, certainty, and vague deliverables.</span>
   </div>
   {{ end }}
-  {{ if in (slice "does-he-love-me-tarot" "is-my-ex-coming-back-tarot") $item.slug }}
+  {{ if and $isCommercial (in (slice "does-he-love-me-tarot" "is-my-ex-coming-back-tarot") $item.slug) }}
   <section class="emotion-prompt">
     <h2>Start with the question you actually have</h2>
     <label>Your question
@@ -21,24 +29,25 @@
   </section>
   {{ end }}
 
-  {{ with $item.hero }}
+  {{ if not $hideInfoHero }}{{ with $item.hero }}
   <figure class="hero-img">
-    <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" width="900" height="480">
+    {{ partial "responsive-image.html" (dict "image" . "hero" true) }}
     {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
   </figure>
-  {{ end }}
+  {{ end }}{{ end }}
 
   {{ with $item.tldr }}
   <aside class="tldr"><strong>Quick take:</strong> {{ . | markdownify }}</aside>
   {{ end }}
 
-  <section class="summary-panel">
+  {{ if $isCommercial }}
+  <section class="summary-panel" aria-label="Booking details">
     <div>
-      <span>Intent</span>
+      <span>Best for</span>
       <strong>{{ $item.intent }}</strong>
     </div>
     <div>
-      <span>Budget</span>
+      <span>Typical budget</span>
       <strong>{{ $item.budget }}</strong>
     </div>
     <div>
@@ -46,7 +55,7 @@
       <strong>{{ $item.delivery }}</strong>
     </div>
     <div>
-      <span>Risk</span>
+      <span>Watch for</span>
       <strong>{{ $item.risk_level }}</strong>
     </div>
   </section>
@@ -54,13 +63,19 @@
   <section class="affiliate-note">
     <p>{{ site.Params.affiliateDisclosure }}</p>
   </section>
+  {{ else }}
+  <aside class="at-a-glance">
+    <strong>At a glance</strong>
+    <span>{{ $item.intent }}</span>
+  </aside>
+  {{ end }}
 
-  {{ range $item.sections }}
-    <section>
+  {{ range $index, $section := $item.sections }}
+    <section class="pseo-section{{ if $isCommercial }} pseo-section--commercial{{ end }}">
       <h2>{{ .heading }}</h2>
       {{ with .image }}
       <figure class="section-img">
-        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+        {{ partial "responsive-image.html" (dict "image" . "hero" false) }}
         {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
       </figure>
       {{ end }}
@@ -90,10 +105,12 @@
   </section>
   {{ end }}
 
-  <section class="cta-panel">
+  {{ if or $isCommercial $item.cta_url }}
+  <section class="cta-panel{{ if $isInfo }} cta-panel--info{{ end }}">
     <h3>If you decide to book</h3>
     <p>{{ $item.audience }} When you know what you want, you can {{ if $item.affiliate }}<a class="soft-cta" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="{{ $item.primary_cta }}" rel="sponsored nofollow noopener">{{ lower $item.primary_cta }} &rarr;</a>{{ else }}<a class="soft-cta" href="{{ $item.cta_url }}"{{ if hasPrefix $item.cta_url "http" }} rel="sponsored nofollow noopener"{{ end }}>{{ lower $item.primary_cta }} &rarr;</a>{{ end }}.</p>
   </section>
+  {{ end }}
 
   {{/* Category-contextual hub links — drives crawl equity to core hub pages from every PSEO page */}}
   {{ $hubs := dict
@@ -147,6 +164,7 @@
 
   {{ with $item.last_updated }}<p class="last-updated">Data anchors last checked: {{ . }}.</p>{{ end }}
 </article>
+{{ end }}
 
 {{/* Service schema for service/comparison pages */}}
 {{ if in (slice "service" "comparison") $item.type }}

@@ -25,6 +25,14 @@
   gig: "https://www.fiverr.com/astrokatya/an-astrological-birth-chart-reading-an-astrological-synastry-chart-reading"
   target: "https://www.fiverr.com/search/gigs?query=astrology%20reading"
 
+# Legacy short paths kept alive for old links and crawler probes.
+- slug: tarot
+  label: Fiverr tarot readers
+  target: "https://www.fiverr.com/search/gigs?query=tarot%20reading"
+- slug: astrology
+  label: Fiverr astrology readers
+  target: "https://www.fiverr.com/search/gigs?query=astrology%20reading"
+
 # --- Tarot intent (tool-matched) ---
 - slug: love-tarot
   label: love & relationship tarot readers

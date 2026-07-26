@@ -1,0 +1,10 @@
+{{ $item := .Item }}
+<article class="content pseo-page pseo-page--info">
+  <p class="eyebrow">{{ $item.category }} / reflection guide</p><h1>{{ $item.h1 }}</h1><p class="lede">{{ $item.description }}</p><p class="author-byline">Reviewed by <strong>{{ site.Params.authorName }}</strong>, {{ site.Params.authorTitle }}.</p>
+  {{ with $item.hero }}<figure class="hero-img hero-img--info">{{ partial "responsive-image.html" (dict "image" . "hero" true) }}{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>{{ end }}
+  {{ with $item.tldr }}<aside class="tldr"><strong>Start here:</strong> {{ . | markdownify }}</aside>{{ end }}
+  <section class="reflection-boundary"><h2>Read the signal before seeking a verdict</h2><p>Use this page to name what you can observe, what you feel, and what choice is yours. A tarot or astrology reading can be a reflection prompt; it cannot certify another person's private thoughts or guarantee an outcome.</p></section>
+  {{ range $item.sections }}<section class="pseo-section pseo-section--info"><h2>{{ .heading }}</h2>{{ with .image }}<figure class="section-img">{{ partial "responsive-image.html" (dict "image" . "hero" false) }}</figure>{{ end }}{{ .body | markdownify }}</section>{{ end }}
+  {{ with $item.faq }}<section class="faq"><h2>FAQ</h2>{{ range . }}<details><summary>{{ .q }}</summary>{{ .a | markdownify }}</details>{{ end }}</section>{{ end }}
+  <section class="cta-panel cta-panel--info"><h2>Turn the worry into a better question</h2><p>Start with the free question generator. If you later want a paid perspective, choose one with clear limits and a fixed scope.</p><a class="button secondary" href="/tools/tarot-question-generator/">Use the free question tool &rarr;</a></section>
+</article>

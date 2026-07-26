@@ -1,5 +1,6 @@
 {{ $embed := .Embed | default false }}
 <section class="rn-tarot-tool{{ if $embed }} rn-tarot-tool--embedded{{ end }}" id="free-love-tarot" data-tarot-tool="free_love_tarot" aria-labelledby="tarot-tool-title">
+  {{ if $embed }}<h2 id="tarot-tool-title" class="rn-visually-hidden">Three-card love tarot reading</h2>{{ end }}
   {{ if not $embed }}<div class="rn-tarot-tool__intro">
     <p class="eyebrow">A private, no-signup reflection tool</p>
     <h1 id="tarot-tool-title">Free Love Tarot Reading</h1>
@@ -9,6 +10,17 @@
 
   <div class="rn-tarot-tool__workspace">
     <div class="rn-tarot-tool__controls">
+      {{ if $embed }}
+      <p class="rn-tarot-tool__prompt">What are they not saying?</p>
+      <p class="rn-tarot-tool__lede">Pull three cards for the truth, the tension, and your next move.</p>
+      <div class="rn-tarot-tool__actions">
+        <button class="rn-tarot-button rn-tarot-button--primary" id="tarot-shuffle" type="button" aria-label="Reveal my three-card love tarot answer">Reveal my three-card answer</button>
+        <button class="rn-tarot-button rn-tarot-button--quiet" id="tarot-reset" type="button" aria-label="Draw a new three-card love tarot reading" hidden>Draw again</button>
+      </div>
+      <p class="rn-tarot-trust">No signup. Private by default.</p>
+      <p class="rn-tarot-hook">For the message you keep rereading.</p>
+      <p class="rn-tarot-status" id="tarot-status" role="status" aria-live="polite">One click. Your three cards reveal automatically.</p>
+      {{ else }}
       <fieldset class="rn-tarot-tool__modes">
         <legend>Choose a reading</legend>
         <div class="rn-tarot-mode-group">
@@ -28,10 +40,11 @@
         <button type="button" class="rn-tarot-chip" data-question="What is blocking this connection?">What is blocking this?</button>
       </div>
       <div class="rn-tarot-tool__actions">
-        <button class="rn-tarot-button rn-tarot-button--primary" id="tarot-shuffle" type="button">Start reading</button>
-        <button class="rn-tarot-button rn-tarot-button--quiet" id="tarot-reset" type="button" hidden>Draw again</button>
+        <button class="rn-tarot-button rn-tarot-button--primary" id="tarot-shuffle" type="button" aria-label="Start tarot reading">Start reading</button>
+        <button class="rn-tarot-button rn-tarot-button--quiet" id="tarot-reset" type="button" aria-label="Draw a new tarot reading" hidden>Draw again</button>
       </div>
       <p class="rn-tarot-status" id="tarot-status" role="status" aria-live="polite">Choose a spread, hold your question in mind, then shuffle.</p>
+      {{ end }}
     </div>
 
     <div class="rn-tarot-tool__reading" aria-live="polite">
@@ -44,7 +57,7 @@
       <div class="rn-tarot-results" id="tarot-results"></div>
       <div class="rn-tarot-results__actions" id="tarot-result-actions" hidden>
         <button class="rn-tarot-copy" id="tarot-copy" type="button">Copy result</button>
-        <a class="rn-tarot-guide" href="/fiverr-tarot-reading/" data-tarot-guide>Explore your situation in depth →</a>
+        <a class="rn-tarot-guide" href="/fiverr-tarot-reading/" data-tarot-guide>Get a written reading for the question still bothering you →</a>
       </div>
     </div>
   </div>

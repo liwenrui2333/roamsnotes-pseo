@@ -4,9 +4,9 @@
 <div class="rn-hero-wrap">
 <section class="rn-hero">
   <div class="rn-hero__text">
-    <p class="eyebrow">Free tarot clarity tools</p>
-    <h1 class="rn-hero__h1">Ask a love question.<br>Pull three cards.<br>Get a calmer next step.</h1>
-    <p class="rn-hero__sub">Free tarot clarity first. Paid readers only when it makes sense.</p>
+    <p class="eyebrow">Free love tarot</p>
+    <h1 class="rn-hero__h1">Not sure where this connection stands?</h1>
+    <p class="rn-hero__sub">Pull three cards to reflect on the situation, what is getting in the way, and the next step you can take.</p>
   </div>
 
   <div class="rn-hero__panel" id="hero-pull-panel">
@@ -24,7 +24,7 @@
     <div class="rn-tool-grid">
       <a class="rn-tool-card" href="/tools/tarot-question-generator/">
         <div class="rn-tool-card__icon" aria-hidden="true">
-          <img src="/img/icons/cards.svg" alt="" width="26" height="26">
+          <img src="/img/icons/cards.svg" alt="Tarot cards" width="26" height="26">
         </div>
         <div>
           <strong>Tarot Question Generator</strong>
@@ -32,9 +32,29 @@
           <span class="rn-tool-card__badge">Free · No signup</span>
         </div>
       </a>
+      <a class="rn-tool-card" href="/tools/tarot-question-builder/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/cards.svg" alt="Question builder" width="26" height="26">
+        </div>
+        <div>
+          <strong>Tarot Question Builder</strong>
+          <p>Turn a real yes-or-no worry into three useful prompts.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
+      </a>
+      <a class="rn-tool-card" href="/tools/tarot-reader-platform-credibility-checklist/">
+        <div class="rn-tool-card__icon" aria-hidden="true">
+          <img src="/img/icons/user-search.svg" alt="Credibility checklist" width="26" height="26">
+        </div>
+        <div>
+          <strong>Reader Credibility Checklist</strong>
+          <p>Spot fear-based upsells and payment pressure before you pay.</p>
+          <span class="rn-tool-card__badge">Free · No signup</span>
+        </div>
+      </a>
       <a class="rn-tool-card" href="/is-my-ex-coming-back-tarot/">
         <div class="rn-tool-card__icon" aria-hidden="true">
-          <img src="/img/icons/heart.svg" alt="" width="26" height="26">
+          <img src="/img/icons/heart.svg" alt="Heart" width="26" height="26">
         </div>
         <div>
           <strong>Free Ex Tarot Reading</strong>
@@ -44,7 +64,7 @@
       </a>
       <a class="rn-tool-card" href="/tarot-reading-cost-guide/">
         <div class="rn-tool-card__icon" aria-hidden="true">
-          <img src="/img/icons/receipt.svg" alt="" width="26" height="26">
+          <img src="/img/icons/receipt.svg" alt="Receipt" width="26" height="26">
         </div>
         <div>
           <strong>Reading Cost Calculator</strong>
@@ -54,7 +74,7 @@
       </a>
       <a class="rn-tool-card" href="/tools/psychic-reader-matcher/">
         <div class="rn-tool-card__icon" aria-hidden="true">
-          <img src="/img/icons/user-search.svg" alt="" width="26" height="26">
+          <img src="/img/icons/user-search.svg" alt="Reader search" width="26" height="26">
         </div>
         <div>
           <strong>Psychic Reader Matcher</strong>
@@ -65,6 +85,9 @@
     </div>
   </div>
 </section>
+
+<!-- ===== TODAY'S SKY: daily freshness signal + crawl path to /todays-sky/ ===== -->
+{{ partial "sky-today.html" . }}
 
 <!-- ===== BUYER GUIDES: editorial layout ===== -->
 <section class="rn-band rn-band--guides">

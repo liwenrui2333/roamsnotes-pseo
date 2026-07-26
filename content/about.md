@@ -1,6 +1,8 @@
 ---
 title: "About RoamsNotes"
 description: "About RoamsNotes and how we compare online spiritual reading services."
+date: "2026-06-28"
+lastmod: "2026-06-28"
 ---
 
 RoamsNotes builds practical tools and comparison guides for people exploring online tarot, astrology, and spiritual reading services.

@@ -302,9 +302,98 @@ function initReaderMatcher() {
   });
 }
 
+/* ---------- 4. Tarot Question Builder (situational rewrite) ---------- */
+
+const QB = {
+  love: {
+    "next-step": [
+      "What is the healthiest next step I can take in this relationship?",
+      "What would I need to see in real life before I reopen this connection?",
+      "How can I communicate clearly without trying to control the other person's choice?"
+    ],
+    clarity: [
+      "What am I not seeing clearly about this relationship right now?",
+      "Which facts, feelings, and assumptions am I mixing together here?",
+      "What would help me distinguish hope from an observable sign?"
+    ],
+    boundary: [
+      "What boundary would protect my peace while this relationship is uncertain?",
+      "What pattern of waiting, checking, or over-giving should I notice?",
+      "What would I stop doing if I trusted my own limit?"
+    ]
+  },
+  default: {
+    "next-step": [
+      "What is the next practical step I can take in this situation?",
+      "What can I prepare or communicate before I decide?",
+      "What result would tell me to continue, pause, or change direction?"
+    ],
+    clarity: [
+      "What part of this situation am I not seeing clearly?",
+      "Which assumption is shaping my decision most strongly?",
+      "What information would be useful to verify outside a reading?"
+    ],
+    boundary: [
+      "What boundary would make this situation more manageable?",
+      "What pattern am I repeating that deserves my attention?",
+      "What can I stop carrying for someone else?"
+    ]
+  }
+};
+
+function initQuestionBuilder() {
+  const form = document.getElementById("question-builder-tool");
+  if (!form) return;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const theme = form.elements.theme.value;
+    const type = form.elements.questionType.value;
+    const input = (form.elements.question.value || "").trim();
+    const base = QB[theme] || QB.default;
+    const questions = (base[type] || base["next-step"]).slice();
+    if (input) questions[0] = `What should I understand about “${input.replace(/[“”]/g, "")}" before I choose my next step?`;
+    renderQuestions(document.getElementById("question-builder-result"), questions, null);
+    trackEvent("tool_result", { tool: "tarot-question-builder", theme, question_type: type });
+  });
+}
+
+/* ---------- 5. Reader and Platform Credibility Checklist ---------- */
+
+function initCredibilityChecklist() {
+  const form = document.getElementById("credibility-checklist-tool");
+  if (!form) return;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const checked = Array.from(form.querySelectorAll('input[name="risk"]:checked'));
+    const result = document.getElementById("credibility-checklist-result");
+    if (!result) return;
+    const highRisk = checked.some((item) => item.value === "curse" || item.value === "extra-payment");
+    const main = document.createElement("p");
+    main.className = "result-main";
+    if (highRisk || checked.length >= 2) {
+      main.textContent = "Pause and do not pay more. Fear, urgency, or a new charge for removing a claimed curse are strong reasons to stop the transaction, save the evidence, and use the platform's report or dispute process.";
+    } else if (checked.length === 1) {
+      main.textContent = "Pause before paying. Ask for the exact deliverable and price in writing, keep payment on-platform, and do not accept pressure to buy an add-on.";
+    } else {
+      main.textContent = "No selected signal is present. Before paying, verify the price, deliverable, turnaround, buyer protection, and cancellation or dispute path.";
+    }
+    const list = document.createElement("ul");
+    list.className = "checklist result-checklist";
+    ["Save the listing, messages, receipts, and account names.", "Do not send passwords, identity documents, or further payment to unlock a result.", "If money has already moved, contact the platform and payment provider promptly."].forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      list.appendChild(li);
+    });
+    result.replaceChildren(main, list);
+    trackEvent("tool_result", { tool: "reader-platform-credibility-checklist", risk_count: checked.length, high_risk: highRisk });
+  });
+}
+
 initQuestionGenerator();
 initReaderMatcher();
 initCostCalculator();
+initQuestionBuilder();
+initCredibilityChecklist();
 
 /* ---------- Hero pull interaction (homepage) ---------- */
 

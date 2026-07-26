@@ -1,0 +1,18 @@
+{{ $item := .Item }}
+<article class="content pseo-page pseo-page--service">
+  <p class="eyebrow">{{ $item.category }} / service guide</p>
+  <h1>{{ $item.h1 }}</h1>
+  <p class="lede">{{ $item.description }}</p>
+  <p class="author-byline">Reviewed by <strong>{{ site.Params.authorName }}</strong>, {{ site.Params.authorTitle }}.</p>
+  {{ with $item.hero }}<figure class="hero-img hero-img--service">{{ partial "responsive-image.html" (dict "image" . "hero" true) }}{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>{{ end }}
+  {{ with $item.tldr }}<aside class="tldr"><strong>Quick take:</strong> {{ . | markdownify }}</aside>{{ end }}
+  <section class="service-brief" aria-label="Booking details">
+    <div><span>Best for</span><strong>{{ $item.intent }}</strong></div><div><span>Budget</span><strong>{{ $item.budget }}</strong></div><div><span>Delivery</span><strong>{{ $item.delivery }}</strong></div>
+  </section>
+  <section class="service-steps"><h2>Before you order</h2><ol><li>Write one focused question and decide whether text, audio, or video suits you.</li><li>Check the sample, recent detailed reviews, package scope, turnaround, and revision policy.</li><li>Set a maximum budget and skip any promise of certainty, urgency, or paid “energy clearing.”</li></ol></section>
+  <p class="affiliate-note">{{ site.Params.affiliateDisclosure }}</p>
+  {{ range $item.sections }}<section class="pseo-section pseo-section--service"><h2>{{ .heading }}</h2>{{ with .image }}<figure class="section-img">{{ partial "responsive-image.html" (dict "image" . "hero" false) }}{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>{{ end }}{{ .body | markdownify }}</section>{{ end }}
+  {{ with $item.faq }}<section class="faq"><h2>FAQ</h2>{{ range . }}<details><summary>{{ .q }}</summary>{{ .a | markdownify }}</details>{{ end }}</section>{{ end }}
+  {{ with $item.checklist }}<section><h2>Before You Click</h2><ul class="checklist">{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul></section>{{ end }}
+  {{ if $item.affiliate }}<section class="cta-panel"><h2>Ready to compare packages?</h2><p>Use the checklist above, then browse only if the scope and price fit your question.</p><a class="button primary" href="/go/{{ $item.affiliate }}/" data-affiliate data-cta="service-bottom" rel="sponsored nofollow noopener">{{ $item.primary_cta }} &rarr;</a></section>{{ end }}
+</article>
