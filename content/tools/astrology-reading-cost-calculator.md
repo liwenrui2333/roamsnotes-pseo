@@ -60,7 +60,7 @@ The range starts from a base set by reading type and depth — for example a sta
 
 ## Example
 
-Choosing *Birth chart (natal) + standard + written + normal* returns a band around $35-$70 and explains it buys a structured report tying the core placements into themes. Switch to *Compatibility + detailed + video + rush* and the range climbs to reflect two-chart analysis, video production, and rush delivery. Use it to judge whether a given gig is fairly priced for what it includes, not as a fixed quote. Not sure what to actually ask once you book? Run the free [tarot question generator](/tools/tarot-question-generator/) to frame a focused question, then compare options on the [Fiverr astrology reading](/fiverr-astrology-reading/) page.
+Choosing *Birth chart (natal) + standard + written + normal* returns a band around $35-$70 and explains it buys a structured report tying the core placements into themes. Switch to *Compatibility + detailed + video + rush* and the range climbs to reflect two-chart analysis, video production, and rush delivery. Use it to judge whether a given gig is fairly priced for what it includes, not as a fixed quote. Not sure what to actually ask once you book? Run the free [tarot question builder](/tools/tarot-question-builder/) to frame a focused question, then compare options on the [Fiverr astrology reading](/fiverr-astrology-reading/) page.
 
 ## FAQ
 

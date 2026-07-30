@@ -22,4 +22,4 @@ The main decision is not just "which psychic site is best." It is whether you wa
 - Love tarot reading on Fiverr: focuses on relationship questions without treating a reading as proof of another person's feelings.
 - [Written tarot reading on Fiverr](/written-tarot-reading-on-fiverr/): explains when a written report is better than a quick live chat.
 
-Use these comparisons after you have a question and a budget. If either is still unclear, start with the [tarot question generator](/tools/tarot-question-generator/) or the [astrology reading cost calculator](/tools/astrology-reading-cost-calculator/) first.
+Use these comparisons after you have a question and a budget. If either is still unclear, start with the [tarot question builder](/tools/tarot-question-builder/) or the [astrology reading cost calculator](/tools/astrology-reading-cost-calculator/) first.
