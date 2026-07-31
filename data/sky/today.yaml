@@ -1,8 +1,8 @@
-updated: 2026-07-26
+updated: 2026-07-31
 moon:
-  name: Waxing Gibbous
-  emoji: 🌔
-  illumination: 88
+  name: Waning Gibbous
+  emoji: 🌖
+  illumination: 97
 mercury_retrograde: false
 mercury_retrograde_until: null
 mercury_known: true

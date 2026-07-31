@@ -2,7 +2,9 @@
 title: "Tarot Question Builder"
 description: "Turn a yes-or-no tarot question into three specific prompts about your choices, boundaries, and next steps."
 date: "2026-07-19"
-lastmod: "2026-07-19"
+lastmod: "2026-07-28"
+aliases:
+  - /tools/tarot-question-generator/
 ---
 
 This builder is for the moment when a question feels urgent but too narrow to be useful. It does not predict another person's decision; it helps you ask something you can reflect on and act on.
@@ -25,7 +27,7 @@ This builder is for the moment when a question feels urgent but too narrow to be
       </select>
     </label>
     <label class="tool-grid__wide">Your starting question
-      <input name="question" type="text" maxlength="140" value="Will I get back together with my ex?" aria-describedby="question-builder-help">
+      <input name="question" type="text" maxlength="140" value="Should I take this job offer?" aria-describedby="question-builder-help">
     </label>
   </div>
   <p class="field-help" id="question-builder-help">Try the example, or replace it with the question you are actually carrying.</p>

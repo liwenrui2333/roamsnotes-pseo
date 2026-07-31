@@ -1946,3 +1946,421 @@ release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=
 [09:46:02] ❌ release gate failed - aborting deploy
 [2026-07-26 09:46:02]   ❌ deploy FAILED — see log
 [2026-07-26 09:46:02] ════ rn_daily END (FAIL) ════
+[2026-07-26 21:46:14] ════ rn_daily START ════
+[2026-07-26 21:46:14] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 91% | mercury_rx=false
+[2026-07-26 21:46:14]   ok
+[2026-07-26 21:46:14] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 91% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-26 21:46:53]   ok
+[2026-07-26 21:46:53] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-26 21:46:54]   ok
+[2026-07-26 21:46:54] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-26 21:46:54]   ok
+[2026-07-26 21:46:54] [5/7] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-26 21:46:54]   ok
+[2026-07-26 21:46:54] [6/7] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-26 21:46:55]   ok
+[2026-07-26 21:46:55] [7/7] build + deploy
+[21:46:55] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[21:46:55] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[21:46:55] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 163 ms
+[21:46:56]       built 81 html files
+[21:46:56] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0 warnings=0
+release_gate=passed
+[21:46:56] [5/8] backup remote webroot
+[21:47:02] [6/8] push build
+[21:47:16] [7/8] extract + prune + chown
+[21:47:19] [8/8] verify live
+[21:47:23]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=31 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=29 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[21:47:47] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-26 21:47:47]   ✓ deployed
+[2026-07-26 21:47:47] [verify] health check
+[2026-07-26 21:47:51]   canonical(http→)=301 home=200 sitemap=31 go=200 empty_ids=1/4
+[2026-07-26 21:47:51]   ⚠ 1 of 4 ids still empty in hugo.toml — analytics/affiliate not fully live
+[2026-07-26 21:47:53]   ✓ live content verified: /todays-sky/ = 2026-07-26
+[2026-07-26 21:47:53] ════ rn_daily END (OK) ════
+[2026-07-27 10:15:57] ════ rn_daily START ════
+[2026-07-27 10:15:57] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 94% | mercury_rx=false
+[2026-07-27 10:15:57]   ok
+[2026-07-27 10:15:58] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 94% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-27 10:16:35]   ok
+[2026-07-27 10:16:35] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 14 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-27 10:16:35]   ok
+[2026-07-27 10:16:35] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-27 10:16:35]   ok
+[2026-07-27 10:16:35] [5/7] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-27 10:16:35]   ok
+[2026-07-27 10:16:35] [6/7] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-27 10:16:36]   ok
+[2026-07-27 10:16:36] [7/7] build + deploy
+[10:16:36] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[10:16:36] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[10:16:36] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 251 ms
+[10:16:37]       built 81 html files
+[10:16:37] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0 warnings=0
+release_gate=passed
+[10:16:37] [5/8] backup remote webroot
+[10:16:43] [6/8] push build
+[10:16:57] [7/8] extract + prune + chown
+[10:16:59] [8/8] verify live
+[10:17:04]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=31 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=29 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[10:17:25] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-27 10:17:25]   ✓ deployed
+[2026-07-27 10:17:25] [verify] health check
+[2026-07-27 10:17:30]   canonical(http→)=301 home=200 sitemap=31 go=200 empty_ids=0/3
+[2026-07-27 10:17:32]   ✓ live content verified: sitemap lastmod=2026-07-27 title=2026-07-27 (today=2026-07-27)
+[2026-07-27 10:17:32] ════ rn_daily END (OK) ════
+[2026-07-28 11:13:59] ════ rn_daily START ════
+[2026-07-28 11:13:59] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌔 Waxing Gibbous 98% | mercury_rx=false
+[2026-07-28 11:13:59]   ok
+[2026-07-28 11:13:59] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌔 Waxing Gibbous 98% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-28 11:14:47]   ok
+[2026-07-28 11:14:47] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-28 11:14:47]   ok
+[2026-07-28 11:14:47] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-28 11:14:47]   ok
+[2026-07-28 11:14:47] [5/7] freshness audit
+freshness_audit: all 56 pages within 60d window
+[2026-07-28 11:14:47]   ok
+[2026-07-28 11:14:47] [6/7] quality gate
+quality_gate=passed pages=56 warnings=0
+[2026-07-28 11:14:48]   ok
+[2026-07-28 11:14:48] [7/7] build + deploy
+[11:14:48] [1/8] quality gate
+quality_gate=passed pages=56 warnings=0
+[11:14:48] [2/8] generate pages + /go/ redirects
+generated=56
+go_redirects=12 affiliate_id=set
+[11:14:48] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   0 
+ Cleaned          │   0 
+
+Total in 269 ms
+[11:14:49]       built 81 html files
+[11:14:49] [4/8] release gate
+release_gate=finished html=81 sitemap=31 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0 warnings=0
+release_gate=passed
+[11:14:49] [5/8] backup remote webroot
+[11:14:57] [6/8] push build
+[11:15:20] [7/8] extract + prune + chown
+[11:15:23] [8/8] verify live
+[11:15:31]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=31 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=29 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[11:15:52] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-28 11:15:52]   ✓ deployed
+[2026-07-28 11:15:52] [verify] health check
+[2026-07-28 11:15:57]   canonical(http→)=301 home=200 sitemap=31 go=200 empty_ids=0/3
+[2026-07-28 11:16:02]   ✓ live content verified: sitemap lastmod=2026-07-28 title=2026-07-28 (today=2026-07-28)
+[2026-07-28 11:16:02] ════ rn_daily END (OK) ════
+[2026-07-29 09:44:52] ════ rn_daily START ════
+[2026-07-29 09:44:52] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌕 Full Moon 100% | mercury_rx=false
+[2026-07-29 09:44:53]   ok
+[2026-07-29 09:44:53] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌕 Full Moon 100% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 56 pages)
+[2026-07-29 09:45:34]   ok
+[2026-07-29 09:45:34] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 15 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-07-30 full-moon | 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-29 09:45:34]   ok
+[2026-07-29 09:45:34] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 1 events to build: full-moon-september-2026
+GEN full-moon-september-2026 (try 1) ...
+OK   full-moon-september-2026
+
+events done=1 failed=0
+[2026-07-29 09:46:22]   ok
+[2026-07-29 09:46:22] [5/7] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-29 09:46:22]   ok
+[2026-07-29 09:46:22] [6/7] quality gate
+FAIL full-moon-september-2026: missing=- banned=legal advice L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-29 09:46:22]   🔔 ALERT: quality gate FAILED — 内容未通过门禁, 线上保持原样
+[2026-07-29 09:46:22] ════ rn_daily END (FAIL) ════
+[2026-07-30 09:55:43] ════ rn_daily START ════
+[2026-07-30 09:55:43] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 99% | mercury_rx=false
+[2026-07-30 09:55:43]   ok
+[2026-07-30 09:55:43] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 99% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-30 09:57:52]   ok
+[2026-07-30 09:57:52] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon | 2026-10-26 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-30 09:57:53]   ok
+[2026-07-30 09:57:53] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-30 09:57:53]   ok
+[2026-07-30 09:57:53] [5/7] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-30 09:57:53]   ok
+[2026-07-30 09:57:53] [6/7] quality gate
+FAIL full-moon-september-2026: missing=- banned=legal advice L0=-
+quality_gate=failed pages=1 warnings=0
+[2026-07-30 09:57:53]   🔔 ALERT: quality gate FAILED — 内容未通过门禁, 线上保持原样
+[2026-07-30 09:57:53] ════ rn_daily END (FAIL) ════
+[2026-07-31 09:15:02] ════ rn_daily START ════
+[2026-07-31 09:15:02] [1/7] refresh sky data (moon phase + mercury rx)
+sky updated: 🌖 Waning Gibbous 97% | mercury_rx=false
+[2026-07-31 09:15:02]   ok
+[2026-07-31 09:15:02] [2/7] generate today's sky article (gpt-5.5)
+sky facts: 🌖 Waning Gibbous 97% | sun=Leo(summer) | mercury=direct (not retrograde)
+GEN todays-sky (try 1) ...
+OK   todays-sky written (pages.yaml now 57 pages)
+[2026-07-31 09:15:59]   ok
+[2026-07-31 09:15:59] [3/7] rebuild astro event calendar (computed moons)
+event_calendar.yaml written: 14 full moons + 15 new moons over 430d (computed).
+next 6 events: 2026-08-14 new-moon | 2026-08-28 full-moon | 2026-09-12 new-moon | 2026-09-27 full-moon | 2026-10-12 new-moon | 2026-10-26 full-moon
+retrogrades/eclipses: 空模板，待人工填权威日期（脚本不臆造）。
+[2026-07-31 09:15:59]   ok
+[2026-07-31 09:15:59] [4/7] generate upcoming event pages (skip existing)
+window=60d max=2 → 0 events to build: (none)
+
+events done=0 failed=0
+[2026-07-31 09:15:59]   ok
+[2026-07-31 09:15:59] [5/7] freshness audit
+freshness_audit: all 57 pages within 60d window
+[2026-07-31 09:15:59]   ok
+[2026-07-31 09:15:59] [6/7] quality gate
+quality_gate=passed pages=57 warnings=0
+[2026-07-31 09:15:59]   ok
+[2026-07-31 09:15:59] [7/7] build + deploy
+[09:15:59] [1/8] quality gate
+quality_gate=passed pages=57 warnings=0
+[09:16:00] [2/8] generate pages + /go/ redirects
+generated=57
+go_redirects=12 affiliate_id=set
+[09:16:00] [3/8] hugo build
+Start building sites … 
+hugo v0.161.1-ea8f66a7ce988664dcc84c052fc96757042e2e4a+extended windows/amd64 BuildDate=2026-04-29T13:56:01Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+                  │ EN  
+──────────────────┼─────
+ Pages            │  73 
+ Paginator pages  │   0 
+ Non-page files   │   0 
+ Static files     │ 117 
+ Processed images │   0 
+ Aliases          │   1 
+ Cleaned          │   0 
+
+Total in 211 ms
+[09:16:00]       built 82 html files
+[09:16:00] [4/8] release gate
+release_gate=finished html=82 sitemap=30 noindex=13 sitemap_noindex=0 go_routes=12 broken_internal_links=0 missing_canonical=0 warnings=0
+release_gate=passed
+[09:16:01] [5/8] backup remote webroot
+[09:16:09] [6/8] push build
+[09:16:40] [7/8] extract + prune + chown
+[09:16:43] [8/8] verify live
+[09:16:46]       home=200 tarot=200 go=200
+rn_post_deploy_check site=https://www.roamsnotes.com root=/www/wwwroot/roamsnotes.com
+core / 200
+core /sitemap.xml 200
+core /llms.txt 200
+core /tools/ 200
+core /fiverr-tarot-reading/ 200
+core /is-my-ex-coming-back-tarot/ 200
+sitemap_count=30 sitemap_noindex=0
+homepage_h1=1
+homepage_cache_control=public, max-age=300, must-revalidate
+go_routes=12
+internal_links_checked=29 internal_link_failures=0
+log_file=/www/wwwlogs/chat.hu-qian.com.log
+googlebot_recent=20
+bingbot_recent=24
+go_hits_recent=0
+      8 /.git/config
+      3 /https%3A/lobechat.com/chat
+      2 /.well-known/farcaster.json
+      1 /wp-admin/setup-config.php
+      1 /_next/static/chunks/'+u.escape(this.src)+'
+      1 /_next/static/chunks/'+(e=i)+'
+      1 /_next/static/chunks/'+e+'
+      1 /_next/static/chunks/$%7Be%7D
+      1 /.git/HEAD
+      1 /.env
+rn_post_deploy_check failures=0
+[09:17:05] ✅ deploy complete → https://www.roamsnotes.com/
+[2026-07-31 09:17:05]   ✓ deployed
+[2026-07-31 09:17:05] [verify] health check
+[2026-07-31 09:17:08]   canonical(http→)=301 home=200 sitemap=30 go=200 empty_ids=0/3
+[2026-07-31 09:17:10]   ✓ live content verified: sitemap lastmod=2026-07-31 title=2026-07-31 (today=2026-07-31)
+[2026-07-31 09:17:10]   (已清除桌面失败标记)
+[2026-07-31 09:17:10] ════ rn_daily END (OK) ════

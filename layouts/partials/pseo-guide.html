@@ -5,5 +5,5 @@
   <section class="guide-routine"><h2>A two-minute screening routine</h2><ol><li>Define the question and preferred format.</li><li>Read recent reviews for detail, not just star averages.</li><li>Confirm scope, turnaround, revisions, and the full price.</li><li>Leave when the pitch uses certainty, fear, or pressure.</li></ol></section>
   {{ range $item.sections }}<section class="pseo-section pseo-section--guide"><h2>{{ .heading }}</h2>{{ with .image }}<figure class="section-img">{{ partial "responsive-image.html" (dict "image" . "hero" false) }}</figure>{{ end }}{{ .body | markdownify }}</section>{{ end }}
   {{ with $item.faq }}<section class="faq"><h2>FAQ</h2>{{ range . }}<details><summary>{{ .q }}</summary>{{ .a | markdownify }}</details>{{ end }}</section>{{ end }}
-  <section class="cta-panel cta-panel--info"><h2>Need a clearer question first?</h2><p>Use a free prompt tool before you compare readers. Buying comes after the question is clear.</p><a class="button secondary" href="/tools/tarot-question-generator/">Draft a tarot question &rarr;</a></section>
+  <section class="cta-panel cta-panel--info"><h2>Need a clearer question first?</h2><p>Use a free prompt tool before you compare readers. Buying comes after the question is clear.</p><a class="button secondary" href="/tools/tarot-question-builder/">Build a tarot question &rarr;</a></section>
 </article>
